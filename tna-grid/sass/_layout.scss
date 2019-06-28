@@ -1,0 +1,135 @@
+.container {
+  max-width: 1240px;
+}
+.breadcrumbs {
+  margin: 1em 0;
+  font-size: .9em;
+}
+.page {
+  .entry-header {
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 0.6em 1.6em;
+    background: #fff;
+  }
+  .entry-content {
+    border-left: solid 2px #000;
+    border-right: 2px solid #000;
+    padding: 1.6em;
+    background: #fff;
+    margin-bottom: 1.6em;
+  }
+  .entry-content:after {
+    display: block;
+    content: '';
+    background-color: #fff;
+    height: 75%;
+    width: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+  }
+  blockquote {
+    font-family: 'Roboto Mono', monospace;
+    border: solid 2px #000;
+    padding: 1.6em 3.2em;
+    margin-bottom: 1.6em;
+    margin-left: -3.2em;
+    background: #fff;
+    max-width: 640px;
+    p {
+      margin: 0;
+    }
+  }
+}
+.level-one {
+  background: #eee;
+  .banner {
+    background-position: center center;
+    background-size: cover;
+    min-height: 288px;
+    margin-bottom: 1.6em;
+    .entry-header {
+      border: $grid_line;
+      padding: 0.6em 3.2em;
+      margin: 1.6em 0 1.6em 3.2em;
+      background-color: #fff;
+      display: inline-block;
+      h1 {
+        margin: 0;
+      }
+    }
+    .entry-content {
+      width: 100%;
+      padding: 0 0 0 4.8em;
+      margin-bottom: 1.6em;
+      p {
+        font-family: $tna_heading_font;
+        display: inline-block;
+        background-color: #fff;
+        margin: 0;
+        border: $grid_line;
+        padding: 0.5em 0.9em;
+      }
+      .button {
+        margin-top: -2px;
+      }
+    }
+  }
+  .banner:before {
+    display: block;
+    content: '';
+    background-color: #fff;
+    border: $grid_line;
+    height: 1.6em;
+    width: 3.2em;
+    position: absolute;
+    top: 0;
+    left: 15px;
+  }
+  main {
+    article {
+      border-left: $grid_line;
+      background: #fff;
+      margin-bottom: 1.6em;
+      padding: 0.5em;
+    }
+    .entry-header {
+      padding: 0.6em 1.6em 0.6em 2em;
+      margin-bottom: 1.6em;
+      h1 {
+        color: #000;
+        margin: 0;
+      }
+      h2 {
+        margin: 0;
+      }
+    }
+    .entry-content {
+      margin-bottom: 3.2em;
+      img {
+        padding-left: 2em;
+        margin-bottom: 1.6em;
+      }
+      p {
+        padding-left: 2em;
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 2em;
+      }
+    }
+  }
+}
+aside {
+  .sidebar-header {
+    margin-bottom: 1.6em;
+  }
+  .sidebar-nav {
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  }
+}

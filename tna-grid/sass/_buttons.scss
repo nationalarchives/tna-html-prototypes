@@ -1,0 +1,28 @@
+
+.button {
+  font-family: $tna_heading_font;
+  background-color: #fff;
+  color: #000;
+  border: $grid_line;
+  padding: 0.5em 0.9em;
+  display: inline-block;
+  min-width: 24px;
+  text-align: center;
+}
+.button:hover {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+}
+.primary {
+  background-color: #000;
+  color: #fff;
+}
+.primary:hover {
+  background-color: #fff;
+  color: #000;
+}
+.secondary {
+  background-color: #eee;
+}
+

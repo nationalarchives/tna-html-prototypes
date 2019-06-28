@@ -1,0 +1,12 @@
+.notification-banner {
+  background-color: $primary_alert;
+  p {
+    margin: 0.3em;
+    strong {
+      background-color: #fff;
+      text-transform: uppercase;
+      padding: 0.1em 0.4em;
+      margin-right: 1em;
+    }
+  }
+}
