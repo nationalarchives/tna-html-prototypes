@@ -3587,42 +3587,51 @@ footer {
   margin: 1em 0;
   font-size: .9em; }
 
-.page {
-  /*.entry-content:after {
+.page .entry-header {
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 0.6em 1.6em;
+  background: #fff; }
+.page .entry-content {
+  border-left: solid 2px #000;
+  border-right: 2px solid #000;
+  padding: 1.6em;
+  background: #fff;
+  margin-bottom: 1.6em; }
+.page .entry-content:after {
+  display: block;
+  content: '';
+  background-color: #fff;
+  height: 75%;
+  width: 2px;
+  position: absolute;
+  bottom: 0;
+  right: 15px; }
+.page blockquote {
+  font-family: 'Roboto Mono', monospace;
+  border: solid 2px #000;
+  padding: 1.6em 3.2em;
+  margin-bottom: 1.6em;
+  margin-left: -3.2em;
+  background: #fff;
+  max-width: 640px; }
+  .page blockquote p {
+    margin: 0; }
+
+.level-one {
+  background: #eee;
+  /*.banner:before {
     display: block;
     content: '';
     background-color: #fff;
-    height: 75%;
-    width: 2px;
+    border: $grid_line;
+    height: 1.6em;
+    width: 3.2em;
     position: absolute;
-    bottom: 0;
-    right: 15px;
+    top: 0;
+    left: 15px;
   }*/ }
-  .page .entry-header {
-    border-left: 2px solid #000;
-    border-right: 2px solid #000;
-    border-bottom: 2px solid #000;
-    padding: 0.6em 1.6em;
-    background: #fff; }
-  .page .entry-content {
-    border-left: solid 2px #000;
-    border-right: 2px solid #000;
-    padding: 1.6em;
-    background: #fff;
-    margin-bottom: 1.6em; }
-  .page blockquote {
-    font-family: 'Roboto Mono', monospace;
-    border: solid 2px #000;
-    padding: 1.6em 3.2em;
-    margin-bottom: 1.6em;
-    margin-left: -3.2em;
-    background: #fff;
-    max-width: 640px; }
-    .page blockquote p {
-      margin: 0; }
-
-.level-one {
-  background: #eee; }
   .level-one .banner {
     background-position: center center;
     background-size: cover;
@@ -3649,16 +3658,6 @@ footer {
         padding: 0.5em 0.9em; }
       .level-one .banner .entry-content .button {
         margin-top: -2px; }
-  .level-one .banner:before {
-    display: block;
-    content: '';
-    background-color: #fff;
-    border: 2px solid #000;
-    height: 1.6em;
-    width: 3.2em;
-    position: absolute;
-    top: 0;
-    left: 15px; }
   .level-one main article {
     border-left: 2px solid #000;
     background: #fff;
