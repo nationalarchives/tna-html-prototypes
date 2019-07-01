@@ -3620,7 +3620,6 @@ footer {
     margin: 0; }
 
 .level-one {
-  background: #eee;
   /*.banner:before {
     display: block;
     content: '';
@@ -3659,28 +3658,22 @@ footer {
       .level-one .banner .entry-content .button {
         margin-top: -2px; }
   .level-one main article {
-    border-left: 2px solid #000;
     background: #fff;
-    margin-bottom: 1.6em;
-    padding: 0.5em; }
+    margin-bottom: 3.2em; }
   .level-one main .entry-header {
-    padding: 0.6em 1.6em 0.6em 2em;
+    border-top: 2px solid #000;
+    padding-top: 0.6em;
     margin-bottom: 1.6em; }
     .level-one main .entry-header h1 {
       color: #000;
       margin: 0; }
     .level-one main .entry-header h2 {
       margin: 0; }
-  .level-one main .entry-content {
-    margin-bottom: 3.2em; }
-    .level-one main .entry-content img {
-      padding-left: 2em;
-      margin-bottom: 1.6em; }
-    .level-one main .entry-content p {
-      padding-left: 2em; }
-    .level-one main .entry-content ul {
-      list-style-type: none;
-      padding-left: 2em; }
+  .level-one main .entry-content img {
+    margin-bottom: 1.6em; }
+  .level-one main .entry-content ul {
+    list-style-type: none;
+    padding: 0; }
 
 aside .sidebar-header {
   margin-bottom: 1.6em; }
