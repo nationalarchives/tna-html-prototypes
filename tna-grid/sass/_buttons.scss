@@ -23,6 +23,16 @@
   color: #000;
 }
 .secondary {
+  border-color: #ccc;
+  background-color: #fff;
+}
+.tertiary {
+  border-color: #eee;
   background-color: #eee;
+}
+.invert {
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
 }
 

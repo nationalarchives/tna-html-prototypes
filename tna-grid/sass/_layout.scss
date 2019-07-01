@@ -41,6 +41,25 @@
     p {
       margin: 0;
     }
+    cite {
+      display: block;
+      font-size: 0.9em;
+      text-align: right;
+      margin: 0.6em 0;
+    }
+  }
+  .emphasis-block {
+    background: #000;
+    color: #fff;
+  }
+  .emphasis-alert {
+    background: $col_alert;
+  }
+  .emphasis-success {
+    background: $col_success;
+  }
+  .emphasis-error {
+    background: $col_error;
   }
 }
 .level-one {

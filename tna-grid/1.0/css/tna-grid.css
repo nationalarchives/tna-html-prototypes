@@ -3618,6 +3618,20 @@ footer {
   max-width: 640px; }
   .page blockquote p {
     margin: 0; }
+  .page blockquote cite {
+    display: block;
+    font-size: 0.9em;
+    text-align: right;
+    margin: 0.6em 0; }
+.page .emphasis-block {
+  background: #000;
+  color: #fff; }
+.page .emphasis-alert {
+  background: #fbe2bc; }
+.page .emphasis-success {
+  background: #dde5d5; }
+.page .emphasis-error {
+  background: #fad3d4; }
 
 .level-one {
   /*.banner:before {
@@ -3705,10 +3719,20 @@ aside .sidebar-nav ul {
   color: #000; }
 
 .secondary {
+  border-color: #ccc;
+  background-color: #fff; }
+
+.tertiary {
+  border-color: #eee;
   background-color: #eee; }
 
+.invert {
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff; }
+
 .notification-banner {
-  background-color: #fce45c; }
+  background-color: #fbe2bc; }
   .notification-banner p {
     margin: 0.3em; }
     .notification-banner p strong {
@@ -3716,3 +3740,22 @@ aside .sidebar-nav ul {
       text-transform: uppercase;
       padding: 0.1em 0.4em;
       margin-right: 1em; }
+
+.cards .card {
+  margin-bottom: 1.6em; }
+.cards a:hover {
+  text-decoration: none; }
+.cards .entry-image {
+  display: block;
+  width: 100%;
+  min-height: 185px;
+  background: #ddd center center;
+  background-size: cover; }
+.cards .content-type {
+  padding: 0.3em 0;
+  color: #222; }
+.cards h3 {
+  border-top: 2px solid #000;
+  padding-top: 0.6em; }
+.cards p {
+  color: #222; }

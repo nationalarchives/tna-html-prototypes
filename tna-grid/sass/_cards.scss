@@ -1,0 +1,26 @@
+.cards {
+  .card {
+    margin-bottom: 1.6em;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .entry-image {
+    display: block;
+    width: 100%;
+    min-height: 185px;
+    background: #ddd center center;
+    background-size: cover;
+  }
+  .content-type {
+    padding: 0.3em 0;
+    color: #222;
+  }
+  h3 {
+    border-top: $grid_line;
+    padding-top: 0.6em;
+  }
+  p {
+    color: #222;
+  }
+}
