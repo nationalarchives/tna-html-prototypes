@@ -17,12 +17,11 @@ header .icon {
     margin: 0 0 1.5em;
     background-color: #fff;
     border: solid 1px #ddd;
-    border-radius: 4px;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
 .dark {
-    background-color: #666;
+    background-color: #ddd;
 }
 .cf:before,
 .cf:after {
