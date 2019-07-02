@@ -3731,7 +3731,7 @@ footer {
 
 aside .sidebar-header {
   margin-bottom: 1.6em; }
-aside .sidebar-nav ul {
+aside ul {
   list-style-type: none;
   padding: 0; }
 
@@ -3782,7 +3782,7 @@ aside .sidebar-nav ul {
       margin-right: 1em; }
 
 .cards .card {
-  margin-bottom: 1.6em; }
+  margin-bottom: 2.4em; }
 .cards a:hover {
   text-decoration: none; }
 .cards .entry-image {
