@@ -15,7 +15,6 @@ form {
   }
   input[type="submit"] {
     padding: 0.5em .9em;
-    border: 0;
     margin: 0;
   }
   input[type=text],
@@ -26,19 +25,19 @@ form {
   input[type=email],
   input[type=date],
   input.width-half {
-    border: 1px solid #ccc;
-    padding: 2px;
-    height: 34px;
+    border: $grid_line;
+    padding: 0.6em;
     text-indent: 5px;
     min-width: 220px;
     width: auto;
   }
   textarea {
-    border: 1px solid #ccc;
-    padding: 0.333em;
+    border: $grid_line;
+    padding: 0.6em;
   }
   select {
-    border: 1px solid #ccc;
+    border: $grid_line;
+    height: 2.4em;
   }
   .form-row {
     max-width: 100%;
@@ -67,7 +66,7 @@ form {
     select,
     textarea {
       width: 100%;
-      max-width: 420px;
+      max-width: 480px;
       &:disabled {
         background: #eee;
       }
@@ -103,6 +102,48 @@ form {
     }
     .form-warning {
       border: 2px solid #EBAB2C;
+    }
+  }
+  .checkbox {
+    input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+    }
+    label {
+      position: relative;
+      display: inline-block;
+      padding-left: 32px;
+    }
+    label::before,
+    label::after {
+      position: absolute;
+      content: "";
+      display: inline-block;
+    }
+    label::before{
+      height: 24px;
+      width: 24px;
+      border: $grid_line;
+      left: 0px;
+      top: 2px;
+    }
+    label::after {
+      height: 7px;
+      width: 13px;
+      border-left: $grid_line;
+      border-bottom: $grid_line;
+      transform: rotate(-45deg);
+      left: 6px;
+      top: 9px;
+    }
+    input[type="checkbox"] + label::after {
+      content: none;
+    }
+    input[type="checkbox"]:checked + label::after {
+      content: "";
+    }
+    input[type="checkbox"]:focus + label::before {
+      outline: rgb(59, 153, 252) auto 5px;
     }
   }
 }
