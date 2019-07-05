@@ -4252,6 +4252,8 @@ form .checkbox input[type="checkbox"]:focus + label::before {
     text-decoration: underline; }
 .cards p {
   color: #222; }
+.cards .entry-header h3 {
+  padding: 0.6em 0; }
 @media (min-width: 768px) {
   .cards .hero-banner {
     display: table;
