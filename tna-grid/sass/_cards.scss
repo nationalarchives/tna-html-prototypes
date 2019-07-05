@@ -1,6 +1,6 @@
 .cards {
   .card {
-    margin-bottom: 2.4em;
+    margin-bottom: 3.2em;
   }
   a:hover {
     text-decoration: none;
@@ -19,8 +19,33 @@
   h3 {
     border-top: $grid_line;
     padding-top: 0.6em;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   p {
     color: #222;
+  }
+  @media (min-width: 768px) {
+    .hero-banner {
+      display: table;
+      width: 100%;
+      .hero-banner a {
+        display: table-row;
+      }
+      .entry-image, .hero-banner-entry {
+        display: table-cell;
+      }
+      .hero-banner-entry {
+        border-left: $grid_line;
+        .content-type, h3, p {
+          padding-left: 24px;
+        }
+      }
+      .entry-image {
+        width: 68%;
+        height: 240px;
+      }
+    }
   }
 }
