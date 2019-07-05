@@ -3807,11 +3807,20 @@ pre {
 .hue-pink {
   background-color: #fad3d4; }
 
+.hue-cool {
+  background-color: #DAD9D6; }
+
+.hue-yellow-light {
+  background-color: #f9f7e2; }
+
 .hue-grey-light {
   background-color: #eee; }
 
-.hue-grey-mid {
-  background-color: #666;
+.hue-grey-mid-light {
+  background-color: #ddd; }
+
+.hue-grey-mid-dark {
+  background-color: #555;
   color: #fff; }
 
 .hue-grey-dark {
@@ -4077,6 +4086,11 @@ form .form-row {
       background: #eee; }
   form .form-row textarea {
     min-height: 120px; }
+  form .form-row select {
+    -webkit-border-radius: 0;
+    border: 0;
+    outline: 2px solid #000;
+    outline-offset: -1px; }
   form .form-row .button-right {
     float: right; }
   form .form-row p {
@@ -4131,39 +4145,48 @@ form .checkbox input[type="checkbox"]:focus + label::before {
 
 .button {
   font-family: "Roboto Mono", monospace;
-  background-color: #fff;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   border: 2px solid #000;
   padding: 0.5em 0.9em;
   display: inline-block;
   min-width: 24px;
   text-align: center; }
-
-.button:hover {
-  background-color: #000;
-  color: #fff;
-  text-decoration: none; }
+  .button:hover {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none; }
 
 .primary {
-  background-color: #000;
-  color: #fff; }
-
-.primary:hover {
   background-color: #fff;
   color: #000; }
+  .primary:hover {
+    background-color: #000;
+    color: #fff; }
 
 .secondary {
   border-color: #ccc;
-  background-color: #fff; }
+  background-color: #fff;
+  color: #000; }
+  .secondary:hover {
+    background-color: #000;
+    color: #fff; }
 
 .tertiary {
   border-color: #eee;
-  background-color: #eee; }
+  background-color: #eee;
+  color: #000; }
+  .tertiary:hover {
+    background-color: #000;
+    color: #fff; }
 
 .invert {
   border-color: #fff;
   background-color: transparent;
   color: #fff; }
+  .invert:hover {
+    background-color: #000;
+    color: #fff; }
 
 .notification-banner {
   background-color: #fbe2bc; }

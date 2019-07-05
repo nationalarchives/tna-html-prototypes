@@ -77,6 +77,12 @@ form {
     textarea {
       min-height: 120px;
     }
+    select {
+      -webkit-border-radius: 0;
+      border: 0;
+      outline: $grid_line;
+      outline-offset: -1px;
+    }
     .button-right {
       float: right;
     }

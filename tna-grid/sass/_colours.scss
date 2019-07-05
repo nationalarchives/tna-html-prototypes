@@ -7,11 +7,20 @@
 .hue-pink {
   background-color: $col_pink;
 }
+.hue-cool {
+  background-color: $col_cool;
+}
+.hue-yellow-light {
+  background-color: $col_warm;
+}
 .hue-grey-light {
   background-color: $col_light;
 }
-.hue-grey-mid {
-  background-color: $col_mid;
+.hue-grey-mid-light {
+  background-color: $col_mid_light;
+}
+.hue-grey-mid-dark {
+  background-color: $col_mid_dark;
   color: #fff;
 }
 .hue-grey-dark {
