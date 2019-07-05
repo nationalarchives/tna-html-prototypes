@@ -3798,6 +3798,26 @@ pre {
   border: 1px solid #ccc;
   border-radius: 0; }
 
+.hue-yellow {
+  background-color: #fbe2bc; }
+
+.hue-green {
+  background-color: #dde5d5; }
+
+.hue-pink {
+  background-color: #fad3d4; }
+
+.hue-grey-light {
+  background-color: #eee; }
+
+.hue-grey-mid {
+  background-color: #666;
+  color: #fff; }
+
+.hue-grey-dark {
+  background-color: #222;
+  color: #fff; }
+
 header {
   background-color: #222;
   color: #fff;
