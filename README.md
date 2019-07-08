@@ -4,8 +4,8 @@
 
 A setup for building rapid HTML/CSS/JS prototypes using AWS CodePipeline and a S3 bucket.
 
-* (AWS CodePipeline)[https://aws.amazon.com/codepipeline/]
-* (AWS S3 buckets)[https://aws.amazon.com/s3/]
+* [AWS CodePipeline](https://aws.amazon.com/codepipeline/)
+* [AWS S3 buckets](https://aws.amazon.com/s3/)
 
 Visit HTML prototype homepage:
 
