@@ -3824,11 +3824,11 @@ pre {
   color: #fff; }
 
 .hue-grey-dark {
-  background-color: #222;
+  background-color: #000;
   color: #fff; }
 
 header {
-  background-color: #222;
+  background-color: #000;
   color: #fff;
   padding: 1.6em 0;
   overflow: hidden; }
@@ -3836,7 +3836,7 @@ header {
     max-height: 50px; }
 
 footer {
-  background-color: #222;
+  background-color: #000;
   color: #fff;
   padding: 1em; }
   footer a, footer a:hover {
