@@ -1,4 +1,4 @@
-# HTML prototypes
+# HTML/CSS/JS prototypes
 
 ## Rapid Prototyping with AWS CodePipeline and S3
 
