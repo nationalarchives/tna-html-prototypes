@@ -9,6 +9,20 @@ A setup for building rapid HTML/CSS/JS prototypes using AWS CodePipeline and a S
 
 ![prototyping diagram](./img/prototyping-diagram.png)
 
+## Usage
+
+### Clone the repo
+```bash
+git clone https://github.com/nationalarchives/tna-html-prototypes.git
+```
+### Create a new prototype
+```bash
+mkdir <prototype-name>
+cd <prototype-name>
+```
+
+## Prototypes
+
 Visit HTML prototype homepage:
 
 http://tna-prototypes.s3-website-eu-west-1.amazonaws.com
