@@ -1,7 +1,7 @@
 footer {
   background-color: $col_dark;
   color: #fff;
-  padding: 1em;
+  padding: 1.6em;
   a, a:hover {
     color: $col_yellow;
   }
@@ -12,9 +12,11 @@ footer {
 
   .footer-col {
     margin-bottom: 1.6em;
+    &:first-child {
+      min-height: 280px;
+    }
     .square-logo {
       max-width: 157px;
-      margin-top: 16px;
       margin-bottom: 23px;
     }
   }

@@ -3838,7 +3838,7 @@ header {
 footer {
   background-color: #000;
   color: #fff;
-  padding: 1em; }
+  padding: 1.6em; }
   footer a, footer a:hover {
     color: #fbe2bc; }
   footer ul {
@@ -3846,9 +3846,10 @@ footer {
     padding-left: 0; }
   footer .footer-col {
     margin-bottom: 1.6em; }
+    footer .footer-col:first-child {
+      min-height: 280px; }
     footer .footer-col .square-logo {
       max-width: 157px;
-      margin-top: 16px;
       margin-bottom: 23px; }
   footer .footer-base .ogl img {
     float: left;
