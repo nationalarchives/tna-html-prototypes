@@ -14,7 +14,14 @@ form {
     font-family: $tna_heading_font;
   }
   input[type="submit"] {
-    padding: 0.5em .9em;
+    font-family: "Roboto Mono", monospace;
+    background-color: #000;
+    color: #fff;
+    border: $grid_line;
+    padding: 0.5em 0.9em;
+    display: inline-block;
+    min-width: 24px;
+    text-align: center;
     margin: 0;
   }
   input[type=text],

@@ -4055,7 +4055,14 @@ form legend {
 form label {
   font-family: "Roboto Mono", monospace; }
 form input[type="submit"] {
-  padding: 0.5em .9em;
+  font-family: "Roboto Mono", monospace;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+  padding: 0.5em 0.9em;
+  display: inline-block;
+  min-width: 24px;
+  text-align: center;
   margin: 0; }
 form input[type=text],
 form input[type=url],
@@ -4324,3 +4331,56 @@ form .checkbox input[type="checkbox"]:focus + label::before {
 
 .icon-video {
   background-image: url("../img/icon-video.png"); }
+
+.newsletter-template {
+  background: #dde5d5;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 1.6em 40px 0 40px; }
+  .newsletter-template .news-icon {
+    display: inline-block;
+    float: left;
+    overflow: hidden; }
+    .newsletter-template .news-icon img {
+      width: 60px;
+      height: 48px; }
+    @media (max-width: 976px) {
+      .newsletter-template .news-icon {
+        display: none; } }
+  .newsletter-template .news-content {
+    width: 40%;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    padding-left: 1.6em; }
+    @media (max-width: 976px) {
+      .newsletter-template .news-content {
+        width: 100%;
+        padding-left: 0;
+        display: block; } }
+  .newsletter-template .news-form {
+    width: 35%;
+    display: inline-block;
+    float: right;
+    margin-bottom: 1.6em; }
+    .newsletter-template .news-form form label {
+      display: none; }
+    .newsletter-template .news-form form input[type="email"] {
+      width: 73%; }
+      @media (max-width: 976px) {
+        .newsletter-template .news-form form input[type="email"] {
+          width: 100%;
+          max-width: 480px;
+          display: block;
+          margin-bottom: 10px; } }
+    .newsletter-template .news-form form input[type="submit"] {
+      height: 48px; }
+    @media (max-width: 1155px) {
+      .newsletter-template .news-form {
+        width: 48%; } }
+    @media (max-width: 976px) {
+      .newsletter-template .news-form {
+        width: 100%;
+        display: block;
+        margin-left: 1.6em; } }
