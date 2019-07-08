@@ -1,6 +1,6 @@
-# HTML prototypes
+# HTML/CSS/JS prototypes
 
-## Rapid Prototyping with AWS CodePipeline and S3
+## Rapid Prototyping with AWS CodePipeline and AWS S3 for iterative design and user testing
 
 A setup for building rapid HTML/CSS/JS prototypes using AWS CodePipeline and a S3 bucket.
 
@@ -11,4 +11,4 @@ A setup for building rapid HTML/CSS/JS prototypes using AWS CodePipeline and a S
 
 Visit HTML prototype homepage:
 
-http://tna-prototypes.s3-website-eu-west-1.amazonaws.com/
+http://tna-prototypes.s3-website-eu-west-1.amazonaws.com
