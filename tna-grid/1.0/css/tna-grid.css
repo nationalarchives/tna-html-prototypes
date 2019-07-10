@@ -4019,14 +4019,11 @@ footer {
     margin: 0; }
   .level-one main .entry-header h2 {
     margin: 0; }
-.level-one main .entry-content {
-  padding-left: 1em;
-  border-left: 1px solid #000; }
-  .level-one main .entry-content img {
-    margin-bottom: 1.6em; }
-  .level-one main .entry-content ul {
-    list-style-type: none;
-    padding: 0; }
+.level-one main .entry-content img {
+  margin-bottom: 1.6em; }
+.level-one main .entry-content ul {
+  list-style-type: none;
+  padding: 0; }
 
 aside .sidebar-header {
   margin-bottom: 1.6em; }
