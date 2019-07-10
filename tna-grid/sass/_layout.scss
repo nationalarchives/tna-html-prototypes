@@ -102,17 +102,6 @@
       }
     }
   }
-  /*.banner:before {
-    display: block;
-    content: '';
-    background-color: #fff;
-    border: $grid_line;
-    height: 1.6em;
-    width: 3.2em;
-    position: absolute;
-    top: 0;
-    left: 15px;
-  }*/
   main {
     article {
       background: #fff;
@@ -131,6 +120,9 @@
       }
     }
     .entry-content {
+      padding-left: 1em;
+      border-left: 1px solid #000;
+
       img {
         margin-bottom: 1.6em;
       }
