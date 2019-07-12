@@ -4342,6 +4342,8 @@ form .checkbox input[type="checkbox"]:focus + label::before {
     float: left;
     overflow: hidden;
     padding-left: 1.6em; }
+    .newsletter-template .news-content h2 {
+      line-height: 1; }
     @media (max-width: 976px) {
       .newsletter-template .news-content {
         width: 100%;

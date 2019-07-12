@@ -4,7 +4,6 @@
   box-sizing: border-box;
   overflow: hidden;
   padding: 1.6em 40px 0 40px;
-
   .news-icon {
     display: inline-block;
     float: left;
@@ -23,6 +22,9 @@
     float: left;
     overflow:hidden;
     padding-left: 1.6em;
+    h2 {
+      line-height: 1;
+    }
     @media (max-width: 976px) {
       width:100%;
       padding-left: 0;
