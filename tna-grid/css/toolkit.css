@@ -21,7 +21,7 @@ header .icon {
     box-shadow: none;
 }
 .dark {
-    background-color: #ddd;
+    background-color: #555;
 }
 .cf:before,
 .cf:after {
@@ -54,6 +54,10 @@ header .icon {
 }
 ul.colours li {
     padding: 0.6em 1em !important;
+}
+ul.colours li span {
+    font-family: "Roboto Mono", monospace;
+    float: right;
 }
 ul.colours  {
     padding-left: 0 !important;

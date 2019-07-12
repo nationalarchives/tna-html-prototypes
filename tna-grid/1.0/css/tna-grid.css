@@ -3824,11 +3824,11 @@ pre {
   color: #fff; }
 
 .hue-grey-dark {
-  background-color: #000;
+  background-color: #222;
   color: #fff; }
 
 header {
-  background-color: #000;
+  background-color: #222;
   color: #fff;
   padding: 1.6em 0;
   overflow: hidden; }
@@ -3836,7 +3836,7 @@ header {
     max-height: 50px; }
 
 footer {
-  background-color: #000;
+  background-color: #222;
   color: #fff;
   padding: 1.6em; }
   footer a, footer a:hover {
@@ -3877,7 +3877,7 @@ footer {
   footer .follow-us a {
     display: inline-block; }
     footer .follow-us a img {
-      background-color: #000;
+      background-color: #222;
       border: 2px solid #fff;
       border-radius: 50%;
       padding: 7px;
@@ -4201,7 +4201,7 @@ form .checkbox input[type="checkbox"]:focus + label::before {
 .secondary {
   border-color: #ccc;
   background-color: #fff;
-  color: #000; }
+  color: #555; }
   .secondary:hover {
     background-color: #000;
     color: #fff; }
@@ -4209,7 +4209,7 @@ form .checkbox input[type="checkbox"]:focus + label::before {
 .tertiary {
   border-color: #eee;
   background-color: #eee;
-  color: #000; }
+  color: #555; }
   .tertiary:hover {
     background-color: #000;
     color: #fff; }
