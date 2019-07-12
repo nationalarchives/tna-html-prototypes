@@ -4024,6 +4024,10 @@ footer {
 .level-one main .entry-content ul {
   list-style-type: none;
   padding: 0; }
+.level-one main .entry-content .well {
+  border: 2px solid #000;
+  padding: 1.6em;
+  margin-top: -1.6em; }
 
 aside .sidebar-header {
   margin-bottom: 1.6em; }
