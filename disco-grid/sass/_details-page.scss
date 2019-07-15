@@ -1,0 +1,607 @@
+#details-tabs {
+    list-style-type: none;
+    display: none;
+}
+
+#details-tabs li {
+    display: inline-block;
+    width: 23%;
+    padding: 1.5em 0;
+    text-align: center;
+    height: 100%;
+    margin-right: 2%;
+    background-color: #EEE;
+}
+
+#details-tabs li:last-child {
+    margin-right: 0;
+}
+
+#details-tabs li.selected {
+    background-color: #405480;
+    color: #FFF;
+}
+
+#details-tabs li.selected a {
+    color: #FFF;
+}
+
+#details-control-panel {
+    font-size: 0.85em;
+    list-style-type: none;
+    text-align: right;
+}
+
+#details-control-panel li {
+    display: inline-block;
+    margin-left: 0.7em;
+}
+
+.sit-right {
+    float: right;
+    margin: 1em 0 0 1em;
+}
+
+#itemImage {
+    display: none;
+}
+
+.asset-details {
+    width: 100%;
+}
+
+.asset-details caption {
+    display: none;
+}
+
+.asset-details tr {
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.asset-details th {
+    vertical-align: top;
+    text-align: left;
+    padding: 0.5em;
+    min-width: 6em;
+    font-weight: normal;
+}
+
+.asset-details td {
+    vertical-align: top;
+    padding: 0.5em 0;
+
+    table {
+        width: 100%;
+        /*display: inline;*/
+        td {
+            /*display: inline;*/
+        }
+    }
+
+    ul {
+        list-style-image: url(/Content/images/list-link-bullet.png);
+        padding-left: 1.5em;
+        margin: 1em 0;
+
+        li {
+            padding: 0.5em 0;
+        }
+    }
+}
+
+p.scopecontent {
+    margin: 0;
+}
+
+textarea {
+    border: 1px solid #CCC;
+    resize: none;
+    width: 80%;
+    padding: 5px;
+}
+
+#user-contributions li {
+    list-style-type: none;
+    display: inline;
+}
+
+#hierarchy {
+    margin: 1em 0;
+    background-color: #FFF;
+    padding: 1em;
+    clear: both;
+    background-color: #EFEFEF;
+    border-left: 8px solid hsl(221, 33%, 26%);
+}
+
+#hierarchy li {
+    list-style-image: url(/Content/Images/list-marker.png);
+    margin-bottom: 0.2em;
+}
+
+#hierarchy li:nth-child(1) {
+    margin-left: 0;
+    list-style-image: none;
+}
+
+#hierarchy li:nth-child(2) {
+    margin-left: 1.5em;
+}
+
+#hierarchy li:nth-child(3) {
+    margin-left: 3em;
+}
+
+#hierarchy li:nth-child(4) {
+    margin-left: 4.5em;
+}
+
+#hierarchy li:nth-child(5) {
+    margin-left: 6em;
+}
+
+#hierarchy li:nth-child(6) {
+    margin-left: 7.5em;
+}
+
+#hierarchy li:nth-child(7) {
+    margin-left: 9em;
+}
+
+#hierarchy li:nth-child(8) {
+    margin-left: 10.5em;
+}
+
+div[class*="-tag-list-item"] {
+    @extend .tag;
+}
+
+div[class*="-tag-list-item"] a {
+    color: #000;
+}
+
+div[class*="-tag-list-item"] span > span {
+    border-left: 1px solid #777;
+    padding-left: 6px;
+}
+
+#suggest-a-correction-form {
+    h3 {
+        margin-top: 20px;
+    }
+
+    select {
+        margin-bottom: 0;
+    }
+
+    label {
+        display: block;
+    }
+
+    input[type=text] {
+        padding: 0.2em;
+        width: 80%;
+    }
+
+    .field-validation-error {
+        display: block;
+    }
+}
+
+.last-form-field-group {
+    margin-top: 10px;
+}
+
+#hierarchy .browseByReference {
+    font-size: 0.85em;
+    float: right;
+}
+
+address > div > div:not(:last-child)::after {
+    content: ", ";
+}
+
+address.repository {
+    font-style: normal;
+    /*p {
+		margin: 0;
+
+		}*/
+    p:last-of-type {
+        a {
+            text-transform: lowercase;
+        }
+    }
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.accessions li {
+    display: inline;
+}
+
+.nra-info {
+    background-color: #ECECEC;
+    padding-top: 1em;
+}
+
+.feature-box {
+    background-color: #EFEFEF;
+    padding: 0.5em 1em;
+}
+
+.feature-link {
+    overflow: hidden;
+    padding-top: 1em;
+}
+
+.feature-link a {
+    float: right;
+}
+
+
+#nra-tabs {
+    margin-bottom: 0;
+}
+
+#nra-tabs li {
+    height: 92px;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    margin-right: 4px;
+    background-color: #FFF;
+    padding: 1em;
+}
+
+.nra-heading {
+    margin-bottom: 0;
+}
+
+.nra-content {
+    margin-bottom: 1em;
+}
+
+h2.inline a {
+    color: #2A5DB0;
+}
+
+.nra-content h2.inline {
+    padding-left: 2%;
+}
+
+section.resource-spread {
+    margin-bottom: 2%;
+    background-color: #fff;
+}
+
+section.resource-spread div.col {
+    margin-bottom: 0;
+}
+
+.nra-content ul {
+    padding: 1em 1em 1em 2em;
+    background-color: #FFF;
+    margin: 0 0 0 0;
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #efefef;
+}
+
+.nra-content li {
+    font-size: 0.85em;
+    padding: 0.3em;
+    list-style-type: disc;
+}
+
+.nra-content:nth-child(5) {
+    margin-bottom: 0;
+}
+
+.access-info {
+    margin-bottom: 1em;
+}
+
+.access-info ul li {
+    margin-bottom: 0.5em;
+}
+
+.access-info th {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+.access-info th, .access-info td {
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.street-map {
+    margin-bottom: 1em;
+}
+
+.js .nra-info h3:hover {
+    cursor: pointer;
+}
+
+.js .short {
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hist-details ul {
+    padding-left: 1.5em;
+}
+
+.hist-details li {
+    list-style-type: disc;
+}
+
+a.download-part {
+    float: right;
+}
+
+/*#preparemessage, #downloadlinks, #choosefilesmessage {
+    display:none
+}*/
+
+p#recordlargemessage {
+    @extend .emphasis-block;
+    margin: 1em 1em 1em 0;
+}
+
+h3#choosefilesmessage {
+    margin: 1em 1em 1em 0;
+}
+
+div.filesWithinOrder div div#largeDownload input#downloadfile.discoveryPrimaryCallToActionLink {
+    float: right;
+    margin: 0 1em 0 0;
+}
+
+#downloadlinks li {
+    overflow: hidden;
+    margin: 0 0 1em 0;
+}
+
+#preparemessage img {
+    margin-top: 1em;
+    display: block;
+}
+
+.addthis_toolbox {
+    float: right;
+    margin-left: 1%;
+}
+
+#sharing-btns {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin: 1em 0 0 0;
+}
+
+#sharing-btns p {
+    font-size: .9em;
+    text-align: right;
+    color: #666;
+    margin: 3em 0 .5em 0;
+}
+
+.addthis_default_style .at15t_compact {
+    margin-right: 0;
+}
+
+#map-canvas {
+    height: 320px;
+    margin: 1em 2% 1em 2%;
+}
+
+ul.child-full {
+    border: none;
+}
+
+ul.child-full li {
+    list-style-image: url("/content/images/list-link-bullet.png");
+    width: 100%;
+    float: left;
+    margin-bottom: 1em;
+}
+
+table p { // Exists for instances where XSLTs are creating <p> tags which end up in a table
+    margin: 0;
+}
+
+.hist-wrapper {
+    @extend .small-spacer-below;
+}
+
+div.contact-details.grid-within-grid-two-item > div {
+    width: auto;
+}
+
+#relatedResearchGuidesWrapper ul {
+    list-style-image: url("/content/images/list-link-bullet.png");
+    padding-left: 1.5em;
+}
+
+#relatedResearchGuidesWrapper li {
+    border-bottom: 1px solid #ececec;
+    padding: .5em 0;
+
+    a {
+        padding-left: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div.contact-details.grid-within-grid-two-item > div {
+        width: 49%;
+    }
+
+    #map-canvas {
+        margin: 1em 2% 1em 0;
+    }
+}
+
+.image-info {
+    margin: 1em 0 .5em 0;
+}
+
+.order-option-wrapper {
+    position: relative;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-left: 8px solid #2c3a58;
+    background-color: #EFEFEF;
+    margin-bottom: 1em;
+
+    .order-option-description {
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .order-buttons {
+        text-align: right;
+        display: block;
+        clear: both;
+
+        ul {
+            margin: 0;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+
+    .expander-link {
+        background-color: #DDD;
+        padding: 0.5em;
+        padding-right: 1.5em;
+        background-repeat: no-repeat;
+        background-image: url(/Content/images/menu-collapsed-small-dark.png);
+        background-position: center right;
+
+        &.expanded {
+            background-image: url(/Content/images/menu-expanded-small-dark.png);
+        }
+    }
+
+    .supplemental-content {
+        border-top: 1px dashed #DDD;
+    }
+}
+
+#staffViewOfOtherUserDOsWrapper {
+    padding: 1em 1em 0.83em 1em;
+    border: 1px solid #DDD;
+    background-color: #DEDEDE;
+}
+
+.viewer-message {
+    @extend .emphasis-block;
+    padding: 0.5em;
+    font-size: 1em;
+
+    p {
+        margin: 0;
+    }
+}
+
+/*START OF styles which need to be deleted when the new search within is introduced */
+
+#search-within-wrapper {
+    input[type='text'] {
+        border: 1px solid #ccc;
+        padding: 2px;
+        height: 40px;
+        text-indent: 5px;
+        min-width: 220px;
+        width: auto;
+        margin-bottom: .5em;
+    }
+
+    input[type='submit'] {
+        width: 40px;
+        height: 40px;
+        background: url(/Content/images/search-white.png) no-repeat center;
+        background-size: cover;
+        position: absolute;
+        border-radius: 0;
+        background-color: #099;
+        color: transparent;
+    }
+}
+
+/*END OF styles which need to be deleted when the new search within is introduced */
+
+.search-within-description {
+    font-size: 0.85em;
+    padding-bottom: 1em;
+}
+
+/* START OF styles for the Copy Order */
+
+form[name="copyOrder"] {
+    textarea {
+        width: 98.4%;
+    }
+
+    .field-row label {
+        width: 53%;
+    }
+
+    .width-half {
+        width: 44%;
+    }
+
+    input[id="natCert"] {
+        &:focus + label {
+            outline: none;
+        }
+    }
+}
+
+/* END OF styles for the Copy Order */
+
+/* START OF styles for the Order summary */
+
+.reviewDetails input[type=submit]:disabled {
+    background: #ccc;
+
+    &:hover {
+        color: white;
+    }
+}
+
+/* END OF styles for the Order summary */
+
+/*Map button*/
+.mapButton {
+    background-image: url(/Content/images/map-marker.png);
+    background-repeat: no-repeat;
+    height: 2em;
+    display: inline-block;
+    padding: .5em .5em 0 2em;
+    background-position: 0%;
+    border: 1px solid #000;
+    color: #000;
+}
+
+#wte-show-button{
+    width: 100%;
+    text-align: left;
+}
