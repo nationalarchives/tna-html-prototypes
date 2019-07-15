@@ -4324,6 +4324,9 @@ form .checkbox input[type="checkbox"]:focus + label::before {
 .icon-video {
   background-image: url("../img/icon-video.png"); }
 
+.icon-info {
+  background-image: url("../img/icon-info.png"); }
+
 .newsletter-template {
   background: #dde5d5;
   width: 100%;
