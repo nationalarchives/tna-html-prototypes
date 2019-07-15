@@ -1,0 +1,391 @@
+﻿@media only screen and (max-width: 360px) {
+    input#mobile-search-field {
+        width: 83%;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    #advanced-search-button {
+        font-size: 1em;
+    }
+
+    #query {
+        width: 86%;
+    }
+
+    #fromdate, #todate {
+        max-width: 80px;
+        display: inline-block;
+    }
+
+    input#mobile-search-field {
+        width: 90%;
+    }
+
+    #generic-tabs li a, #generic-tabs li span {
+        display: inline-block;
+        padding: .5em 0;
+		line-height:1.5;
+    }
+
+	.results-form .searchbox {
+	    width: 100%;
+	    display: inline-block;
+    }
+
+    .results-form .find-an-archive {
+    	width: auto;
+    	margin: 1em 1% 1em 0;
+    	padding: 1em;
+    	background: #383838;
+
+    }
+
+	 .results-form .search-form-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    #search-options-outer-wrapper {
+        margin: auto;
+    }
+
+    #query {
+        font-size: 1.2em;
+    }
+
+    #primary-search-wrapper #submit {
+        width: 49px;
+        height: 48px;
+    }
+
+    .primary-search-positioner {
+        width: 97%;
+        margin: auto;
+    }
+
+    #options-button span {
+        display: inline-block;
+    }
+
+    #primary-search-options span {
+        display: inline-block;
+    }
+
+    .mega-menu li:first-child {
+        border-top-width: 1px;
+        border-top-style: dotted;
+    }
+
+    .call-to-action-link span:last-child {
+        display: inline;
+        padding: 0;
+    }
+
+    .mega-menu ul {
+        display: block;
+        margin: 0 0;
+    }
+
+    .mega-menu-group {
+        width: 49%;
+        margin-left: 2%;
+    }
+
+    .mega-menu-group div {
+        height: 100%;
+    }
+
+    .call-to-action-link span:first-child {
+        display: inline;
+    }
+
+    .call-to-action-link span:last-child {
+        text-transform: none;
+    }
+
+    #records-home {
+        min-height: 300px;
+    }
+
+    .mega-menu h3:hover {
+        text-decoration: none;
+        cursor: default;
+    }
+
+    .mega-menu h3 {
+        background: none;
+        padding-left: 0;
+    }
+
+    .mega-menu h3 a {
+        padding: 4px;
+    }
+
+    #breadcrumb-holder .col + .col {
+        margin-top: 0;
+    }
+
+    .mega-menu .row nav:nth-child(3), .mega-menu .row nav:nth-child(5) {
+        margin-left: 0;
+    }
+
+    .mega-menu .row nav:nth-child(4) {
+        margin-bottom: 1.5em;
+    }
+
+    .mega-menu h3 a {
+        background-image: none;
+    }
+
+    .mega-menu h3 span {
+        display: none;
+    }
+
+    .mega-menu h3 a {
+        padding-left: 4px;
+    }
+
+    .mega-menu li.mobileOnly {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #breadcrumb-holder .col {
+        margin-top: 0;
+    }
+
+    #global-controls {
+        float: right;
+        text-align: right;
+        padding: auto;
+    }
+
+    #global-controls li {
+        display: inline;
+    }
+
+    input#mobile-search-field {
+        width: 95%;
+    }
+
+    .search-tabs li a span {
+        padding: 0.6em;
+    }
+
+	#sharing-btns p {
+		margin: 1em 0 .5em 0!important;
+}
+
+    #generic-tabs li a, #generic-tabs li span {
+		font-size: 1em;
+
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+    .search-tabs li a span {
+        padding: 0.9em;
+    }
+
+    #search-all-collections, #search-the-national-archives, #search-tna-digitised-input, #search-other-archives, #search-results-search-query {
+        width: 28em;
+    }
+
+    #search-options-outer-wrapper {
+        width: 80%;
+    }
+
+    #breadcrumb span {
+        display: inline;
+    }
+
+    .primary-search-positioner {
+        width: 80%;
+        margin: auto;
+    }
+
+    #account-controls-wrapper {
+        text-align: right;
+        padding: 0;
+    }
+
+    .mega-menu-group {
+        width: 32%;
+        margin-left: 2%;
+    }
+
+    .mega-menu-group:nth-child(4) {
+        margin-left: 0;
+    }
+
+    .mega-menu .row nav:nth-child(3), .mega-menu .row nav:nth-child(5) {
+        margin-left: 2%;
+    }
+
+    #footer-wrapper .footer-left {
+        float: left;
+        width: 50%;
+    }
+
+    #mobile-global-search {
+        display: none;
+    }
+
+    #search-expander {
+        display: none;
+    }
+
+    .search-field-wrapper {
+        width: 75%;
+    }
+
+    .pull-down {
+        margin: -42px 0 0;
+    }
+
+    #primary-navigation ul {
+        display: block;
+    }
+
+    #records-home {
+        min-height: 18em;
+    }
+
+    a.callToAction {
+        margin: 0 0 0 0.5em;
+    }
+
+    #search-field-wrapper {
+        display: block;
+        position: relative;
+        height: 2em;
+        border: 1px solid transparent;
+        margin: 4px 0 0 0;
+        width: auto;
+    }
+
+    .img-desc {
+        margin: 0;
+        position: relative;
+        top: -15px;
+        width: 100%;
+        font-size: .85em;
+        text-align: right;
+        background: transparent;
+    }
+
+    .container .min-height {
+        min-height: 2104px;
+    }
+
+    #mobile-search-field {
+        width: 90%;
+    }
+
+    #generic-tabs li a, #generic-tabs li span {
+		font-size: 1.2em;
+
+    }
+
+.results-form .searchbox {
+	width: 50%;
+	display: inline-block;
+}
+
+.results-form .find-an-archive {
+	float: right;
+	width: auto;
+	margin: -2.5em 1% 1em 0;
+	padding: 1em;
+	background: #383838;
+}
+
+
+
+
+}
+
+@media only screen and (min-width: 960px) {
+    .search-tabs li a span {
+        padding: 1.1em;
+    }
+
+    #search-control-panel .not-at-smaller {
+        display: inline-block;
+    }
+
+    #search-options-outer-wrapper {
+        width: 65%;
+    }
+
+    .primary-search-positioner {
+        width: 65%;
+        margin: auto;
+    }
+
+    .mega-menu-group {
+        width: 15%;
+        margin-left: 2%;
+    }
+
+    .mega-menu-group:nth-child(4) {
+        margin-left: 2%;
+    }
+
+    .search-form-container {
+        width: 60%;
+    }
+
+	.results-form .searchbox {
+	width: 60%;
+	display: inline-block;
+}
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .primary-search-positioner {
+        width: 55%;
+        margin: auto;
+    }
+
+    #more-options > div {
+        min-height: 240px;
+    }
+
+    #footer-wrapper .footer-left {
+        float: none;
+        width: auto;
+    }
+}
+
+
+@media only screen and (min-width: 1280px) {
+    #search-options-outer-wrapper {
+        width: 50%;
+    }
+
+    .primary-search-positioner {
+        width: 50%;
+        margin: auto;
+    }
+
+    .container {
+        width: 1240px;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        width: 1280px;
+    }
+}

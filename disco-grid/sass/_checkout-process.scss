@@ -1,0 +1,248 @@
+h2.dark {
+    font-weight:400;
+    color: #111 !important;
+}
+
+ul.step-indicator {
+    list-style-type: none;
+    float: left;
+    margin: 0 0 1em 0;
+    padding: 0;
+    width: 100%;
+}
+ul.step-indicator li {
+    width: 13%;
+    padding: 0.5% 1%;
+    background: #e2e2e2 url("../images/inactive-step-indicator.png") no-repeat right center;
+    display: block;
+    float: left;
+    font-size: 14px;
+    border-right: 0; 
+}
+
+ul.step-indicator li.complete {
+    background: #e2e2e2 url("../images/complete-step-indicator.png") no-repeat right center;
+}
+
+ul.step-indicator li.last {
+    background: #e2e2e2 url("../images/inactive-step-indicator-last.png") no-repeat right center;
+    border-right: 0;
+}
+ul.step-indicator li.active {
+    background: #405480 url("../images/active-step-indicator.png") no-repeat right center;
+    color: #fff;
+    width:50%
+}
+
+ul.step-indicator li span:first-child {
+    margin: 0 0.5em 0 15%;
+    width: 15px;
+    display: block;
+    float: left;
+    color: #111;
+    text-align: left;
+    background-color: none;
+}
+
+ul.step-indicator li span + span {
+    display: none;
+}
+
+ul.step-indicator li.active span + span {
+    display: inline;
+    margin:0
+}
+ul.step-indicator li.active span:first-child {margin-left: 0.5em}
+ul.step-indicator li.active span:first-child, ul.step-indicator li.active-last span:first-child {
+    color: #fff;
+}
+
+#basketContents .row {
+    border-bottom:1px solid #ccc
+}
+#basketContents .row.total,#basketContents .row.payment {
+    border-bottom:0px none transparent
+}
+
+#basketContents .col {margin-bottom:0;margin-top:0.5em}
+
+#basketContents dl {
+    margin: 0;
+}
+dl.itemDetails + p {
+    margin:0.5em 0 0 0;
+}
+dl.itemQuantity {
+    margin:0
+}
+#basketContents dl dt {
+    font-weight:bold;
+    display:block;
+    float:left;
+    width:100px
+}
+
+#basketContents dl dd {
+    display:block;
+    margin-left:100px;
+    margin-bottom:0.5em
+}
+dl.itemDetails dt {
+    width:100px
+}
+
+.basket-item {
+    position: relative;
+    border-bottom: 1px dotted #CCCCCC;
+}
+a.removeLink {
+    font-size: 0.85em;
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    border: 1px solid #ddd;
+    padding: 0 4px;
+    background: #efefef;
+}
+.checkout a.secondary {
+    padding: .4em;
+    background-color: #999;
+}
+
+dl.itemDetails dd{
+    margin-left:100px;
+}
+.grand-total {
+    font-size: 1.5em;
+	text-align: right;
+	font-size:inherit;
+	margin-top:0.5em
+}
+.grand-total span {
+	font-weight:bold
+}
+div.checkout {
+    text-align: right;
+    margin:1em 0;
+}
+#basketContents a.call-to-action-link.secondary {background-color:#666}
+
+#basketContents .row.payment .ends-at-two-thirds span {
+    display:block;
+    float:left
+}
+#basketContents .row.payment .ends-at-two-thirds img {
+    margin-right:2%
+}
+
+.basket-contents .payment div:first-child img {
+    margin-right: 1%;
+    outline: 1px solid #dedede;
+}
+
+/* START OF page check basket item */
+
+.basketItemDetails {
+	padding-bottom: 1em;
+	border-bottom: 1px dotted #CCC;
+	li {
+		margin-top: 0.5em;
+		span {
+			vertical-align: top;
+			display: block;
+		}
+		.title {
+			font-weight: bold;
+		}
+		@media screen and (min-width: 768px) {
+			.description {
+				display: inline-block;
+				width: 65%;
+			}
+			.title {
+				display: inline-block;
+				width: 25%;	
+			}
+		}
+	}
+}
+
+.back-btn-left {
+    float: left;
+    margin-left: 0;
+}
+
+
+/* START OF receipt page - needs refactoring (since stylistic changes were necessary the day before go-live */
+
+.receipt-page {
+	#basketItems {
+		.item {
+			border-top: 1px solid #CCC;
+			padding: 1em 0;
+			.itemDetails {
+				div {
+					margin-bottom: 0.2em;
+				}
+			}
+		}
+	}
+	.active {
+		background-color: #405480!important;
+	}
+	#createAnAccountCallToAction {
+		@extend .breather, .emphasis-block;
+		background-color: #EFEFEF;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+}
+
+
+/* END OF receipt page */
+
+.right-align {
+    text-align:right
+}
+.center-align {
+    text-align:center
+}
+
+#DeliveryEmail {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: .2em;
+}
+
+@media only screen and (min-width: 768px) {
+    #DeliveryEmail {width:50%}
+}
+
+@media only screen and (min-width: 1024px) {
+    ul.step-indicator li, ul.step-indicator li.active  {
+        width: 23%;
+        *width:22%;
+    }
+    ul.step-indicator li span:first-child {
+        margin-left: 0;
+    }
+    ul.step-indicator li span:first-child {
+        text-align: center;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        background-color: #fff;
+        width:20px;
+        margin-right:1em;
+    }
+    ul.step-indicator li.active span:first-child {
+        color: #405480;
+        background-color: #fff;
+    }
+    ul.step-indicator li span + span {
+        display: inline
+    }
+    ul.step-indicator li.active span:first-child, ul.step-indicator li.active-last span:first-child {
+        color: #111;
+    }
+}

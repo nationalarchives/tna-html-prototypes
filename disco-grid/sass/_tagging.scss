@@ -1,0 +1,278 @@
+﻿.tags-list {
+    ul {
+        @extend .featured-lists !optional;
+        li {
+            padding-left: 0;
+				a {
+					display: inline-block;
+				}
+        }
+    }
+}
+
+.all-tagging {
+  background-position: right bottom;
+  min-height: 224px;
+  background: url(/Content/images/1_230_386_1905.jpg) no-repeat center -100px;
+  background-size: cover;
+}
+
+.faq-list {
+  margin-left: 20px;
+  li {
+    list-style-type: disc;
+    list-style-position: outside;
+  }
+}
+
+#tagging-search {
+  .tagging-search-wrapper {
+    position: relative;
+    padding-right: 56px;
+  }
+  position: relative;
+  padding-top: 1.2em;
+}
+
+#tagSearchText {
+  border: 1px solid #ccc;
+  padding: 5px 3px;
+  border-color: #FFF;
+  padding: 8px 7px;
+  width: 100%;
+}
+
+#tagging-search {
+    margin-top: 3em;
+  .tagging-submit {
+    width: 40px;
+    height: 40px;
+    background: url(/Content/images/search-white.png) no-repeat center;
+    background-size: cover;
+    background-color: #099;
+    color: transparent;
+    border-radius: 0;
+    padding: .39em;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  p {
+    margin-top: 0;
+  }
+}
+
+
+/* Tagging search results styles - DW - July 2014 */
+
+.users-tag-list-item, .general-tag-list-item {
+	padding: 0 .4em 0 .5em;
+	border-left: 1px solid #ccc;
+}
+
+a.users-tag-list-item:first-child, a.general-tag-list-item:first-child {
+	padding: 0 .4em 0 0;
+	border-left: none;
+}
+
+.deleteTag {
+	border: none;
+	padding: 0;
+	color: #000;
+	background: url(/Content/images/delete.png) center 3px no-repeat;
+	width: 1em;
+	height: 1em;
+	display: inline-block;
+	margin-left: -6px;
+}
+
+.tagSection {
+	margin-top: 1em;
+}
+
+.tagSection li {
+    overflow: hidden;
+    clear: both;
+    display: inline-block;
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+.tag-list > li:first-of-type {
+    border-left: none;
+    padding-left: 0;
+}
+
+.tag-result > li {
+    @extend .result !optional;
+}
+
+#tabs {
+  padding: 0;
+  li {
+    display: block;
+    float: left;
+    width: 50%;
+    margin-bottom: 5px;
+    a {
+      text-decoration: none;
+      background: #eee;
+      display: inline-block;
+      width: 96%;
+      text-align: center;
+      line-height: 1.5em;
+      padding: 5px 0;
+      &:hover {
+        background: #099;
+        color: #ffffff;
+        -webkit-transition: background 0.2s ease-in;
+        -moz-transition: background 0.2s ease-in;
+        -ms-transition: background 0.2s ease-in;
+        -o-transition: background 0.2s ease-in;
+        transition: background 0.2s ease-in;
+      }
+    }
+  }
+}
+
+ul.list-categories li.active a:hover {
+  color: #fff;
+}
+
+#tabs .current a {
+  background: #099 !important;
+  color: #fff;
+}
+
+/* Browse tags by letter styles */
+
+#tagging-a-z-small #a-z-menu li {
+  a, span.alpha-disabled {
+    font-size: 0.5em;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+#a-z-menu li {
+  a {
+    background-color: #099;
+  }
+  span.alpha-disabled {
+    background-color: gray;
+  }
+  a:hover {
+    background-color: black;
+  }
+}
+
+.browse-detail-ul {
+    background-color: #eee;
+    padding: 0.8em;
+    padding-bottom: 1.6em;
+    li {
+        display: inline-block;
+        &.selected-browse-letter {
+            display: block;
+            margin-bottom: 0.5em;
+            font-family: 'Bitter';
+            font-size: 2em;
+			
+        }
+        a {
+            padding: 0.5em; 
+            background-color: #FFF;
+            margin-bottom: 0.5em;
+			display: inline-block;
+        }
+    }
+
+}
+
+/* browse results styles */
+
+
+#tagging-search {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.8);
+    color: #FFF;
+    .number {
+        font-size: 1.4em;
+        font-family: Bitter,serif;
+        font-weight: 400;
+    }
+}
+
+/* what are tags*/
+.tagging-illustration img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.bullet-list-tagging {
+    @extend .bullet-list;
+    li {
+        border: none;
+        a {
+            display: inline;
+            margin: 0px;
+        }
+    }
+}
+
+.tags-list {
+    ul {
+        @extend .bullet-list;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+  #tabs li {
+    width: 50%;
+    a:link {
+      min-height: 24px;
+    }
+  }
+  #a-z-menu {
+    width: 430px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #tabs li {
+    display: block;
+    float: left;
+    width: 33.33%;
+    a:link {
+      min-height: 48px;
+    }
+}
+  #tagging-a-z-small #a-z-menu {
+    width: 430px;
+  }
+  .tagging-illustation img {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #tabs li a:link {
+    min-height: 24px;
+  }
+  #a-z-menu {
+    width: 630px;
+  }
+  #tagging-a-z-small #a-z-menu {
+    width: 590px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #tagging-a-z-small #a-z-menu {
+    width: 710px;
+  }
+}
+
