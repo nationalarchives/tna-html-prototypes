@@ -1,45 +1,33 @@
 ﻿// Newsletter form CSS namespace
 .newsletter-template {
-  margin-top: 1em;
-  background: #dddddd;
+  background: #dde5d5;
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
-  @media (max-width: 1155px) {
-    border-left: 15px solid #008484;
-  }
+  padding: 1.6em 40px 0 40px;
   .news-icon {
-    background: #008484;
-    vertical-align: middle;
-    text-align: center;
-    width: 157px;
-    height: 127px;
     display: inline-block;
-    padding: 38px 0 0 0;
     float: left;
     overflow: hidden;
-    box-sizing:border-box;
     img {
       width: 60px;
       height: 48px;
-
     }
     @media (max-width: 1155px) {
       display: none;
     }
   }
   .news-content {
-    width:45.879032258064516%;
+    width: 40%;
     display: inline-block;
     float: left;
-    overflow:hidden;
+    overflow: hidden;
+    padding-left: 1.6em;
     h2 {
-      margin: 0;
-      padding: 36px 0 0 20px;
-      font-weight: 300;
-      font-size: 24px;
-      font-family: 'Bitter', serif;
-      color:#000000;
+      line-height: 1;
+      color: #000;
+      margin-bottom: .5rem;
+      margin-top: 0;
       @media (max-width: 1155px) {
         padding: 10px 15px 10px 20px;
       }
@@ -49,7 +37,7 @@
       }
     }
     p {
-      padding: 2px 0 0 20px;
+      padding: 2px 0 0 0;
       margin-top:5px;
       @media (max-width: 1155px) {
         padding: 0 0 0 20px;
@@ -72,25 +60,33 @@
     }
   }
   .news-form {
-    width: 35.879032258064516%;
+    width: 35%;
     display: inline-block;
-    padding: 45px 0 0 0;
     float: right;
+    margin-bottom: 1.6em;
     form {
       label {
         display: none;
       }
       input {
         &[type="email"] {
+          border: 2px solid #000;
+          padding: 0.6em;
+          text-indent: 5px;
+          min-width: 220px;
+          display: inline-block;
+          margin-bottom: 10px;
+
           width: 73% !important;
           height: 37px !important;
-          padding:0 0 0  8px !important;
-          border: 1px solid #ccc;
           &::-webkit-input-placeholder {
               color:#ccc;
           }
-          @media (max-width: 1155px) {
-            margin-bottom:10px;
+          @media (max-width: 976px) {
+            width: 100%;
+            max-width: 480px;
+            display: block;
+            margin-bottom: 10px;
           }
           @media (max-width: 370px) {
             width: 100%;
@@ -98,15 +94,16 @@
         }
         &[type="submit"] {
           height: 36px;
+          display: inline-block;
+          font-family: 'Roboto Mono', monospace;
           border: none;
-          background: #008484;
+          background: #000;
           font-size: 16px;
           padding: 0 10px 0 10px;
         }
       }
     }
-    .small-margin { 
-        margin-top: 10px;
+    .small-margin {
         font-size: 85%;
     }
     @media (max-width: 1155px) {

@@ -41,10 +41,6 @@
   background-color: #EFEFEF;
 }
 
-.focussed-element, button:focus, input:focus + label, input:focus, a:focus, .mega-menu a:focus, #skip-link-container a:focus {
-  outline: 2px solid #FCE45C;
-}
-
 .small-spacer-below, .hist-wrapper, #main-search-container {
   margin-bottom: 0.5em;
 }
@@ -63,6 +59,14 @@
   line-height: 1.6;
 }
 
+#search-results .emphasis-block, #search-results .account-pages .orderItem .filesWithinOrder .recordlargemessage, .account-pages .orderItem .filesWithinOrder #search-results .recordlargemessage, #search-results .receipt-page #createAnAccountCallToAction, .receipt-page #search-results #createAnAccountCallToAction, #search-results .viewer-message, #search-results p#recordlargemessage {
+  background: #fbe2bc;
+  margin-left: 0;
+  font-family: "Roboto Mono", monospace;
+  border: solid 2px #000;
+  padding: 1.6em;
+}
+
 .search-collections, .home .find-an-archive .archive-search-wrapper #archive-search, .primary-search-box .search-form-container #search-all-collections {
   border-color: #FFF;
   width: 100%;
@@ -73,7 +77,7 @@
 
 .result, .tag-result > li, #simple-results > li, #search-results > li {
   padding: 0.2em 1em 1em 1em;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 4px solid #ddd;
   position: relative;
 }
 .result:hover, .tag-result > li:hover, #simple-results > li:hover, #search-results > li:hover {
@@ -459,10 +463,11 @@ body {
   font-family: "Open Sans", sans-serif;
   word-wrap: break-word;
   font-size: 16px;
+  line-height: 1;
 }
 
 h1, h2, h3 {
-  font-family: Bitter, serif;
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
   margin: 10px 0;
 }
@@ -498,7 +503,7 @@ h4 {
   font-weight: 400;
   font-size: 1.2em;
   line-height: 150%;
-  margin: 10px 0;
+  margin-bottom: 0.5rem;
   padding: 0;
 }
 
@@ -994,7 +999,7 @@ form .emphasis-block, form .account-pages .orderItem .filesWithinOrder .recordla
 }
 
 #page_wrap .results-form {
-  background: #2f2f2f;
+  background: #555;
   padding: 0 0 1em 0;
   display: inline-block;
   margin-bottom: 0;
@@ -1097,6 +1102,9 @@ div.general-tag-list-item span.flagTag a {
 }
 #generic-tabs li:first-child {
   margin-right: 2%;
+}
+#generic-tabs li span {
+  font-family: "Roboto Mono", monospace;
 }
 #generic-tabs #archive-contact-tab {
   display: none;
@@ -1756,7 +1764,7 @@ a#cookieCutter {
 }
 
 #footer-wrapper {
-  background-color: #222222;
+  background-color: #000;
   background-position: -6em 20px;
   background-repeat: no-repeat;
   color: #FCFCFC;
@@ -1765,10 +1773,11 @@ a#cookieCutter {
 }
 
 #footer-wrapper h4 {
-  font-family: "Bitter", serif;
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
-  font-size: 19px;
-  margin-bottom: 0;
+  font-size: 1.16em;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
   color: #ffffff;
 }
 
@@ -1780,9 +1789,8 @@ a#cookieCutter {
 
 #footer-wrapper li {
   list-style-type: none;
-  padding: 0.5em 0;
-  font-size: 0.85em;
-  border-top: 1px dotted #666;
+  padding: 0.2em 0;
+  font-size: 16px;
   width: 90%;
 }
 
@@ -1852,14 +1860,14 @@ a#cookieCutter {
   display: inline-block;
 }
 .follow-us a img {
-  background-color: #008484;
+  background-color: #000;
+  border: 2px solid #fff;
   border-radius: 50%;
-  padding: 9px;
+  padding: 7px;
   margin: 0 0.2em 0.3em 0;
-  width: 28px;
+  width: 25px;
   transition: 0.4s ease-in-out;
-  -webkit-transition: 0.4s ease-in-out;
-  -moz-transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s;
 }
 .follow-us a img:hover {
   background: #555;
@@ -1884,11 +1892,12 @@ a#cookieCutter {
   }
 }
 #footer-wrapper address {
-  font-family: Bitter, Georgia, Verdana, Arial, Helvetica, serif;
+  margin-bottom: 1rem;
   font-style: normal;
-  line-height: 150%;
-  font-size: 1.166em;
-  margin: 10px 0 10px 0;
+  line-height: inherit;
+}
+#footer-wrapper #flickr-image a img {
+  max-width: 100%;
 }
 @media (max-width: 767px) {
   #footer-wrapper .ends-at-one-quarter {
@@ -1919,7 +1928,6 @@ a#cookieCutter {
 }
 #footer-wrapper .ends-at-one-quarter .footer-left img {
   max-width: 157px;
-  margin-top: 16px;
   margin-bottom: 23px;
 }
 @media (max-width: 767px) {
@@ -1942,7 +1950,7 @@ a#cookieCutter {
 }
 #footer-wrapper .footer-col .opening-times .open_table .open_tableCell, #footer-wrapper .footer-col .opening-times .open_table .open_tableHead {
   display: table-cell;
-  padding: 3px 0;
+  padding: 7px 0;
   width: 49%;
 }
 @media (max-width: 1100px) {
@@ -1991,7 +1999,7 @@ body {
 }
 
 a {
-  color: #2A5DB0;
+  color: #007bff;
   text-decoration: none;
 }
 a:hover {
@@ -1999,7 +2007,7 @@ a:hover {
 }
 
 #account-controls-wrapper {
-  background-color: #2D3B59;
+  background-color: #111;
   color: #FFF;
 }
 
@@ -2058,7 +2066,7 @@ h1, h2, h1 a, h2 a {
 }
 
 #footer-wrapper a {
-  color: #FCE45C;
+  color: #fbe2bc;
 }
 
 .mega-menu {
@@ -2098,6 +2106,22 @@ h2 > span > span, h1 > span > span {
 input[type=submit], input[type=reset], #show-more-options span, #mobileSearchSubmit {
   background-color: #099;
   color: #fff;
+}
+
+.discoveryPrimaryCallToActionLink, #search-filters input[type=submit] {
+  font-family: "Roboto Mono", monospace;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+  padding: 0.5em 0.9em;
+  display: inline-block;
+  min-width: 24px;
+  text-align: center;
+}
+.discoveryPrimaryCallToActionLink:hover, #search-filters input[type=submit]:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: underline;
 }
 
 #mobile-search-wrapper #mobileSearchSubmit {
@@ -2260,7 +2284,7 @@ h4 {
 }
 
 #generic-tabs li.selected {
-  background-color: #405480;
+  background-color: #000;
   color: #fff;
 }
 
@@ -2287,13 +2311,19 @@ h4 {
 }
 
 .pagination li {
-  background-color: #099;
   color: #FFF;
 }
 
 .pagination li.current {
-  background: #FCE45C;
   color: #000;
+  background-color: #fff;
+  text-align: center;
+  border: 2px solid #000;
+  font-size: 1.25em;
+  line-height: 44px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
 }
 
 .pagination li a,
@@ -2302,12 +2332,16 @@ h4 {
 }
 .pagination li a:hover,
 .number-of-results span a:hover {
+  background-color: #fff;
   color: #000;
 }
 
 .pagination li.next a,
 .pagination li.previous a {
-  color: #2A5DB0;
+  background-color: transparent;
+  border: none;
+  margin: 0 0.5em;
+  color: #007bff;
 }
 .pagination li.next a:hover,
 .pagination li.previous a:hover {
@@ -2315,13 +2349,16 @@ h4 {
   text-decoration: underline;
 }
 
-.number-of-results span:hover {
-  background-color: #FCE45C;
-}
-
 .number-of-results span.current-selection {
   color: #000;
-  background-color: #FCE45C;
+  background-color: #fff;
+  text-align: center;
+  border: 2px solid #000;
+  font-size: 1.25em;
+  line-height: 44px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
 }
 
 .highlight {
@@ -2973,6 +3010,7 @@ fieldset {
 
 #search-filters li {
   list-style-type: none;
+  line-height: 1.5;
 }
 
 #search-filters label {
@@ -3026,19 +3064,24 @@ fieldset {
   margin-top: 0;
   text-align: left;
   display: block;
-  padding: 0.8em;
-  background-color: #eee;
-  color: #000;
-  border-bottom: 1px solid #DDD;
-  border-top: 1px solid #fff;
-  background-image: url("https://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-24-accordion-open.png");
+  background-color: #555;
+  color: #fff;
+  background-image: url("../../tna-grid/1.0/img/icon-chevron-down.png");
   background-size: 28px;
   background-repeat: no-repeat;
   background-position: 99% center;
+  border-top: 2px solid #fff;
+  padding: 0.5em 0.9em;
+}
+.filter-toggler:hover {
+  background-color: #000;
+  border-top: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
 }
 
 .filter-toggler.expanded {
-  background-image: url("https://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-24-accordion-close.png");
+  background-image: url("../../tna-grid/1.0/img/icon-chevron-up.png");
 }
 
 .filter-togglee {
@@ -3076,16 +3119,19 @@ fieldset {
   padding: 0.2em 1em 1em;
 }
 #search-results > li table {
-  color: #000000;
-  font-size: 0.9em;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
 }
 #search-results > li table td {
+  padding: 0.75rem;
   vertical-align: top;
+  border-top: 1px solid #dee2e6;
 }
 #search-results > li table td.item-desc-label {
-  font-weight: bold;
-  width: 144px;
-  padding: 4px 2px;
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
 }
 #search-results li:hover .highlight {
   background-color: transparent;
@@ -3097,9 +3143,6 @@ fieldset {
 }
 #search-results a:visited h3 {
   color: #609;
-}
-#search-results a:hover {
-  text-decoration: none;
 }
 #search-results a:hover h3 {
   text-decoration: underline;
@@ -3137,16 +3180,19 @@ fieldset {
   padding: 0.2em 1em 1em;
 }
 #simple-results > li table {
-  color: #000000;
-  font-size: 0.9em;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
 }
 #simple-results > li table td {
+  padding: 0.75rem;
   vertical-align: top;
+  border-top: 1px solid #dee2e6;
 }
 #simple-results > li table td.item-desc-label {
-  font-weight: bold;
-  width: 144px;
-  padding: 4px 2px;
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
 }
 #simple-results li:hover .highlight {
   background-color: transparent;
@@ -3158,9 +3204,6 @@ fieldset {
 }
 #simple-results a:visited h3 {
   color: #609;
-}
-#simple-results a:hover {
-  text-decoration: none;
 }
 #simple-results a:hover h3 {
   text-decoration: underline;
@@ -3294,27 +3337,30 @@ li#detailed-view {
 }
 
 .pagination li {
-  font-family: "Bitter", serif;
+  list-style-type: none;
+  margin: 0 4px 4px 0;
   display: inline-block;
-  text-decoration: none;
-  line-height: 40px;
-  margin: 0 2px 4px 2px;
-  border-radius: 50%;
-  font-size: 1.25em;
-  min-width: 40px;
-  color: #FFF;
 }
 .pagination li:hover {
   color: #000;
-  background-color: #FCE45C;
 }
 .pagination li a {
   display: block;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  border: 2px solid #000;
+  font-size: 1.25em;
+  line-height: 44px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
 }
 
 .pagination li.next,
 .pagination li.previous {
   background-color: transparent;
+  border: none;
   margin: 0 0.5em;
 }
 .pagination li.next a:hover,
@@ -3327,18 +3373,21 @@ li#detailed-view {
 }
 
 .number-of-results span {
-  font-family: "Bitter", serif;
-  display: inline-block;
-  text-decoration: none;
-  line-height: 40px;
+  list-style-type: none;
   margin: 0 4px 4px 0;
-  background-color: #099;
-  border-radius: 50%;
-  font-size: 1.25em;
-  min-width: 40px;
+  display: inline-block;
 }
 .number-of-results span a {
   display: block;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  border: 2px solid #000;
+  font-size: 1.25em;
+  line-height: 44px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
 }
 
 .highlight {
@@ -3354,7 +3403,19 @@ li#detailed-view {
 }
 
 .results-form fieldset a, .results-form .find-an-archive a {
-  color: #FCE45C;
+  font-family: "Roboto Mono", monospace;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+  padding: 0.5em 0.9em;
+  display: inline-block;
+  min-width: 24px;
+  text-align: center;
+}
+.results-form fieldset a:hover, .results-form .find-an-archive a:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
 }
 
 .results-form input[type=submit] {
@@ -3362,7 +3423,7 @@ li#detailed-view {
   height: 40px;
   background: url(https://discovery.nationalarchives.gov.uk/Content/images/search-white.png) no-repeat center;
   background-size: cover;
-  background-color: #099;
+  background-color: #000;
   color: transparent;
   border-radius: 0;
   padding: 0.39em;
@@ -6853,28 +6914,16 @@ li.taggedRecord a.disco-button {
   }
 }
 .newsletter-template {
-  margin-top: 1em;
-  background: #dddddd;
+  background: #dde5d5;
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
-}
-@media (max-width: 1155px) {
-  .newsletter-template {
-    border-left: 15px solid #008484;
-  }
+  padding: 1.6em 40px 0 40px;
 }
 .newsletter-template .news-icon {
-  background: #008484;
-  vertical-align: middle;
-  text-align: center;
-  width: 157px;
-  height: 127px;
   display: inline-block;
-  padding: 38px 0 0 0;
   float: left;
   overflow: hidden;
-  box-sizing: border-box;
 }
 .newsletter-template .news-icon img {
   width: 60px;
@@ -6886,18 +6935,17 @@ li.taggedRecord a.disco-button {
   }
 }
 .newsletter-template .news-content {
-  width: 45.8790322581%;
+  width: 40%;
   display: inline-block;
   float: left;
   overflow: hidden;
+  padding-left: 1.6em;
 }
 .newsletter-template .news-content h2 {
-  margin: 0;
-  padding: 36px 0 0 20px;
-  font-weight: 300;
-  font-size: 24px;
-  font-family: "Bitter", serif;
-  color: #000000;
+  line-height: 1;
+  color: #000;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 @media (max-width: 1155px) {
   .newsletter-template .news-content h2 {
@@ -6911,7 +6959,7 @@ li.taggedRecord a.disco-button {
   }
 }
 .newsletter-template .news-content p {
-  padding: 2px 0 0 20px;
+  padding: 2px 0 0 0;
   margin-top: 5px;
 }
 @media (max-width: 1155px) {
@@ -6942,25 +6990,32 @@ li.taggedRecord a.disco-button {
   }
 }
 .newsletter-template .news-form {
-  width: 35.8790322581%;
+  width: 35%;
   display: inline-block;
-  padding: 45px 0 0 0;
   float: right;
+  margin-bottom: 1.6em;
 }
 .newsletter-template .news-form form label {
   display: none;
 }
 .newsletter-template .news-form form input[type=email] {
+  border: 2px solid #000;
+  padding: 0.6em;
+  text-indent: 5px;
+  min-width: 220px;
+  display: inline-block;
+  margin-bottom: 10px;
   width: 73% !important;
   height: 37px !important;
-  padding: 0 0 0 8px !important;
-  border: 1px solid #ccc;
 }
 .newsletter-template .news-form form input[type=email]::-webkit-input-placeholder {
   color: #ccc;
 }
-@media (max-width: 1155px) {
+@media (max-width: 976px) {
   .newsletter-template .news-form form input[type=email] {
+    width: 100%;
+    max-width: 480px;
+    display: block;
     margin-bottom: 10px;
   }
 }
@@ -6971,13 +7026,14 @@ li.taggedRecord a.disco-button {
 }
 .newsletter-template .news-form form input[type=submit] {
   height: 36px;
+  display: inline-block;
+  font-family: "Roboto Mono", monospace;
   border: none;
-  background: #008484;
+  background: #000;
   font-size: 16px;
   padding: 0 10px 0 10px;
 }
 .newsletter-template .news-form .small-margin {
-  margin-top: 10px;
   font-size: 85%;
 }
 @media (max-width: 1155px) {

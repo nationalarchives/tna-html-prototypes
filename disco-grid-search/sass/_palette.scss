@@ -3,7 +3,7 @@
 }
 
 a {
-    color: #2A5DB0;
+    color: #007bff;
     text-decoration: none;
     &:focus {
         @extend .focussed-element;
@@ -15,7 +15,7 @@ a:hover {
 }
 
 #account-controls-wrapper {
-    background-color: #2D3B59;
+    background-color: #111;
     color: #FFF;
 }
 
@@ -37,7 +37,7 @@ a:hover {
     color: #FFF;
 }
 
-#miniBasketWrapper { 
+#miniBasketWrapper {
     background-color: #383838;
     color: #FFF;
 }
@@ -75,7 +75,7 @@ h1, h2, h1 a, h2 a {
 }
 
 #footer-wrapper a {
-    color: #FCE45C;
+    color: #fbe2bc;
 }
 
 .mega-menu {
@@ -117,9 +117,24 @@ input[type=submit], input[type=reset], #show-more-options span, #mobileSearchSub
     color: #fff;
 }
 
+.discoveryPrimaryCallToActionLink, #search-filters input[type=submit]{
+    font-family: "Roboto Mono", monospace;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+    padding: 0.5em 0.9em;
+    display: inline-block;
+    min-width: 24px;
+    text-align: center;
+    &:hover {
+        background-color: #fff;
+        color: #000;
+        text-decoration: underline;
+    }
+}
 
 #mobile-search-wrapper #mobileSearchSubmit {
-    background-color: #099;    
+    background-color: #099;
 }
 
 #popular-collections .text-holder {
@@ -140,12 +155,12 @@ input[type=submit], input[type=reset], #show-more-options span, #mobileSearchSub
     background-color: #099;
 }
 
-#primary-search-options li {  
+#primary-search-options li {
     background-color: #DEDEDE;
 }
 
 
-#primary-search-options li.selected {  
+#primary-search-options li.selected {
     background-color: #222;
     color: #EFEFEF;
 }
@@ -284,7 +299,7 @@ h4 {
 }
 
 #generic-tabs li.selected {
-    background-color: #405480;
+    background-color: #000;
     color: #fff;
 }
 
@@ -311,14 +326,20 @@ h4 {
 }
 
 .pagination li {
-    background-color: #099;
     color: #FFF;
 }
 
 
 .pagination li.current {
-    background: #FCE45C;
-	color: #000;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid #000;
+    font-size: 1.25em;
+    line-height: 44px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
 }
 
 
@@ -327,28 +348,33 @@ h4 {
 .number-of-results span a {
     color: #FFF;
 	&:hover {
-		color: #000;
+        background-color: #fff;
+        color: #000;
 	}
 }
 
 .pagination li.next a,
 .pagination li.previous a {
-    color: #2A5DB0;
+    background-color: transparent;
+    border: none;
+    margin: 0 0.5em;
+    color: #007bff;
 		&:hover {
 		color: #2A5DB0;
 		text-decoration:underline;
 	}
 }
 
-.number-of-results span {
-	&:hover {
-	    background-color: #FCE45C;
-	}
-}
-
 .number-of-results span.current-selection {
-	color: #000;
-	background-color: #FCE45C;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid #000;
+    font-size: 1.25em;
+    line-height: 44px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
 }
 
 .highlight {
