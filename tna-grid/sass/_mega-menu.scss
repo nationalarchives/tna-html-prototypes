@@ -1,6 +1,11 @@
 .mega-menu {
-  background-color: $col_green;
+  background-color: $col_dark;
+  color: #fff;
   padding: 1.6em 0;
+  border-top: solid 2px #fff;
+  a {
+    color: #fff;
+  }
   ul {
     margin: 0;
     padding: 0;

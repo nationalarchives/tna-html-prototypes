@@ -4128,8 +4128,12 @@ footer {
         background: #555; }
 
 .mega-menu {
-  background-color: #dde5d5;
-  padding: 1.6em 0; }
+  background-color: #222;
+  color: #fff;
+  padding: 1.6em 0;
+  border-top: solid 2px #fff; }
+  .mega-menu a {
+    color: #fff; }
   .mega-menu ul {
     margin: 0;
     padding: 0;
