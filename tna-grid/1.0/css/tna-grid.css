@@ -4148,6 +4148,7 @@ footer {
       min-height: 1px;
       padding-left: 15px;
       padding-right: 15px;
+      margin-bottom: 1em;
       line-height: 1.8; }
       .mega-menu > ul > li > a, .mega-menu > ul > li > div {
         font-family: "Roboto Mono", monospace;
