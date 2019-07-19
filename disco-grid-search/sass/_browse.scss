@@ -1,0 +1,217 @@
+.browse {
+
+    li[class$="expanded"] {
+        ul {
+            list-style-image: url(https://discovery.nationalarchives.gov.uk/Content/images/list-link-bullet.png);
+            padding-left: 1.5em;
+		    margin: 1em 0;
+            li {
+                padding: 0.5em 0;
+            }
+	    }
+    }
+
+    .browse-separator {
+        padding: 0.3em 1em;
+        background-color: #099;
+    }
+
+    #browse-child-nodes-pagination {
+	    margin-top: 2.55em;
+		margin-bottom: 0.4em;
+    }
+
+    #browseNavLinks, #browse-child-nodes-pagination {
+	    @include prev-next-links;
+    }
+
+    .browse-siblings {
+	    @include prev-next-links;
+	    border-right:solid 1px $white
+    }
+
+    .siblings-list {
+	    @extend .browse-list;
+    	margin-top:0;
+        background-color: $white;
+    	border-right:solid 1px $light-grey;
+	    border-left:solid 1px $light-grey;
+    }
+
+    .child-list {
+	    @extend .browse-list;
+        background-color: $white;
+    	margin-top:0;
+    	border-right:solid 1px $light-grey;
+        li {
+            background-color: $white;
+            outline: 1px solid #222;
+        }
+        .details-link {
+            padding-top: 0.5em;
+            font-size: 0.85em;
+        }
+    }
+
+    .children-heading {
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+    }
+
+    #a-z-index {
+	    font-size:3em;
+	    line-height: 0.8em;
+	    margin-right:1em;
+	    font-family:bitter,serif;
+    }
+    #browse-ancestors {
+        ul {
+            margin: 0;
+        }
+
+        li {
+            background: url($image-path + "list-marker.png") no-repeat;
+            background-repeat: no-repeat;
+            background-position: 0 4px;
+            padding-left: 1.2em;
+        }
+
+        .level-1 {
+            margin-left: 0;
+            padding-left: 0em;
+            background: none;
+        }
+
+        .level-2 {
+            margin-left: $margin;
+        }
+
+        .level-3 {
+            margin-left: $margin * 2;
+        }
+
+        .level-4 {
+            margin-left: $margin * 3;
+        }
+
+        .level-5 {
+            margin-left: $margin * 4;
+        }
+
+        .level-6 {
+            margin-left: $margin * 5;
+        }
+    }
+    .sit-right {
+        margin-top: 1em;
+        @extend .call-to-action-link;
+    }
+
+    .siblings-list .parent-collapsed {
+        background: url("/SearchUI/Content/images/browse-folder-closed.png") no-repeat scroll;
+        background-position: 1em 1em;
+        background-color: $light-grey;
+        border: 1px solid #DDD;
+        position: relative;
+        .item-details {
+
+            width: 100%;
+            @media screen and (max-width: 680px) {
+                width: 100%;
+            }
+        }
+        li {
+            padding: 0;
+            background-color: transparent;
+            list-style-type: disc;
+            margin-left: 1em;
+        }
+        .collapsed-link {
+            &:hover {
+                text-decoration: none;
+                span {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+	.refTitle {
+		font-size: .85em;
+		display: block;
+		margin-bottom: 1em;
+	}
+
+	.item-reference {
+        font-family: Bitter,serif;
+        font-size: 1.16em;
+        display: inline-block;
+        width: 49%;
+    }
+    .covering-dates {
+        display: inline-block;
+        width: 49%;
+        text-align: right;
+        font-size: 0.85em;
+    }
+    .item-title {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+	td.label {
+		width: 102px;
+	}
+
+	li.expanded .item-title {
+		font-weight: bold;
+	}
+
+
+    .details-link-wrapper {
+        width: 99%;
+        font-size: 0.85em;
+        text-align: right;
+    }
+
+    .parent {
+        background: url("/SearchUI/Content/images/browse-folder-closed.png") no-repeat scroll;
+        background-position: 1em 1em;
+    }
+
+    .leaf, .leaf-expanded, .leaf-collapsed {
+        background: url("/SearchUI/Content/images/view-full-description.png") no-repeat scroll;
+        background-position: 1em 1em;
+    }
+
+    .siblings-list .parent-expanded {
+        background: url("/SearchUI/Content/images/browse-folder-open.png") no-repeat scroll;
+        background-position: 1em 1em;
+        border: 1px solid #222;
+        &:hover {
+            border: 1px solid #222;
+        }
+    }
+
+    .browse-record-creators {
+        li {
+            display: inline-block;
+            &:first-child {
+                 .call-to-action-link {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+.details-page h1 {
+	max-width: 85%;
+}
+
+p.tna-browse-description {
+	margin-top: 0;
+	}
+}
+
+
+

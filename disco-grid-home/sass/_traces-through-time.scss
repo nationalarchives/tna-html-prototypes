@@ -1,0 +1,210 @@
+#traces-through-time-collection {
+    .heading-container {
+        border: 1px solid #ccc;
+        padding: 0.5em 1em;
+        background: #eee;
+
+        h3 {
+            margin-bottom: 0.2em;
+            display: inline-block;
+
+            a.external {
+                padding-right: 23px;
+                background: url(https://discovery.nationalarchives.gov.uk/Content/images/external-link-icon.png) no-repeat right;
+                background-size: 14px 14px;
+            }
+        }
+    }
+
+    .heading-container p {
+        margin: 0.2em 0 0.5em;
+    }
+
+    .indicator {
+        display: inline-block;
+        float: left;
+        width: 100%;
+        margin-top: 1em;
+
+        p {
+            display: inline-block;
+            float: left;
+            font-size: .8em;
+        }
+    }
+
+    .indicator-outer-container {
+        background: #ddd;
+        width: 48%;
+        height: 40px;
+        display: inline-block;
+        float: right;
+        padding: 1px;
+    }
+
+    .indicator-inner-container {
+        background: #fff;
+        //width: 95%;
+        height: 40px;
+        //border: 5px solid #fff;
+    }
+
+    .confidence-bar {
+        background: #f3f3f3;
+        height: 40px;
+    }
+
+    .content-container {
+        border: 1px solid #ccc;
+        border-top: 0;
+        padding: .5em .5em .5em 1em;
+        margin-bottom: 1em;
+
+        ul {
+            display: inline-block;
+            margin: 0 0;
+            font-size: 0.8em;
+            color: #666;
+
+            li {
+                margin-bottom: 0.3em;
+            }
+
+            a.smaller {
+                font-size: .8em;
+            }
+        }
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    #show-all {
+        cursor: pointer;
+    }
+
+    .label {
+        font-size: .5em;
+        font-family: 'Open sans', sans-serif;
+        text-transform: uppercase;
+        margin: 0 1em;
+        background: #fce45c;
+        color: #222;
+        display: inline-block;
+        padding: .2em .4em;
+        vertical-align: middle;
+    }
+
+    .highlight-heading {
+        background-color: #fce45c;
+        color: #222;
+        padding: .5em;
+        margin-top: 0 !important;
+    }
+
+    .bounding-box {
+        border: 1px solid #ccc;
+        font-size: .8em;
+        text-align: center;
+
+        .caption {
+            margin-left: .5em;
+            color: #999;
+        }
+    }
+
+    .secondary-field span {
+        width: 10px;
+        height: 10px;
+        background-color: #2A5DB0;
+        display: inline-block;
+        margin-right: 7px;
+    }
+
+    ul.key {
+        margin: 2em 0 1em;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 0.4em 0 0.4em;
+
+        li {
+            font-size: 0.9em;
+            text-align: left;
+            display: inline-block;
+            margin-right: 1.5em;
+        }
+    }
+
+    ul {
+        li {
+            span {
+                width: 10px;
+                height: 10px;
+                display: inline-block;
+                margin-right: 7px;
+            }
+
+            span.external {
+                background-color: #2A5DB0;
+            }
+
+            span.internal {
+                background: #CB0D07;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+#traces-through-time-collection {
+    .ttt-item {
+        border-bottom: 1px solid #ccc;
+
+        .heading-container {
+            background: none;
+            padding: 0;
+            border: none;
+        }
+
+        .content-container {
+            padding: 0;
+            margin-bottom: 3em;
+            border: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #traces-through-time-collection {
+        .indicator-outer-container {
+            width: 60%;
+        }
+
+        .indicator-inner-container {
+            //width: 96%;
+        }
+
+        .bounding-box {
+            margin-top: 1em;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #traces-through-time-collection {
+        .indicator-outer-container {
+            width: 184px;
+        }
+
+        .indicator-inner-container {
+            width: 184px;
+        }
+
+        .indicator {
+            margin-top: 0;
+            float: right;
+            width: 318px;
+        }
+    }
+}
