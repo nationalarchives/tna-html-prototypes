@@ -64,7 +64,7 @@
 }
 
 .search-collections, .home .find-an-archive .archive-search-wrapper #archive-search, .primary-search-box .search-form-container #search-all-collections {
-  border-color: #FFF;
+  border: 2px solid black;
   width: 100%;
   height: 40px;
   padding-right: 0.5em;
@@ -100,7 +100,7 @@
   height: 40px;
   background: url(https://discovery.nationalarchives.gov.uk/Content/images/search-white.png) no-repeat center;
   background-size: cover;
-  background-color: #099;
+  background-color: #000;
   color: transparent;
   border-radius: 0;
   position: absolute;
@@ -146,19 +146,11 @@
   padding: 1em;
 }
 
-.bullet-list, .archives-home .countries-selector, .archives-home .counties-selector, .tags-list ul, .bullet-list-tagging, .home ul.popular-search-terms, .home ol, .popular-tags ul {
-  list-style-image: url(https://discovery.nationalarchives.gov.uk/Content/images/list-link-bullet.png);
-  padding-left: 1.5em;
-}
 .bullet-list li, .archives-home .countries-selector li, .archives-home .counties-selector li, .tags-list ul li, .bullet-list-tagging li, .home ul.popular-search-terms li, .home ol li, .popular-tags ul li {
-  border-bottom: 1px solid #ececec;
-  padding: 0.5em 0;
-  background-position: center left;
-  background-repeat: no-repeat;
+  list-style-type: disc;
 }
 .bullet-list li a, .archives-home .countries-selector li a, .archives-home .counties-selector li a, .tags-list ul li a, .bullet-list-tagging li a, .home ul.popular-search-terms li a, .home ol li a, .popular-tags ul li a {
-  margin-left: 5px;
-  display: block;
+  color: #007bff;
 }
 
 .heading-mimic {
@@ -195,11 +187,15 @@
   text-decoration: underline;
 }
 .link-heading h2 span span, .home .discover-ww1 h2 span span, .home .find-an-archive h2 span span {
-  color: #fff;
+  color: #000;
+  background-color: #fff;
+  border-top: 2px solid black;
   background-image: url("https://discovery.nationalarchives.gov.uk/Content/images/icon-24-heading-link.png");
   background-repeat: no-repeat;
   background-position: 98% 50%;
-  padding-right: 37px;
+  width: 100%;
+  padding-bottom: 0.6em;
+  padding-top: 0.6em;
 }
 
 #search-options li a {
@@ -462,30 +458,13 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: Bitter, serif;
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
   margin: 10px 0;
 }
 
-h1 > span {
-  background-image: url(https://discovery.nationalarchives.gov.uk/Content/images/heading-flourish.png);
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  padding-bottom: 0.42em;
-  margin-left: -10px;
-}
-
 h1 > span > span, h2 > span > span {
   display: inline-block;
-  padding: 4px 10px;
-}
-
-h2 > span, h3 > span {
-  background-image: url(https://discovery.nationalarchives.gov.uk/Content/images/heading-flourish.png);
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  padding-bottom: 0.54em;
-  margin-left: -10px;
 }
 
 h3 > span > span {
@@ -693,11 +672,6 @@ p {
 }
 
 .call-to-action-link, .browse .sit-right, .advanced-search-form input[type=submit], .advanced-search-form input[type=reset] {
-  -webkit-transition: background-color 300ms linear;
-  -moz-transition: background-color 300ms linear;
-  -o-transition: background-color 300ms linear;
-  -ms-transition: background-color 300ms linear;
-  transition: background-color 300ms linear;
   text-decoration: none;
   font-size: 1em;
   line-height: 130%;
@@ -760,12 +734,14 @@ p {
 }
 
 .heading-holding-banner {
+  border-top: 2px solid #000;
+  padding: 0.6em 1.6em;
+  background: #fff;
   padding: 2px 0;
-  background-image: url(https://discovery.nationalarchives.gov.uk/Content/images/dot-grey.png);
 }
 
 .heading-holding-banner h1, .heading-holding-banner h2, .heading-holding-banner h3, .holding-box div h2, .holding-box div h3 {
-  margin: 10px 0;
+  margin: 0;
 }
 
 .a-z ul {
@@ -875,10 +851,6 @@ h3 a:hover, h4 a:hover, .pictorial-list li a:hover {
 
 div[id$=box-discovery] .call-to-action-link, div[id$=box-discovery] .browse .sit-right, .browse div[id$=box-discovery] .sit-right, div[id$=box-discovery] .advanced-search-form input[type=submit], .advanced-search-form div[id$=box-discovery] input[type=submit], div[id$=box-discovery] .advanced-search-form input[type=reset], .advanced-search-form div[id$=box-discovery] input[type=reset] {
   float: right;
-}
-
-.breather, .receipt-page #createAnAccountCallToAction {
-  padding: 0 1em;
 }
 
 .breather-all {
@@ -1756,7 +1728,7 @@ a#cookieCutter {
 }
 
 #footer-wrapper {
-  background-color: #222222;
+  background-color: #000;
   background-position: -6em 20px;
   background-repeat: no-repeat;
   color: #FCFCFC;
@@ -1765,10 +1737,11 @@ a#cookieCutter {
 }
 
 #footer-wrapper h4 {
-  font-family: "Bitter", serif;
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
-  font-size: 19px;
-  margin-bottom: 0;
+  font-size: 1.16em;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
   color: #ffffff;
 }
 
@@ -1780,9 +1753,8 @@ a#cookieCutter {
 
 #footer-wrapper li {
   list-style-type: none;
-  padding: 0.5em 0;
-  font-size: 0.85em;
-  border-top: 1px dotted #666;
+  padding: 0.2em 0;
+  font-size: 16px;
   width: 90%;
 }
 
@@ -1852,14 +1824,14 @@ a#cookieCutter {
   display: inline-block;
 }
 .follow-us a img {
-  background-color: #008484;
+  background-color: #000;
+  border: 2px solid #fff;
   border-radius: 50%;
-  padding: 9px;
+  padding: 7px;
   margin: 0 0.2em 0.3em 0;
-  width: 28px;
+  width: 25px;
   transition: 0.4s ease-in-out;
-  -webkit-transition: 0.4s ease-in-out;
-  -moz-transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s;
 }
 .follow-us a img:hover {
   background: #555;
@@ -1884,11 +1856,12 @@ a#cookieCutter {
   }
 }
 #footer-wrapper address {
-  font-family: Bitter, Georgia, Verdana, Arial, Helvetica, serif;
+  margin-bottom: 1rem;
   font-style: normal;
-  line-height: 150%;
-  font-size: 1.166em;
-  margin: 10px 0 10px 0;
+  line-height: inherit;
+}
+#footer-wrapper #flickr-image a img {
+  max-width: 100%;
 }
 @media (max-width: 767px) {
   #footer-wrapper .ends-at-one-quarter {
@@ -1919,7 +1892,6 @@ a#cookieCutter {
 }
 #footer-wrapper .ends-at-one-quarter .footer-left img {
   max-width: 157px;
-  margin-top: 16px;
   margin-bottom: 23px;
 }
 @media (max-width: 767px) {
@@ -1942,7 +1914,7 @@ a#cookieCutter {
 }
 #footer-wrapper .footer-col .opening-times .open_table .open_tableCell, #footer-wrapper .footer-col .opening-times .open_table .open_tableHead {
   display: table-cell;
-  padding: 3px 0;
+  padding: 7px 0;
   width: 49%;
 }
 @media (max-width: 1100px) {
@@ -1987,11 +1959,11 @@ a#cookieCutter {
 }
 
 body {
-  background: #ececec;
+  background: #fff;
 }
 
 a {
-  color: #2A5DB0;
+  color: #007bff;
   text-decoration: none;
 }
 a:hover {
@@ -1999,7 +1971,7 @@ a:hover {
 }
 
 #account-controls-wrapper {
-  background-color: #2D3B59;
+  background-color: #111;
   color: #FFF;
 }
 
@@ -2039,13 +2011,15 @@ h1, h2, h1 a, h2 a {
 }
 
 .call-to-action-link, .browse .sit-right, .advanced-search-form input[type=submit], .advanced-search-form input[type=reset] {
-  background: #099;
+  border: 2px solid black;
+  background: #000;
   color: #fff;
 }
 
 .call-to-action-link:hover, .browse .sit-right:hover, .advanced-search-form input[type=submit]:hover, .advanced-search-form input[type=reset]:hover {
-  background: #FCE45C;
+  background: #fff;
   color: #000;
+  border: 2px solid black;
 }
 
 #mega-menu-pull-down {
@@ -2058,7 +2032,7 @@ h1, h2, h1 a, h2 a {
 }
 
 #footer-wrapper a {
-  color: #FCE45C;
+  color: #fbe2bc;
 }
 
 .mega-menu {
@@ -2091,12 +2065,13 @@ h1, h2, h1 a, h2 a {
 }
 
 h2 > span > span, h1 > span > span {
-  background-color: #405480;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
+  padding-top: 0.6em;
 }
 
 input[type=submit], input[type=reset], #show-more-options span, #mobileSearchSubmit {
-  background-color: #099;
+  background-color: #000;
   color: #fff;
 }
 
@@ -2191,7 +2166,7 @@ input[type=submit], input[type=reset], #show-more-options span, #mobileSearchSub
 }
 
 h2 > span > span a {
-  color: #ffffff;
+  color: #000;
 }
 
 h3 > span > span {
@@ -2606,7 +2581,7 @@ h4 {
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 3em;
   }
 
   #breadcrumb-holder .col {
@@ -3468,12 +3443,11 @@ li#detailed-view {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 400px) {
-  .popular-collections {
-    margin-left: 2%;
-  }
-}
 .popular-collections li {
+  min-height: 150px;
+}
+
+.popular-collections li, .research-guides li {
   position: relative;
   background-repeat: no-repeat;
   background-position: center center;
@@ -3482,48 +3456,40 @@ li#detailed-view {
   margin-bottom: 10px;
 }
 @media screen and (min-width: 400px) {
-  .popular-collections li {
+  .popular-collections li, .research-guides li {
     background-position: center center;
   }
 }
 @media screen and (min-width: 380px) {
-  .popular-collections li {
-    background-position: center bottom;
-    display: inline-block;
-    width: 48%;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 2%;
-    float: left;
-  }
-  .popular-collections li:last-child {
-    margin-bottom: 0;
-  }
-  .popular-collections li:nth-last-child(2) {
-    margin-bottom: 0;
+  .popular-collections li, .research-guides li {
+    display: block;
+    width: 100%;
+    min-height: 150px;
+    background: #ddd center center;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 568px) and (max-width: 960px) {
-  .popular-collections li {
+  .popular-collections li, .research-guides li {
     background-position: center center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 960px) {
-  .popular-collections li {
+  .popular-collections li, .research-guides li {
     display: block;
     width: 96%;
     max-height: 160px;
     background-position: center center;
   }
 }
-.popular-collections li a {
+.popular-collections li a, .research-guides li a {
   position: absolute;
-  color: #000;
+  color: #fff;
   display: block;
   width: 100%;
   height: 100%;
 }
-.popular-collections li a:hover {
+.popular-collections li a:hover, .research-guides li a:hover {
   background-color: rgba(255, 255, 255, 0.15);
   -webkit-transition: background-color 300ms linear;
   -moz-transition: background-color 300ms linear;
@@ -3531,33 +3497,32 @@ li#detailed-view {
   -ms-transition: background-color 300ms linear;
   transition: background-color 300ms linear;
 }
-.popular-collections li a > span {
-  display: inline-block;
+.popular-collections li a > span, .research-guides li a > span {
+  display: block;
+  position: absolute;
+  bottom: 0;
   margin: 10px 10px 0 0;
   padding: 5px;
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: #000;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1em;
 }
-.popular-collections li a > span span {
-  font-family: Bitter;
-  font-size: 1.2em;
-}
-.popular-collections #navy {
+.popular-collections #navy, .research-guides #navy {
   background-image: url("https://discovery.nationalarchives.gov.uk/Content/images/navy.png");
 }
-.popular-collections #marines {
+.popular-collections #marines, .research-guides #marines {
   background-image: url("https://discovery.nationalarchives.gov.uk/Content/images/marines.png");
 }
-.popular-collections #medals {
+.popular-collections #medals, .research-guides #medals {
   background-image: url("https://discovery.nationalarchives.gov.uk/Content/images/military.png");
 }
-.popular-collections #wills {
+.popular-collections #wills, .research-guides #wills {
   background-image: url("https://discovery.nationalarchives.gov.uk/Content/images/wills.png");
 }
-.popular-collections #raf {
+.popular-collections #raf, .research-guides #raf {
   background-image: url("https://discovery.nationalarchives.gov.uk/Content/images/raf.png");
 }
-.popular-collections #more {
+.popular-collections #more, .research-guides #more {
   background-image: url("https://discovery.nationalarchives.gov.uk/Content/images/other.png");
 }
 
@@ -3611,17 +3576,11 @@ li#detailed-view {
   color: #FFF;
 }
 .primary-search-box header h1 {
-  color: inherit;
-  text-rendering: optimizelegibility;
-  margin: 0 1em 0.5em 1em;
-}
-.no-js .primary-search-box header h1 {
-  color: #FFF;
-}
-@media screen and (min-width: 768px) {
-  .primary-search-box header h1 {
-    font-size: 2.5em;
-  }
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  z-index: 2;
+  line-height: 1.6;
+  letter-spacing: -0.025em;
 }
 .primary-search-box header h1 > span {
   font-size: 1.5em;
@@ -3629,7 +3588,7 @@ li#detailed-view {
   padding: 0;
 }
 .primary-search-box header > p {
-  font-family: "Open Sans", serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 1.2em;
   letter-spacing: -0.025em;
   margin: 0 auto;
@@ -3639,7 +3598,7 @@ li#detailed-view {
 
 .popular-tags b {
   font-size: 1.4em;
-  font-family: "Bitter", serif;
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
 }
 .popular-tags .call-to-action-link, .popular-tags .browse .sit-right, .browse .popular-tags .sit-right, .popular-tags .advanced-search-form input[type=submit], .advanced-search-form .popular-tags input[type=submit], .popular-tags .advanced-search-form input[type=reset], .advanced-search-form .popular-tags input[type=reset] {
@@ -3682,10 +3641,14 @@ li#detailed-view {
   line-height: 1.35;
   font-size: 1.16em;
 }
+.home ul.popular-search-terms {
+  padding-left: 0.6em;
+}
 .home #page-controls ul {
   color: #FFF;
-  background-color: black;
+  background-color: #000;
   background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
   display: inline-block;
   padding: 0.4em;
 }
@@ -3697,19 +3660,20 @@ li#detailed-view {
   padding-left: 0;
 }
 .home #page-controls a {
-  color: #FCE45C;
+  color: #fce45c;
 }
 .home #breadcrumb ul {
   color: #FFF;
-  background-color: black;
+  background-color: #000;
   background-color: rgba(0, 0, 0, 0.5);
   display: inline-block;
+  border: 2px solid black;
   padding: 0.4em;
 }
 .home #breadcrumb ul a {
-  background-image: url("https://discovery.nationalarchives.gov.uk/Content/images/breadcrumb-separator-white.png");
+  background-image: url(https://discovery.nationalarchives.gov.uk/Content/images/breadcrumb-separator-white.png);
   padding-right: 1.4em;
-  color: #FCE45C;
+  color: #fce45c;
 }
 .home #page_wrap {
   padding-top: 0;
@@ -3736,56 +3700,19 @@ li#detailed-view {
 .home #page_wrap .more-options {
   display: block;
   font-size: 0.85em;
-  background-color: black;
-  color: #FFF;
-  padding: 0.6em;
+  background-color: #dde5d5;
+  color: #000;
+  padding: 0.6em 0;
   text-align: center;
-  margin: auto;
-  margin-bottom: 1%;
-}
-@media screen and (min-width: 768px) {
-  .home #page_wrap .more-options {
-    width: 70%;
-    background: url("https://discovery.nationalarchives.gov.uk/Content/images/banner-footer-left.png") left no-repeat, url("https://discovery.nationalarchives.gov.uk/Content/images/banner-footer-right.png") right no-repeat, black;
-  }
-}
-@media screen and (min-width: 960px) {
-  .home #page_wrap .more-options {
-    width: 50%;
-  }
+  margin-bottom: 2.5em;
+  margin-top: 0;
+  width: 100%;
 }
 .home #page_wrap .more-options a {
-  color: #FCE45C;
+  color: #007bff;
 }
-.home .research-guides li {
-  background-color: #333;
-  background-size: cover;
-  margin-bottom: 10px;
+.home .research-guides {
   min-height: 100px;
-  position: relative;
-}
-.home .research-guides li a {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  color: #000;
-  font-family: Bitter;
-  font-size: 1.2em;
-}
-.home .research-guides li a:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-  -webkit-transition: background-color 300ms linear;
-  -moz-transition: background-color 300ms linear;
-  -o-transition: background-color 300ms linear;
-  -ms-transition: background-color 300ms linear;
-  transition: background-color 300ms linear;
-}
-.home .research-guides li span {
-  display: inline-block;
-  margin: 10px 10px 0 0;
-  padding: 5px;
-  background-color: #fff;
-  background-color: rgba(255, 255, 255, 0.85);
 }
 .home .research-guides #family-history {
   background-image: url("https://discovery.nationalarchives.gov.uk/Content/images/discovery-family-history.jpg");
@@ -3814,6 +3741,9 @@ li#detailed-view {
   background-image: url("https://discovery.nationalarchives.gov.uk/Content/images/MPB_1_7_1605.jpg");
   background-position: center center;
   padding-bottom: 0;
+}
+.home .find-an-archive .archive-search-wrapper {
+  font-family: "Roboto Mono", monospace;
 }
 @media only screen and (min-width: 768px) {
   .home .find-an-archive .archive-search-wrapper {
@@ -3854,6 +3784,7 @@ li#detailed-view {
   padding: 1px 1em;
   background: #fff;
   background: rgba(255, 255, 255, 0.92);
+  font-family: "Roboto Mono", monospace;
 }
 
 #details-tabs {
@@ -6853,150 +6784,90 @@ li.taggedRecord a.disco-button {
   }
 }
 .newsletter-template {
-  margin-top: 1em;
-  background: #dddddd;
+  background: #dde5d5;
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
-}
-@media (max-width: 1155px) {
-  .newsletter-template {
-    border-left: 15px solid #008484;
-  }
+  padding: 1.6em 40px 0 40px;
 }
 .newsletter-template .news-icon {
-  background: #008484;
-  vertical-align: middle;
-  text-align: center;
-  width: 157px;
-  height: 127px;
   display: inline-block;
-  padding: 38px 0 0 0;
   float: left;
   overflow: hidden;
-  box-sizing: border-box;
 }
 .newsletter-template .news-icon img {
   width: 60px;
   height: 48px;
 }
-@media (max-width: 1155px) {
+@media (max-width: 976px) {
   .newsletter-template .news-icon {
     display: none;
   }
 }
 .newsletter-template .news-content {
-  width: 45.8790322581%;
+  width: 40%;
   display: inline-block;
   float: left;
   overflow: hidden;
+  padding-left: 1.6em;
 }
 .newsletter-template .news-content h2 {
-  margin: 0;
-  padding: 36px 0 0 20px;
-  font-weight: 300;
-  font-size: 24px;
-  font-family: "Bitter", serif;
-  color: #000000;
+  line-height: 1;
+  color: #000;
 }
-@media (max-width: 1155px) {
-  .newsletter-template .news-content h2 {
-    padding: 10px 15px 10px 20px;
-  }
-}
-@media (max-width: 974px) {
-  .newsletter-template .news-content h2 {
-    width: 100%;
-    display: block;
-  }
-}
-.newsletter-template .news-content p {
-  padding: 2px 0 0 20px;
-  margin-top: 5px;
-}
-@media (max-width: 1155px) {
-  .newsletter-template .news-content p {
-    padding: 0 0 0 20px;
-  }
-}
-@media (max-width: 974px) {
-  .newsletter-template .news-content p {
-    width: 100%;
-    display: block;
-  }
-}
-@media (max-width: 600px) {
-  .newsletter-template .news-content p {
-    width: 80%;
-  }
-}
-@media (max-width: 1155px) {
-  .newsletter-template .news-content {
-    width: 47%;
-  }
-}
-@media (max-width: 974px) {
+@media (max-width: 976px) {
   .newsletter-template .news-content {
     width: 100%;
+    padding-left: 0;
     display: block;
   }
 }
 .newsletter-template .news-form {
-  width: 35.8790322581%;
+  width: 35%;
   display: inline-block;
-  padding: 45px 0 0 0;
   float: right;
+  margin-bottom: 1.6em;
 }
 .newsletter-template .news-form form label {
   display: none;
 }
 .newsletter-template .news-form form input[type=email] {
-  width: 73% !important;
-  height: 37px !important;
-  padding: 0 0 0 8px !important;
-  border: 1px solid #ccc;
+  width: 73%;
+  padding: 0.6em;
+  text-indent: 5px;
+  border: 2px solid #000;
+  min-width: 220px;
 }
-.newsletter-template .news-form form input[type=email]::-webkit-input-placeholder {
-  color: #ccc;
-}
-@media (max-width: 1155px) {
+@media (max-width: 976px) {
   .newsletter-template .news-form form input[type=email] {
+    width: 100%;
+    max-width: 480px;
+    display: block;
     margin-bottom: 10px;
   }
 }
-@media (max-width: 370px) {
-  .newsletter-template .news-form form input[type=email] {
-    width: 100%;
-  }
-}
 .newsletter-template .news-form form input[type=submit] {
-  height: 36px;
-  border: none;
-  background: #008484;
-  font-size: 16px;
-  padding: 0 10px 0 10px;
-}
-.newsletter-template .news-form .small-margin {
-  margin-top: 10px;
-  font-size: 85%;
+  height: 48px;
+  font-family: "Roboto Mono", monospace;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+  padding: 0.5em 0.9em;
+  display: inline-block;
+  min-width: 24px;
+  text-align: center;
+  margin: 0;
 }
 @media (max-width: 1155px) {
   .newsletter-template .news-form {
     width: 48%;
   }
 }
-@media (max-width: 974px) {
-  .newsletter-template .news-form {
-    padding: 0px 0 16px 20px;
-    width: 70%;
-    display: block;
-    float: left;
-  }
-}
-@media (max-width: 370px) {
+@media (max-width: 976px) {
   .newsletter-template .news-form {
     width: 100%;
-    padding-right: 10px;
+    display: block;
+    margin-left: 1.6em;
   }
 }
 

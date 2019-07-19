@@ -3,12 +3,13 @@ $break-tiny : 400px;
 $break-medium : 768px;
 $break-large : 960px;
 $line-color : #DDD;
-$link-color :  #FCE45C;
+$link-color :  #007bff;
 
-.popular-collections {
-	@media screen and (min-width: $break-tiny) {
-		margin-left: 2%;
-	}
+.popular-collections li {
+	min-height: 150px;
+}
+
+.popular-collections, .research-guides {
 	li {
         position: relative;
 		background-repeat: no-repeat;
@@ -20,49 +21,40 @@ $link-color :  #FCE45C;
 			background-position: center center;
 	}
 		@media screen and (min-width: $break-small) {
-			background-position: center bottom;
-			display: inline-block;
-			width: 48%; 
-			margin-top: 0;
-			margin-left: 0;
-			margin-right: 2%;
-			float: left;
-					&:last-child {
-			margin-bottom: 0;
-}
-		&:nth-last-child(2) {
-			margin-bottom: 0;
-		}
+			display: block;
+			width: 100%;
+			min-height: 150px;
+			background: #ddd center center;
+			background-size: cover;
 		}
 		@media screen and (min-width: 568px) and (max-width: 960px) {
 			background-position: center center;
 		}
 		@media screen and (min-width: 768px) and (max-width: 960px) {
 			display: block;
-			width: 96%; 
+			width: 96%;
 			max-height: 160px;
 			background-position: center center;
 		}
         a {
             position: absolute;
-            color: #000;
+            color: #fff;
             display: block;
             width: 100%;
             height: 100%;
             &:hover {
-                background-color: rgba(255,255,255,0.15);  
-                @include background-transition(background-color, 300ms); 
+                background-color: rgba(255,255,255,0.15);
+                @include background-transition(background-color, 300ms);
             }
     		> span {
-	    		display: inline-block;
+	    		display: block;
+				position: absolute;
+				bottom: 0;
 		    	margin: 10px 10px 0 0;
 		    	padding: 5px;
-			    background-color: rgb(255,255,255);
-			    background-color: rgba(255,255,255,0.85);	
-			    span {
-				    font-family: Bitter;
-				    font-size: 1.2em;	
-			    }	
+			    background-color: #000;
+				font-family: "Roboto Mono", monospace;
+				font-size: 1em;
 		    }
         }
 	}
@@ -95,7 +87,7 @@ $link-color :  #FCE45C;
 	.field-validation-error {
 		display: block;
 		padding: 0.5em;
-		margin-bottom: 0.5em; 
+		margin-bottom: 0.5em;
 		border: 2px solid #CB0D07;
 		background-color: #fdf2f2;
 		border-radius: 4px;
@@ -134,22 +126,18 @@ $link-color :  #FCE45C;
         }
 	}
 	header {
-		color: inherit; 
+		color: inherit;
 		.no-js & {
 			color: #FFF;
 		}
 		text-align: center;
 		h1 {
-			color: inherit;
-            text-rendering: optimizelegibility; 
-            margin: 0 1em .5em 1em;
-			.no-js & {
-				color: #FFF;
-			}
+			font-family: "Roboto Mono", monospace;
+			font-weight: 400;
+			z-index: 2;
+			line-height: 1.6;
+			letter-spacing: -.025em;
 
-			@media screen and (min-width: $break-medium) {		
-				font-size: 2.5em;
-			}
 			> span {
 				font-size: 1.5em;
 				background-image: none;
@@ -157,7 +145,7 @@ $link-color :  #FCE45C;
 			}
 		}
 		> p {
-			font-family: 'Open Sans', serif;
+			font-family: "Roboto Mono", monospace;
 			font-size: 1.2em;
 			letter-spacing:-.025em;
 			margin: 0 auto;
@@ -170,7 +158,7 @@ $link-color :  #FCE45C;
 .popular-tags {
     b {
         font-size: 1.4em;
-        font-family: 'Bitter', serif;
+        font-family: 'Roboto Mono', monospace;
         font-weight: 400;
     }
     .call-to-action-link {
@@ -234,16 +222,18 @@ $link-color :  #FCE45C;
 
 	ul.popular-search-terms {
         @extend .bullet-list;
+		padding-left: .6em;
 	}
 
 	#page-controls {
 		ul {
 			color: #FFF;
-			background-color: rgb(0,0,0);
-			background-color: rgba(0,0,0,0.5);
+			background-color: #000;
+			background-color: rgba(0,0,0,.5);
+			border: 2px solid black;
 			display: inline-block;
 			padding: 0.4em;
-			
+
 			li { padding-bottom: .25em; line-height:1.25;
 				&:first-child {
 					a {
@@ -253,20 +243,21 @@ $link-color :  #FCE45C;
 			}
 		}
 		a {
-			color: $link-color;
+			color: #fce45c;
 		}
 	}
 	#breadcrumb {
 		ul {
 			color: #FFF;
-			background-color: rgb(0,0,0);
-			background-color: rgba(0,0,0,0.5);
+			background-color: #000;
+			background-color: rgba(0,0,0,.5);
 			display: inline-block;
+			border: 2px solid black;
 			padding: 0.4em;
 			a {
-				background-image : url($image-path + 'breadcrumb-separator-white.png');
+				background-image: url(https://discovery.nationalarchives.gov.uk/Content/images/breadcrumb-separator-white.png);
 				padding-right: 1.4em;
-				color: $link-color;
+				color: #fce45c;
 			}
 		}
 
@@ -290,54 +281,24 @@ $link-color :  #FCE45C;
 		.more-options {
 			display: block;
 			font-size: 0.85em;
-			background-color: rgb(0,0,0);
-			color: #FFF;
-			padding: 0.6em;
+			background-color: #dde5d5;
+			color: #000;
+			padding: 0.6em 0;
 			text-align: center;
-			margin: auto;
-			margin-bottom: 1%;
-			@media screen and (min-width: $break-medium) {
-				width: 70%;
-				background: url($image-path + 'banner-footer-left.png') left no-repeat, 
-					url($image-path + 'banner-footer-right.png') right no-repeat,
-					rgb(0,0,0);
-			}
-			@media screen and (min-width: $break-large) {
-				width: 50%;
-			}
+			margin-bottom: 2.5em;
+			margin-top: 0;
+			width: 100%;
+
 			a {
 				color: $link-color;
 			}
 		}
 	}
 
-	.research-guides { 
-		li {
-			background-color: #333;
-			background-size: cover;
-			margin-bottom: 10px;
-			min-height: 100px;
-            position: relative;
-            a {
-                position: absolute;
-                height: 100%;
-                width: 100%;
-				color: #000;
-				font-family: Bitter;
-				font-size: 1.2em;	
-                &:hover {
-                    background-color: rgba(255,255,255,0.15);
-                    @include background-transition(background-color, 300ms); 
-                }
-            }
-			span {
-				display: inline-block;
-				margin: 10px 10px 0 0;
-				padding: 5px;
-				background-color: #fff;
-				background-color: rgba(255,255,255,.85);
-			}
-		}
+	.research-guides {
+
+		min-height: 100px;
+
 		#family-history {
 			background-image: url($image-path + 'discovery-family-history.jpg');
 			background-position: center center;
@@ -364,18 +325,19 @@ $link-color :  #FCE45C;
 	}
 
 	.find-an-archive {
-		@extend .link-heading; 
+		@extend .link-heading;
 		background-image: url($image-path + 'MPB_1_7_1605.jpg');
-		background-position: center center;	
+		background-position: center center;
 		padding-bottom: 0;
 		.archive-search-wrapper {
+			font-family: "Roboto Mono", monospace;
 			@media only screen and (min-width: $break-medium) {
 				margin-top: 110px;
 			}
 			fieldset {
 				background-color: rgb(0, 0, 0);
 				background-color: rgba(0, 0, 0, 0.8);
-				margin-bottom: 0;		
+				margin-bottom: 0;
 				padding: 1em;
 				border: none;
 			}
@@ -411,13 +373,14 @@ $link-color :  #FCE45C;
 		background-color: #000;
 		background-image: url($image-path + 'discover-ww1.jpg');
 		background-position: right center;
-		background-repeat: no-repeat;			
+		background-repeat: no-repeat;
 			.discover-ww1-wrapper {
 				margin: 110px 0 10px 0;
 				padding: 1px 1em;
 				background: #fff;
 				background: rgba(255,255,255, .92);
-				
+				font-family: "Roboto Mono", monospace;
+
 			}
 	}
 

@@ -1,9 +1,9 @@
 ﻿body {
-    background: #ececec;
+    background: #fff;
 }
 
 a {
-    color: #2A5DB0;
+    color: #007bff;
     text-decoration: none;
     &:focus {
         @extend .focussed-element;
@@ -15,7 +15,7 @@ a:hover {
 }
 
 #account-controls-wrapper {
-    background-color: #2D3B59;
+    background-color: #111;
     color: #FFF;
 }
 
@@ -37,7 +37,7 @@ a:hover {
     color: #FFF;
 }
 
-#miniBasketWrapper { 
+#miniBasketWrapper {
     background-color: #383838;
     color: #FFF;
 }
@@ -56,13 +56,15 @@ h1, h2, h1 a, h2 a {
 
 
 .call-to-action-link {
-    background: #099;
+    border: 2px solid black;
+    background: #000;
     color: #fff;
 }
 
 .call-to-action-link:hover {
-    background: #FCE45C;
+    background: #fff;
     color: #000;
+    border: 2px solid black;
 }
 
 #mega-menu-pull-down {
@@ -75,7 +77,7 @@ h1, h2, h1 a, h2 a {
 }
 
 #footer-wrapper a {
-    color: #FCE45C;
+    color: #fbe2bc;
 }
 
 .mega-menu {
@@ -108,18 +110,19 @@ h1, h2, h1 a, h2 a {
 }
 
 h2 > span > span, h1 > span > span {
-    background-color: #405480;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
+    padding-top: .6em;
 }
 
 input[type=submit], input[type=reset], #show-more-options span, #mobileSearchSubmit {
-    background-color: #099;
+    background-color: #000;
     color: #fff;
 }
 
 
 #mobile-search-wrapper #mobileSearchSubmit {
-    background-color: #099;    
+    background-color: #099;
 }
 
 #popular-collections .text-holder {
@@ -140,12 +143,12 @@ input[type=submit], input[type=reset], #show-more-options span, #mobileSearchSub
     background-color: #099;
 }
 
-#primary-search-options li {  
+#primary-search-options li {
     background-color: #DEDEDE;
 }
 
 
-#primary-search-options li.selected {  
+#primary-search-options li.selected {
     background-color: #222;
     color: #EFEFEF;
 }
@@ -213,7 +216,7 @@ input[type=submit], input[type=reset], #show-more-options span, #mobileSearchSub
 }
 
 h2 > span > span a {
-    color: #ffffff;
+    color: #000;
 }
 
 

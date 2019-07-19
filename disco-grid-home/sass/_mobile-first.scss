@@ -76,31 +76,15 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: Bitter, serif;
+    font-family: "Roboto Mono", monospace;
     font-weight: 400;
     margin: 10px 0;
 }
 
-h1 > span {
-    background-image: url(https://discovery.nationalarchives.gov.uk/Content/images/heading-flourish.png);
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    padding-bottom: .42em;
-    margin-left: -10px;
-}
-
 h1 > span > span, h2 > span > span {
     display: inline-block;
-    padding: 4px 10px;
 }
 
-h2 > span, h3 > span {
-    background-image: url(https://discovery.nationalarchives.gov.uk/Content/images/heading-flourish.png);
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    padding-bottom: .54em;
-    margin-left: -10px;
-}
 
 h3 > span > span {
     display: inline-block;
@@ -329,7 +313,6 @@ p {
 }
 
 .call-to-action-link {
-    @include background-transition(background-color, 300ms);
     text-decoration: none;
     font-size: 1em;
     line-height: 130%;
@@ -399,11 +382,15 @@ p {
 }
 
 .heading-holding-banner {
-    padding: 2px 0;
-    background-image: url(https://discovery.nationalarchives.gov.uk/Content/images/dot-grey.png);
+  border-top: 2px solid #000;
+  padding: 0.6em 1.6em;
+  background: #fff;
+  padding: 2px 0;
 }
+
+
 .heading-holding-banner h1, .heading-holding-banner h2, .heading-holding-banner h3, .holding-box div h2, .holding-box div h3 {
-	margin:10px 0;
+	margin: 0;
 	}
 .a-z {
 	 ul {
@@ -518,10 +505,6 @@ h3 a:hover, h4 a:hover, .pictorial-list li a:hover {
 
 div[id$=box-discovery] .call-to-action-link {
     float: right;
-}
-
-.breather {
-    padding: 0 1em;
 }
 
 .breather-all {

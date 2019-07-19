@@ -1,5 +1,5 @@
 ﻿#footer-wrapper {
-    background-color: #222222;
+    background-color: #000;
     background-position: -6em 20px;
     background-repeat: no-repeat;
     color: #FCFCFC;
@@ -8,10 +8,11 @@
 }
 
 #footer-wrapper h4 {
-    font-family: 'Bitter', serif;
+    font-family: "Roboto Mono", monospace;
     font-weight: 400;
-    font-size: 19px;
-    margin-bottom: 0;
+    font-size: 1.16em;
+    margin-bottom: .5rem;
+    margin-top: 0;
     color: #ffffff;
 }
 
@@ -23,9 +24,8 @@
 
 #footer-wrapper li {
     list-style-type: none;
-    padding: 0.5em 0;
-    font-size: .85em;
-    border-top: 1px dotted #666;
+    padding: 0.2em 0;
+    font-size: 16px;
     width: 90%;
 }
 
@@ -100,14 +100,14 @@
         display: inline-block;
 
         img {
-            background-color: #008484;
+            background-color: #000;
+            border: 2px solid #fff;
             border-radius: 50%;
-            padding: 9px;
+            padding: 7px;
             margin: 0 0.2em 0.3em 0;
-            width: 28px;
+            width: 25px;
             transition: 0.4s ease-in-out;
-            -webkit-transition: 0.4s ease-in-out;
-            -moz-transition: 0.4s ease-in-out;
+            -webkit-transition: 0.4s;
 
             &:hover {
                 background: #555;
@@ -138,11 +138,17 @@
 
 #footer-wrapper {
     address {
-        font-family: Bitter,Georgia,Verdana,Arial,Helvetica,serif;
+        margin-bottom: 1rem;
         font-style: normal;
-        line-height: 150%;
-        font-size: 1.166em;
-        margin: 10px 0 10px 0;
+        line-height: inherit;
+    }
+
+    #flickr-image{
+        a{
+            img{
+                max-width: 100%;
+            }
+        }
     }
 
     .ends-at-one-quarter {
@@ -171,7 +177,6 @@
 
             img {
                 max-width: 157px;
-                margin-top: 16px;
                 margin-bottom: 23px;
             }
         }
@@ -199,7 +204,7 @@
 
                 .open_tableCell, .open_tableHead {
                     display: table-cell;
-                    padding: 3px 0;
+                    padding: 7px 0;
                     width: 49%;
 
                     @media (max-width:1100px) {

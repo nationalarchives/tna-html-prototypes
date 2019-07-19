@@ -61,7 +61,7 @@
 }
 
 .search-collections {
-    border-color: #FFF;
+    border: 2px solid black;
     width: 100%;
 	height: 40px;
 	padding-right: 0.5em;
@@ -98,7 +98,7 @@
     height: 40px;
     background: url(https://discovery.nationalarchives.gov.uk/Content/images/search-white.png) no-repeat center;
     background-size: cover;
-    background-color: #099;
+    background-color: #000;
     color: transparent;
     border-radius: 0;
     position: absolute;
@@ -150,18 +150,15 @@
 }
 
 .bullet-list {
-    list-style-image: url(https://discovery.nationalarchives.gov.uk/Content/images/list-link-bullet.png);
-    padding-left: 1.5em;
-	li {
-		border-bottom: 1px solid #ececec;
-		padding: 0.5em 0;
-		background-position: center left;
-		background-repeat: no-repeat;
-		a {
-			margin-left: 5px;
-			display: block;
-		}
-	}
+    li {
+
+      list-style-type: disc;
+
+      a {
+        color: #007bff;
+      }
+
+    }
 }
 
 .heading-mimic {
@@ -199,11 +196,15 @@
 		text-decoration: underline;
 	}
 	h2 span span {
-		color: #fff;
+		color: #000;
+        background-color: #fff;
+        border-top: 2px solid black;
 		background-image: url($image-path + 'icon-24-heading-link.png');
 		background-repeat: no-repeat;
 		background-position: 98% 50%;
-		padding-right: 37px;
+		width: 100%;
+        padding-bottom: .6em;
+        padding-top: .6em;
 	}
 }
 
