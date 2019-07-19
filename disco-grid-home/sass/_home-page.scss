@@ -222,7 +222,12 @@ $link-color :  #007bff;
 
 	ul.popular-search-terms {
         @extend .bullet-list;
-		padding-left: .6em;
+
+		li {
+			list-style-type: none;
+			padding-bottom: 1.6em;
+		}
+
 	}
 
 	#page-controls {
