@@ -4127,6 +4127,32 @@ footer {
       footer .follow-us a img:hover {
         background: #555; }
 
+.navigation {
+  background-color: #222;
+  color: #fff;
+  border-top: solid 2px #fff;
+  border-bottom: solid 2px #fff; }
+  .navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .navigation ul li {
+      display: block;
+      float: left;
+      border-left: solid 2px #fff; }
+      .navigation ul li:last-child {
+        border-right: solid 2px #fff; }
+      .navigation ul li:hover {
+        background-color: #fff; }
+      .navigation ul li a {
+        font-family: "Roboto Mono", monospace;
+        color: #fff;
+        display: block;
+        padding: 0.6em 1em; }
+        .navigation ul li a:hover {
+          text-decoration: none;
+          color: #000; }
+
 .mega-menu {
   background-color: #222;
   color: #fff;
