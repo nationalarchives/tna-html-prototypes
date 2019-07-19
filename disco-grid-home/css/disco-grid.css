@@ -3466,7 +3466,7 @@ li#detailed-view {
   .popular-collections li, .research-guides li {
     display: block;
     width: 100%;
-    min-height: 150px;
+    min-height: 115px;
     background: #ddd center center;
     background-size: cover;
   }
