@@ -9,8 +9,8 @@
     float: left;
     overflow: hidden;
     img {
-      width: 60px;
-      height: 48px;
+      max-width: 64px;
+      height: auto;
     }
     @media (max-width: 976px) {
       display: none;

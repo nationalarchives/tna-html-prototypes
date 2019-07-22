@@ -4596,18 +4596,19 @@ form .checkbox input[type="checkbox"]:focus + label::before {
   width: 48px;
   height: 48px;
   margin: 0 .2em .3em 0;
-  cursor: pointer;
   transition: .4s ease-in-out;
   -webkit-transition: .4s ease-in-out;
   -moz-transition: .4s ease-in-out; }
-
-.icon-circle:hover {
-  background-color: #555; }
 
 .icon-size-26 {
   background-size: 78% 78%;
   width: 26px;
   height: 26px; }
+
+.icon-size-64 {
+  background-size: 68% 68%;
+  width: 64px;
+  height: 64px; }
 
 .icon-facebook {
   background-image: url("../img/icon-social-facebook.png"); }
@@ -4647,8 +4648,8 @@ form .checkbox input[type="checkbox"]:focus + label::before {
     float: left;
     overflow: hidden; }
     .newsletter-template .news-icon img {
-      width: 60px;
-      height: 48px; }
+      max-width: 64px;
+      height: auto; }
     @media (max-width: 976px) {
       .newsletter-template .news-icon {
         display: none; } }
