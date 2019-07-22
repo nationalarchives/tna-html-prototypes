@@ -3466,7 +3466,7 @@ li#detailed-view {
   .popular-collections li, .research-guides li {
     display: block;
     width: 100%;
-    min-height: 150px;
+    min-height: 115px;
     background: #ddd center center;
     background-size: cover;
   }
@@ -3757,7 +3757,6 @@ li#detailed-view {
   background-color: white;
   margin-bottom: 0;
   padding: 1em;
-  border: 2px solid black;
 }
 .home .find-an-archive .archive-search-wrapper label {
   color: #000;
@@ -3774,15 +3773,14 @@ li#detailed-view {
 .home .discover-ww1 {
   background-color: #000;
   background-image: url("https://discovery.nationalarchives.gov.uk/Content/images/discover-ww1.jpg");
-  background-position: right center;
+  background-position: right top;
   background-repeat: no-repeat;
 }
 .home .discover-ww1 .discover-ww1-wrapper {
-  margin: 110px 0 10px 0;
+  margin: 110px 0 -8px 0;
   padding: 1px 1em;
   background: #fff;
   font-family: "Roboto Mono", monospace;
-  border: 2px solid black;
 }
 
 #details-tabs {
