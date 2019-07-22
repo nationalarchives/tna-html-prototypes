@@ -4605,6 +4605,11 @@ form .checkbox input[type="checkbox"]:focus + label::before {
   width: 26px;
   height: 26px; }
 
+.icon-size-32 {
+  background-size: 78% 78%;
+  width: 32px;
+  height: 32px; }
+
 .icon-size-64 {
   background-size: 68% 68%;
   width: 64px;
@@ -4636,6 +4641,52 @@ form .checkbox input[type="checkbox"]:focus + label::before {
 
 .icon-info {
   background-image: url("../img/icon-info.png"); }
+
+.feature-img {
+  position: relative; }
+  .feature-img .feature-img-caption {
+    z-index: 1000;
+    width: 38px;
+    height: 38px; }
+  .feature-img .img-caption-bottom {
+    position: absolute;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    bottom: 0;
+    right: 0; }
+  .feature-img .img-caption-top {
+    position: absolute;
+    margin-top: 1em;
+    margin-right: 1em;
+    top: 0;
+    right: 0; }
+  .feature-img .eye_caption {
+    width: 32px;
+    height: 32px;
+    border: 0;
+    padding: 0;
+    background-color: transparent; }
+    .feature-img .eye_caption div {
+      margin: 0; }
+    .feature-img .eye_caption div:hover {
+      background-color: #555; }
+    .feature-img .eye_caption div:focus {
+      background-color: #fbe2bc;
+      outline: 3px solid #fad3d4;
+      color: #fbe2bc; }
+  .feature-img .image_caption_back {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 0.6em;
+    z-index: 5000;
+    font-size: .9em;
+    color: #000;
+    text-align: right;
+    min-width: 300px;
+    max-width: 100%; }
 
 .newsletter-template {
   background: #dde5d5;
@@ -4691,3 +4742,44 @@ form .checkbox input[type="checkbox"]:focus + label::before {
         width: 100%;
         display: block;
         margin-left: 1.6em; } }
+
+.portal-landing .banner {
+  background: #ddd center center;
+  background-size: cover; }
+  .portal-landing .banner h1 {
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 10px 50px;
+    margin-bottom: 5em; }
+  .portal-landing .banner .portal-logo img {
+    margin: 0 auto; }
+.portal-landing .intro-card {
+  background-color: #dde5d5;
+  margin-bottom: 1.6em; }
+  .portal-landing .intro-card h2 {
+    border-top: 2px solid #000;
+    padding-top: 0.6em;
+    margin-bottom: 1.6em; }
+  .portal-landing .intro-card article {
+    margin-bottom: 1.6em; }
+.portal-landing .tna-breadcrumb {
+  margin: 0; }
+.portal-landing .breadcrumbs {
+  display: inline-block;
+  color: #fff;
+  padding: 3px 7px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .portal-landing .breadcrumbs a {
+    color: #fbe2bc; }
+.portal-landing .stay-up-to-date-bar {
+  padding: 0.4em 0;
+  background: #dde5d5;
+  text-align: right; }
+  .portal-landing .stay-up-to-date-bar a {
+    display: inline-block;
+    vertical-align: middle;
+    height: 26px; }
+    .portal-landing .stay-up-to-date-bar a .icon-circle {
+      margin: 0; }
