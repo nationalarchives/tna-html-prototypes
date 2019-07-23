@@ -4779,7 +4779,9 @@ form .checkbox input[type="checkbox"]:focus + label::before {
 .portal-landing .stay-up-to-date-bar {
   padding: 0.4em 0;
   text-align: right;
-  background-color: rgba(255, 255, 255, 0.3); }
+  background-color: #dde5d5; }
+  .portal-landing .stay-up-to-date-bar span {
+    margin-right: 1em; }
   .portal-landing .stay-up-to-date-bar a {
     display: inline-block;
     vertical-align: middle;
