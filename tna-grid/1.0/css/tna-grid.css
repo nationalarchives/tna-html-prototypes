@@ -4745,7 +4745,8 @@ form .checkbox input[type="checkbox"]:focus + label::before {
 
 .portal-landing .banner {
   background: #ddd center center;
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 1.6em; }
   .portal-landing .banner h1 {
     display: inline-block;
     background-color: #fff;
@@ -4755,14 +4756,16 @@ form .checkbox input[type="checkbox"]:focus + label::before {
   .portal-landing .banner .portal-logo img {
     margin: 0 auto; }
 .portal-landing .intro-card {
-  background-color: #dde5d5;
-  margin-bottom: 1.6em; }
-  .portal-landing .intro-card h2 {
+  margin-bottom: 3.2em; }
+  .portal-landing .intro-card .entry-image {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .portal-landing .intro-card .entry-content {
     border-top: 2px solid #000;
-    padding-top: 0.6em;
-    margin-bottom: 1.6em; }
-  .portal-landing .intro-card article {
-    margin-bottom: 1.6em; }
+    padding-top: 0.6em; }
 .portal-landing .tna-breadcrumb {
   margin: 0; }
 .portal-landing .breadcrumbs {
@@ -4775,11 +4778,11 @@ form .checkbox input[type="checkbox"]:focus + label::before {
     color: #fbe2bc; }
 .portal-landing .stay-up-to-date-bar {
   padding: 0.4em 0;
-  background: #dde5d5;
-  text-align: right; }
+  text-align: right;
+  background-color: rgba(255, 255, 255, 0.3); }
   .portal-landing .stay-up-to-date-bar a {
     display: inline-block;
     vertical-align: middle;
-    height: 26px; }
+    height: 32px; }
     .portal-landing .stay-up-to-date-bar a .icon-circle {
       margin: 0; }
