@@ -77,8 +77,8 @@
     margin-bottom: 1.6em;
     .entry-header {
       border: $grid_line;
-      padding: 0.6em 3.2em;
-      margin: 1.6em 0 1.6em 3.2em;
+      padding: 8px 34px;
+      margin: 34px 0 16px 34px;
       background-color: #fff;
       display: inline-block;
       h1 {
@@ -87,7 +87,7 @@
     }
     .entry-content {
       width: 100%;
-      padding: 0 0 0 4.8em;
+      padding: 0 0 0 66px;
       margin-bottom: 1.6em;
       p {
         font-family: $tna_heading_font;

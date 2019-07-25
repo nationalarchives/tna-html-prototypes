@@ -3733,7 +3733,7 @@ body {
     line-height: 1.6;
     letter-spacing: -.025em; }
   body h1 {
-    font-size: 2em; }
+    font-size: 2.4em; }
   body h2 {
     font-size: 1.6em; }
   body h3 {
@@ -4297,15 +4297,15 @@ footer {
   margin-bottom: 1.6em; }
   .level-one .banner .entry-header {
     border: 2px solid #000;
-    padding: 0.6em 3.2em;
-    margin: 1.6em 0 1.6em 3.2em;
+    padding: 8px 34px;
+    margin: 34px 0 16px 34px;
     background-color: #fff;
     display: inline-block; }
     .level-one .banner .entry-header h1 {
       margin: 0; }
   .level-one .banner .entry-content {
     width: 100%;
-    padding: 0 0 0 4.8em;
+    padding: 0 0 0 66px;
     margin-bottom: 1.6em; }
     .level-one .banner .entry-content p {
       font-family: "Roboto Mono", monospace;
@@ -4751,7 +4751,7 @@ form .checkbox input[type="checkbox"]:focus + label::before {
     display: inline-block;
     background-color: #fff;
     border: 2px solid #000;
-    padding: 10px 50px;
+    padding: 8px 34px;
     margin-bottom: 5em; }
   .portal-landing .banner .portal-logo img {
     margin: 0 auto; }
