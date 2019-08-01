@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en-gb" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A collection of CSS elements for frontend development of flexible layouts whilst maintaining consistency across TNA online.">
+    <meta name="author" content="The National Archives">
+    <link rel="icon" href="education-landing/1.0/img/favicon.png">
+
+    <title>Education Landing</title>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto+Mono:400,700&display=swap" rel="stylesheet">
+
+    <!-- TNA Grid core CSS -->
+    <link rel="stylesheet" href="education-landing/1.0/css/tna-grid.css">
+
+    <script type='text/javascript' src='http://www.nationalarchives.gov.uk/wp-content/themes/tna-base/js/lib/jquery-1.11.3.min.js?ver=1.11.3'></script>
+    <script type='text/javascript' src='http://www.nationalarchives.gov.uk/wp-content/themes/tna-base/js/lib/modernizr.js?ver=2.8.3'></script>
+
+</head>
+
+<body class="portal-landing">
+<div class="notification-banner">
+    <div class="container">
+        <div class="row">
+            <p><strong>Prototype</strong> This is a prototype. <a href="../index.html">Click here</a> to return to the prototype home page.</p>
+        </div>
+    </div>
+</div>
+<header id="header" role="banner">
+    <a id="skip-to-main-content" href="#breadcrumb-holder">Skip to Main Content</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2 col-sm-5" id="logo-holder">
+                <button aria-label="Toggle menu" id="mega-menu-mobile"></button>
+                <a href="http://www.nationalarchives.gov.uk" title="Go to The National Archives homepage" class="visible-lg visible-md visible-sm">
+                    <img src="education-landing/1.0/img/tna-horizontal-white-logo.png" alt="The National Archives" class="img-fluid logo">
+                </a>
+            </div>
+            <div class="col-xs-8 col-sm-2" id="mobile-logo-holder">
+                <button title="Main menu" aria-label="Toggle menu" id="mega-menu-pull-down" class="hidden-xs"><span>Menu</span></button>
+                <a href="http://www.nationalarchives.gov.uk" title="Go to The National Archives homepage" class="hidden-lg hidden-md hidden-sm">
+                    <img src="education-landing/1.0/img/tna-horizontal-white-logo.png" alt="The National Archives" class="img-fluid logo">
+                </a>
+            </div>
+            <div class="col-xs-2 col-sm-5" id="search-field-wrapper">
+                <form action="/search/results" method="get" id="globalSearch" role="search" class="hidden-xs">
+                    <span id="scope-selector">&nbsp;</span>
+                    <input type="text" class="search-field" placeholder="Search our website..." id="tnaSearch" name="_q" required="" aria-required="true">
+                    <input type="submit" class="search-button" id="search-button" value="">
+                </form>
+                <ul style="display: none;">
+                    <li><a title="Search our website" href="#" class="formDestinationChanger" data-target="/search/results" data-placeholder="Search our website..." data-fieldname="_q" role="button" aria-label="Change form destination to search the website">Search our website</a></li>
+                    <li><a title="Search our catalogue for records" href="#" class="formDestinationChanger" data-target="http://discovery.nationalarchives.gov.uk/results/r" data-placeholder="Search our records..." data-fieldname="_q" role="button" aria-label="Change form destination to search the catalogue">Search our records</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row hidden-lg hidden-md hidden-sm">
+            <div class="col-md-12">
+                <button class="search-expander">&nbsp;</button>
+                <form method="get" id="mobileGlobalSearch" style="display: none;" name="responsiveSearch" action="/search/results" role="search">
+                    <div class="input-group">
+                        <input type="text" placeholder="Search our website..." required="" aria-required="true" name="QueryText" value="">
+                        <span class="input-group-addon"><input type="submit" value=""></span>
+                    </div>
+                    <label>
+                        <input name="radioSearchGroup" value="search_website" checked="" type="radio"> Search our website
+                    </label>
+                    <label>
+                        <input name="radioSearchGroup" value="search_records" type="radio"> Search our records
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+<nav id="nav" role="navigation">
+    <div class="mega-menu clearfix">
+        <ul class="main-ul">
+            <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/about" class="toggle-sub-menu">About us</a>
+                <ul class="sub-menu">
+                    <li class="mobile-home-link"><a href="http://www.nationalarchives.gov.uk/about">About us home</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/about/our-role/">Our role</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/about/visit-us/">Visit us</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/about/visit-us/opening-times/">Opening times</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/about/visit-us/whats-on/">What’s on</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/about/visit-us/venue-hire/">Venue hire</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/about/jobs/">Jobs</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/about/get-involved/">Get involved</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/about/news/">News</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/about/commercial-opportunities/">Commercial opportunities</a></li>
+                </ul>
+            </li>
+            <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/education/" class="toggle-sub-menu">Education</a>
+                <ul class="sub-menu">
+                    <li class="mobile-home-link"><a href="http://www.nationalarchives.gov.uk/education/">Education home</a></li>
+                    <li><a data-gtm="mega-menu"
+                           href="http://www.nationalarchives.gov.uk/education/sessions-and-resources/?time-period=medieval,early-modern,empire-and-industry,victorians,early-20th-century,interwar,second-world-war,postwar">Time
+                        periods</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/education/sessions-and-resources/?resource-type=lesson">Lessons</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/education/sessions-and-resources/?resource-type=workshop">Workshops</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/education/sessions-and-resources/?resource-type=video-conferences">Videoconferences</a>
+                    </li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/education/sessions-and-resources/?resource-type=virtual-classroom">Virtual classroom</a>
+                    </li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/education/teachers/professional-development/">Professional development</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/education/teachers/">For teachers</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/education/students/">For students</a></li>
+                </ul>
+            </li>
+            <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/help-with-your-research" class="toggle-sub-menu">Help with your research</a>
+                <ul class="sub-menu">
+                    <li class="mobile-home-link"><a href="http://www.nationalarchives.gov.uk/help-with-your-research">Help with your research home</a></li>
+                    <li><a data-gtm="mega-menu" href="http://discovery.nationalarchives.gov.uk/">Search Discovery, our catalogue</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/help-with-your-research/start-here/">Start your research here</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/help-with-your-research/research-guides-keywords/">Research guides A-Z</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/?research-category=online">Online collections</a>
+                    </li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/webarchive/">UK Government Web Archive</a></li>
+                    <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/contact-us/british-citizenship-services/">British citizenship services</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/help-with-your-research/record-copying/">Record copying</a></li>
+                </ul>
+            </li>
+            <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/information-management/" class="toggle-sub-menu">Information management</a>
+                <ul class="sub-menu">
+                    <li class="mobile-home-link"><a href="http://www.nationalarchives.gov.uk/information-management/">Information management home</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/information-management/browse-guidance-standards/">Guidance and standards A-Z</a></li>
+                    <li><a data-gtm="mega-menu"
+                           href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">Copyright</a>
+                    </li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/information-management/manage-information/">How to manage your information</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/">Re-using PSI</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/information-management/producing-official-publications/">Producing official
+                        publications</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/information-management/legislation/">Legislation and regulations</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/information-management/training/">Training</a></li>
+                </ul>
+            </li>
+            <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/archives-sector" class="toggle-sub-menu">Archives sector</a>
+                <ul class="sub-menu">
+                    <li class="mobile-home-link"><a href="http://www.nationalarchives.gov.uk/archives-sector">Archives sector home</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/archives-sector/our-archives-sector-role/historical-manuscripts-commission/">Historical
+                        Manuscripts Commission</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/archives-sector/finding-funding/">Finding funding</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/archives-sector/projects-and-programmes/">Projects and programmes</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/archives-sector/case-studies-and-research-reports/">Case studies and research reports</a>
+                    </li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/archives-sector/advice-and-guidance/">Operating your archive</a></li>
+                    <li><a data-gtm="mega-menu" href="http://www.nationalarchives.gov.uk/archives-sector/our-archives-sector-role/">Our role in the archives sector</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="toggle-sub-menu" id="more-link">More…</div>
+                <ul class="sub-menu">
+                    <li><a data-gtm="mega-menu" href="http://bookshop.nationalarchives.gov.uk/">Bookshop</a></li>
+                    <li><a data-gtm="mega-menu" href="https://images.nationalarchives.gov.uk/">Image library</a></li>
+                    <li><a data-gtm="mega-menu" href="https://blog.nationalarchives.gov.uk/">Blog</a></li>
+                    <li><a data-gtm="mega-menu" href="https://media.nationalarchives.gov.uk/">Podcasts and videos</a></li>
+                    <li><a data-gtm="mega-menu" href="https://www.nationalarchives.gov.uk/contact-us/">Contact us</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="banner feature-img" role="banner"
+     style="background-image: url(https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2004&q=80);">
+    <div id="breadcrumb-holder" class="tna-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumbs"><a href="http://www.nationalarchives.gov.uk/">Home</a> <span class="sep">&gt;</span> <span>Education and outreach</span></div>
+                    <!-- .breadcrumbs -->            </div>
+            </div>
+        </div>
+    </div>
+    <div class="heading-banner text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 portal-title">
+                    <h1>Education and outreach</h1>
+                </div>
+            </div>
+            <div class="feature-img-caption img-caption-top">
+                <button class="eye_caption"><div class="icon-circle icon-info icon-size-32"></div></button>
+                <div class="image_caption_back">
+                    <span class="clearfix">Black Power demonstration and march in Notting Hill, London, in 1970. Catalogue reference: MEPO31-21 (16)</span>
+                    <a href="https://images.nationalarchives.gov.uk/assetbank-nationalarchives/action/viewAsset?id=59868&amp;index=5&amp;total=51&amp;view=viewSearchItem"
+                       target="_blank" rel="noopener noreferrer">
+                        View in the image library
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="subject-information hue-grey-mid-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    
+                        <p>The Education Service provides free online resources and taught sessions, supporting the National Curriculum for history from key stage 1 up to A-level</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<main id="primary" role="main" class="content-area">
+    <div class="intro-card">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-9 col-sm-8 col-md-8">
+                    <div class="entry-content">
+                        <h3>This resource is designed to support the discovery of documents relating to black British history within The National Archives’ collections.</h3>
+                        <p>Due to the nature of our records, the term ‘black British history’ in this context refers to records relating to British citizens of African and African-Caribbean descent.</p>
+                        <h3>Help with your research</h3>
+                        <p>Our research guide on <a href="http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/black-british-social-and-political-history-in-the-20th-century/">black British social and political history in the 20th century</a> is a useful place to start. You can find further guidance under <a href="http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/?research-category=social-and-cultural-history">social and cultural</a>, <a href="http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/?research-category=political-and-economic-history">political and economic</a>, <a href="http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/?research-category=foreign-and-colonial-history">foreign and colonial</a>, and <a href="http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/?research-category=family-history">family history</a>.</p>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-4 col-md-4">
+                    <div class="entry-image" style="background-image: url(http://www.nationalarchives.gov.uk/wp-content/uploads/sites/27/2016/09/Soldier-of-German-East-Africa-Anglo-German-Nyasa-Tanganyika-boundary-Malawi-1898.jpg)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row cards">
+            <div class="col-md-4">
+                <div class="card"><a href="#">
+                    <div class="entry-image" style="background-image: url(https://cdn.nationalarchives.gov.uk/blog/wp-content/uploads/2016/12/01153157/BBH-blog-1-resized.jpg)"></div>
+                    <div class="entry-content">
+                        <div class="content-type">Blog</div>
+                        <h3>Young, British and black: opposing race discrimination - The National Archives blog</h3>
+                        <p>On 15 September 1973 Lorne Horsford was refused entry to the Mecca Palais dance hall…</p>
+                    </div>
+                </a></div>
+            </div>
+            <div class="col-md-4">
+                <div class="card"><a href="#">
+                    <div class="entry-image" style="background-image: url(https://cdn.nationalarchives.gov.uk/blog/wp-content/uploads/2015/04/01155332/Picture2.jpg)"></div>
+                    <div class="entry-content">
+                        <div class="content-type">Blog</div>
+                        <h3>Diversity in archives - The National Archives blog</h3>
+                        <p>Are Diverse History months still important or do they confine an already marginalised history to just one month a year?</p>
+                    </div>
+                </a></div>
+            </div>
+            <div class="col-md-4">
+                <div class="card"><a href="#">
+                    <div class="entry-image" style="background-image: url(https://cdn.nationalarchives.gov.uk/blog/wp-content/uploads/2015/10/01160106/HO325-143-Front-top-half-Flyer-calling-for-justice-for-the-Mangrove-Nine-1970.jpg)"></div>
+                    <div class="entry-content">
+                        <div class="content-type">Blog</div>
+                        <h3>Rights, resistance and racism: the story of the Mangrove Nine</h3>
+                        <p>How resistance to repeated raids on a Notting Hill restaurant marked a key moment in the black British civil rights movement</p>
+                    </div>
+                </a></div>
+            </div>
+            <div class="col-md-4">
+                <div class="card"><a href="#">
+                    <div class="entry-image" style="background-image: url(http://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/events.jpg)"></div>
+                    <div class="entry-content">
+                        <div class="content-type">Event</div>
+                        <h3>Events - The National Archives</h3>
+                        <p>Find more information about our events programme and how to book tickets.</p>
+                    </div>
+                </a></div>
+            </div>
+            <div class="col-md-4">
+                <div class="card"><a href="#">
+                    <div class="entry-image" style="background-image: url(http://media.nationalarchives.gov.uk/files/2015/01/black-poppies.jpg)"></div>
+                    <div class="entry-content">
+                        <div class="content-type">Multimedia</div>
+                        <h3>Black Poppies: Britain's black community and the Great War</h3>
+                        <p>Stephen Bourne talks about his latest book, Black Poppies, published by The History Press to coincide with the centenary of the First World War. Black Poppies explores the military and civilian wartime...</p>
+                    </div>
+                </a></div>
+            </div>
+            <div class="col-md-4">
+                <div class="card"><a href="#">
+                    <div class="entry-image" style="background-image: url(http://media.nationalarchives.gov.uk/files/2014/06/air-2-8278.jpg)"></div>
+                    <div class="entry-content multimedia">
+                        <div class="content-type">Multimedia</div>
+                        <h3>The untold story of the RAF's black Second World War fliers over Europe</h3>
+                        <p>While the United States could boast the black fliers of Tuskegee, few people are aware of the important contribution made by 500 RAF aircrew recruited from the Caribbean and West Africa. </p>
+                    </div>
+                </a></div>
+            </div>
+            <div class="col-md-4">
+                <div class="card"><a href="#">
+                    <div class="entry-image" style="background-image: url(http://www.nationalarchives.gov.uk/wp-content/uploads/sites/27/2016/09/A-black-trumpeter-depicted-on-Henry-VIIIs-Tournament-Roll.-Used-with-the-permission-of-The-College-of-Arms-London..jpg)"></div>
+                    <div class="entry-content resource">
+                        <div class="content-type">Resource</div>
+                        <h3>Black Presence: Asian and Black history in Britain, 1500-1850</h3>
+                        <p>A resource created in partnership with the Black and Asian Studies association that outlines the history of over 500 years of people of African descent living in Britain.</p>
+                    </div>
+                </a></div>
+            </div>
+            <div class="col-md-4">
+                <div class="card"><a href="#">
+                    <div class="entry-image" style="background-image: url(http://www.nationalarchives.gov.uk/wp-content/uploads/sites/27/2016/09/A-photograph-of-three-women-outside-a-plane-in-Trinidad-and-Tobago.jpg)"></div>
+                    <div class="entry-content resource">
+                        <div class="content-type">Resource</div>
+                        <h3>Migration Histories</h3>
+                        <p>The 'Moving Here' resource explores the origins, motivations and experiences of communities who have moved to England over the last 200 years.</p>
+                    </div>
+                </a></div>
+            </div>
+            <div class="col-md-4">
+                <div class="card"><a href="#">
+                    <div class="entry-image" style="background-image: url(http://www.nationalarchives.gov.uk/wp-content/uploads/sites/27/2016/09/Soldier-of-German-East-Africa-Anglo-German-Nyasa-Tanganyika-boundary-Malawi-1898.jpg)"></div>
+                    <div class="entry-content resource">
+                        <div class="content-type">Resource</div>
+                        <h3>World Through a Lens</h3>
+                        <p>Explore large collections of photographs taken by the Foreign and Commonwealth Office from the 1860s onwards.</p>
+                    </div>
+                </a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="newsletter-template">
+        <div class="container">
+            <div class="news-icon">
+                <div class="icon-circle icon-envelope icon-size-64"></div>
+            </div>
+
+            <div class="news-content" id="newsletterAccessibility">
+                <h2>Sign me up to the mailing list</h2>
+                <p>Subscribe now for regular news, updates and priority booking for events</p>
+            </div>
+
+            <div class="news-form">
+                <form name="signup" id="signup" action="https://app.wiredplus.com/form-signup" method="post" role="form">
+
+                    <input type="hidden" name="signup" value="NDQ1">
+                    <input type="hidden" name="return_url" value="https://www.nationalarchives.gov.uk/notifications/newsletter-thank-you/">
+                    <input type="hidden" name="confirmation_subject" value="">
+                    <input type="hidden" name="confirmation" value="">
+                    <input type="hidden" name="list" value="3">
+                    <input type="hidden" name="source" value="web">
+                    <input type="hidden" name="opt_in" value="1">
+
+                    <label for="Email">Send me The National Archives’ newsletter</label>
+                    <input type="email" name="email" id="email" required="required" placeholder="Enter your email address" aria-labelledby="newsletterAccessibility">
+                    <input id="newsletterSignUp" type="submit" name="Submit" value="Submit" class="margin-left-medium">
+                </form>
+                <div class="small small-margin"><small><a href="http://www.nationalarchives.gov.uk/legal/privacy-policy/" title="About our privacy policy">About our privacy policy</a></small></div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer id="footer" class="breather-top-bottom" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="row">
+                    <div class="footer-col col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                        <img src="education-landing/1.0/img/tna-square-white-logo.png" alt="The National Archives" class="img-fluid square-logo">
+                        <address>
+                            The National Archives<br>
+                            Kew, Richmond, Surrey,<br>
+                            TW9 4DU
+                        </address>
+                    </div>
+                    <div class="footer-col col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                        <h4>Standard opening times</h4>
+                        <div class="opening-times">
+                            <div class="open_table">
+                                <div class="open_tableBody">
+                                    <div class="open_tableRow">
+                                        <div class="open_tableCell">Monday</div>
+                                        <div class="open_tableCell">Closed</div>
+                                    </div>
+                                    <div class="open_tableRow">
+                                        <div class="open_tableCell">Tuesday</div>
+                                        <div class="open_tableCell">09:00 – 19:00</div>
+                                    </div>
+                                    <div class="open_tableRow">
+                                        <div class="open_tableCell">Wednesday</div>
+                                        <div class="open_tableCell">09:00 – 17:00</div>
+                                    </div>
+                                    <div class="open_tableRow">
+                                        <div class="open_tableCell">Thursday</div>
+                                        <div class="open_tableCell">09:00 – 19:00</div>
+                                    </div>
+                                    <div class="open_tableRow">
+                                        <div class="open_tableCell">Friday</div>
+                                        <div class="open_tableCell">09:00 – 17:00</div>
+                                    </div>
+                                    <div class="open_tableRow">
+                                        <div class="open_tableCell">Saturday</div>
+                                        <div class="open_tableCell">09:00 – 17:00</div>
+                                    </div>
+                                    <div class="open_tableRow">
+                                        <div class="open_tableCell">Sunday</div>
+                                        <div class="open_tableCell">Closed</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="/about/visit-us/opening-times/">Full opening times</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col col-xs-12 col-sm-12 col-md-6">
+                <div class="row">
+                    <div class="footer-col col-xs-12 col-sm-6 col-md-6">
+                        <h4>Find out more</h4>
+                        <ul>
+                            <li><a href="/contact-us/">Contact us</a></li>
+                            <li><a href="/about/press-room/">Press room</a></li>
+                            <li><a href="/about/jobs/">Jobs and careers</a></li>
+                            <li><a href="/about/get-involved/friends-of-the-national-archives/">Friends of The National
+                                Archives</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-xs-12 col-sm-6 col-md-6">
+                        <h4>Websites</h4>
+                        <ul>
+                            <li><a href="http://blog.nationalarchives.gov.uk/">Blog</a></li>
+                            <li><a href="http://media.nationalarchives.gov.uk/">Podcasts and videos</a></li>
+                            <li><a href="http://bookshop.nationalarchives.gov.uk/">Bookshop</a></li>
+                            <li><a href="https://images.nationalarchives.gov.uk/">Image library</a></li>
+                            <li><a href="/webarchive/">UK Government Web Archive</a></li>
+                            <li><a href="http://www.legislation.gov.uk/" target="_blank" rel="noopener noreferrer">Legislation.gov.uk</a></li>
+                            <li><a href="https://www.thegazette.co.uk/" target="_blank" rel="noopener noreferrer">The Gazette</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="footer-col col-xs-12 col-sm-6 col-md-6">
+                        <h4>Site help</h4>
+                        <ul>
+                            <li><a href="/help/">Help</a></li>
+                            <li><a href="/help/a-to-z/">Website A-Z index</a></li>
+                            <li><a href="/help/web-accessibility/">Accessibility</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-xs-12 col-sm-6 col-md-6">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="/legal/">Terms of use</a></li>
+                            <li><a href="/legal/privacy.htm">Privacy policy</a></li>
+                            <li><a href="/legal/cookies.htm">Cookies</a></li>
+                            <li><a href="/about/freedom-of-information/">Freedom of Information</a></li>
+                            <li><a href="/about/our-role/transparency/">Transparency</a></li>
+                            <li><a href="/legal/our-fees.htm">Our fees</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col col-xs-12 col-sm-12 col-md-3">
+                <div class="row">
+                    <div class="footer-col col-xs-12 col-sm-6 col-md-12">
+                        <h4>Follow us</h4>
+                        <div class="follow-us">
+                            <a href="https://twitter.com/@UKNatArchives" title="Follow us on Twitter" target="_blank" rel="noopener noreferrer">
+                                <img src="https://nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/twitter.png" alt="Twitter logo"></a>
+                            <a href="https://www.youtube.com/c/TheNationalArchivesUK" title="Follow us on YouTube" target="_blank" rel="noopener noreferrer">
+                                <img src="https://nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/youtube-play.png" alt="YouTube logo"></a>
+                            <a href="https://www.flickr.com/photos/nationalarchives" title="Follow us on Flickr" target="_blank" rel="noopener noreferrer">
+                                <img src="https://nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/flickr.png" alt="Flickr logo"></a>
+                            <a href="https://www.facebook.com/TheNationalArchives" title="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
+                                <img src="https://nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/facebook.png" alt="Facebook logo"></a>
+                            <a href="https://www.instagram.com/nationalarchivesuk/" title="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+                                <img src="https://nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/instagram.png" alt="Instagram logo"></a>
+                            <a href="http://www.nationalarchives.gov.uk/rss/" title="Follow us via RSS">
+                                <img src="https://nationalarchives.gov.uk/wp-content/themes/tna-base/img/social/rss.png" alt="RSS logo"></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col col-xs-12 col-sm-6 col-md-12">
+                        <h4>Featured Flickr image</h4>
+                        <p id="flickr-caption">Yacht Basin, St Lucia (<a href="https://www.flickr.com/photos/nationalarchives/7643149896/" title="External website - opens in new window" target="_blank">CO 1069/386</a>)</p>
+                        <p id="flickr-image">
+                            <a target="_blank" title="External website - opens in a new window" href="https://www.flickr.com/photos/nationalarchives/7643149896/" rel="noopener noreferrer">
+                                <img class="img-fluid" src="https://www.nationalarchives.gov.uk/images/global/co-1069-386-1-yacht-basin-st-lucia.jpg" alt="Yacht Basin, St Lucia">
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row footer-base">
+            <div class="col-xs-12 col-sm-9 col-md-9 ogl">
+                <a title="External website - opens in a new window" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/"> <img alt="Open Government License logo" src="education-landing/1.0/img/logo-ogl.png">
+                </a>
+                <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open
+                    Government Licence v3.0</a>, <br>except where otherwise stated </p>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 text-right">
+                <a title="External website - opens in a new window" href="http://gov.uk/" target="_blank" rel="noopener noreferrer"> <img alt="GOV.UK logo" src="education-landing/1.0/img/logo-gov-uk.png" class="float-right"> </a>
+            </div>
+        </div>	</div>
+</footer>
+
+<script type='text/javascript' src='education-landing/js/tna-base.js'></script>
+
+</body>
+</html>
