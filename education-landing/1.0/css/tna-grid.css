@@ -4788,11 +4788,25 @@ form .checkbox input[type="checkbox"]:focus + label::before {
     height: 32px; }
     .portal-landing .stay-up-to-date-bar a .icon-circle {
       margin: 0; }
-.portal-landing .subject-information {
-  text-align: center;
-  padding: 0.4em 0; }
-  .portal-landing .subject-information p {
-    margin: auto;
-    font-size: 1.5em; }
+
+.education-landing .education {
+  min-height: 150px;
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+  .education-landing .education a {
+    display: block;
+    color: #fff;
+    text-align: left; }
+    .education-landing .education a > span {
+      padding: 5px;
+      background-color: #000;
+      font-size: 1em;
+      position: absolute;
+      bottom: 0; }
+.education-landing .subject-information p {
+  font-size: 1.5em; }
+.education-landing .bottom-spacing {
+  margin-bottom: 1.5em; }
 
 /*# sourceMappingURL=tna-grid.css.map */
