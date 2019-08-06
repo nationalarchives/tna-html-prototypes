@@ -1,0 +1,29 @@
+.education-landing {
+    .education {
+        min-height: 150px;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        a {
+            display: block;
+            color: #fff;
+            text-align: left;
+            >span {
+                //margin: 10px 10px 0 0;
+                padding: 5px;
+                background-color: #000;
+                font-size: 1em;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+    .subject-information {
+        p {
+            font-size: 1.5em;
+        }
+    }
+    .bottom-spacing {
+        margin-bottom: 1.5em
+    }
+}
