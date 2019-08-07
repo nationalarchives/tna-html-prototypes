@@ -4,6 +4,7 @@
         background-size: cover;
         background-position: center center;
         position: relative;
+        margin-bottom: 2em;
         a {
             display: block;
             color: #fff;
@@ -15,6 +16,15 @@
                 font-size: 1em;
                 position: absolute;
                 bottom: 0;
+            }
+        }
+        &:hover {
+            opacity: 0.9;
+            cursor: pointer;
+            a {
+                span {
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -29,12 +39,15 @@
     .video {
         position: relative;
         .icon-square {
-            margin: 1em 0.5em 0;
+            margin: 1em 0.5em 0.5em;
             position: absolute;
             left: 0;
             bottom: 0;
             background-size: 68% 68%;
             background-repeat: no-repeat;
+            background-color: #000;
+            background-position: center;
+            border: 1px solid #fff;
         }
         .icon-video {
             background-image: url(../img/video.png);
