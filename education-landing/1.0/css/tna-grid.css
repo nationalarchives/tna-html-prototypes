@@ -4807,6 +4807,19 @@ form .checkbox input[type="checkbox"]:focus + label::before {
 .education-landing .subject-information p {
   font-size: 1.5em; }
 .education-landing .bottom-spacing {
-  margin-bottom: 1.5em; }
+  margin-bottom: 2em; }
+.education-landing .video {
+  position: relative; }
+  .education-landing .video .icon-square {
+    margin: 1em 0.5em 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-size: 68% 68%;
+    background-repeat: no-repeat; }
+  .education-landing .video .icon-video {
+    background-image: url(../img/video.png);
+    width: 41px;
+    height: 41px; }
 
 /*# sourceMappingURL=tna-grid.css.map */

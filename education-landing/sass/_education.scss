@@ -24,6 +24,22 @@
         }
     }
     .bottom-spacing {
-        margin-bottom: 1.5em
+        margin-bottom: 2em;
+    }
+    .video {
+        position: relative;
+        .icon-square {
+            margin: 1em 0.5em 0;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-size: 68% 68%;
+            background-repeat: no-repeat;
+        }
+        .icon-video {
+            background-image: url(../img/video.png);
+            width: 41px;
+            height: 41px;
+        }
     }
 }
