@@ -639,7 +639,7 @@ form .emphasis-block {
 }
 
 #page_wrap .results-form {
-    background: #555;
+    background: #dddddd;
 	padding: 0 0 1em 0;
 	display: inline-block;
 	margin-bottom: 0;
@@ -734,6 +734,8 @@ div.general-tag-list-item span.flagTag a {
 
 #generic-tabs {
     margin: 0;
+  border-bottom: 2px solid black;
+  overflow: hidden;
 	li {
 	    display: inline-block;
 		text-align: center;
