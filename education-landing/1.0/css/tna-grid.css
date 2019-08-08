@@ -4789,26 +4789,27 @@ form .checkbox input[type="checkbox"]:focus + label::before {
     .portal-landing .stay-up-to-date-bar a .icon-circle {
       margin: 0; }
 
-.education-landing .education {
-  min-height: 150px;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  margin-bottom: 2em; }
-  .education-landing .education a {
-    display: block;
-    color: #fff;
-    text-align: left; }
-    .education-landing .education a > span {
-      padding: 5px;
-      background-color: #000;
-      font-size: 1em;
+.education-landing a.education {
+  margin-bottom: 2em;
+  display: block; }
+  .education-landing a.education > div {
+    background-size: cover;
+    background-position: center center;
+    text-align: left;
+    min-height: 150px;
+    min-height: 150px;
+    position: relative; }
+    .education-landing a.education > div > span {
       position: absolute;
-      bottom: 0; }
-  .education-landing .education:hover {
+      bottom: 0;
+      background: #000;
+      padding: 5px;
+      color: #fff;
+      font-size: 1em; }
+  .education-landing a.education:hover > div {
     opacity: 0.9;
     cursor: pointer; }
-    .education-landing .education:hover a span {
+    .education-landing a.education:hover > div span {
       text-decoration: underline; }
 .education-landing .subject-information p {
   font-size: 1.5em; }

@@ -1,27 +1,27 @@
 .education-landing {
-    .education {
-        min-height: 150px;
-        background-size: cover;
-        background-position: center center;
-        position: relative;
+    a.education {
         margin-bottom: 2em;
-        a {
-            display: block;
-            color: #fff;
+        display: block;
+        >div {
+            background-size: cover;
+            background-position: center center;
             text-align: left;
+            min-height: 150px;
+            min-height: 150px;
+            position: relative;
             >span {
-                //margin: 10px 10px 0 0;
-                padding: 5px;
-                background-color: #000;
-                font-size: 1em;
                 position: absolute;
                 bottom: 0;
+                background: #000;
+                padding: 5px;
+                color: #fff;
+                font-size: 1em;
             }
         }
         &:hover {
-            opacity: 0.9;
-            cursor: pointer;
-            a {
+            >div {
+                opacity: 0.9;
+                cursor: pointer;
                 span {
                     text-decoration: underline;
                 }
