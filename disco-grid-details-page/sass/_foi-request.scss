@@ -1,0 +1,141 @@
+﻿.foi-request-1939 {
+    @extend .foi-request;
+    #Confirm_error {
+        display:inline !important;
+    }
+
+}
+
+.data-subject-foi-request {
+    display: inline-block;
+}
+
+.foi-request {
+    .breather {
+        padding: 20px;
+    }
+
+    fieldset {
+        border: 1px solid #ccc;
+        padding: 1em !important;
+        min-width: 0;
+        margin-bottom: 2em;
+
+        legend {
+            display: block;
+            color: #000;
+            width: auto;
+            padding: 0 0.5em;
+            line-height: inherit;
+            font-family: Bitter,"Open Sans",arial,serif;
+            font-size: 1.6em;
+            margin-bottom: 10px;
+            width: auto;
+            padding: 0 .5em;
+        }
+
+        .form-row {
+            max-width: 92%;
+            margin: 0 auto;
+            margin-bottom: 1.5em;
+
+            select {
+                margin: 0;
+            }
+
+            .input-validation-error {
+                border: 2px solid #EBAB2C !important;
+            }
+
+            .form-error {
+                color: #000;
+                width: 100%;
+                max-width: 420px;
+                display: block !important;
+                background: #FFF8D0;
+                box-sizing: border-box;
+            }
+
+            .form-warning {
+                border: 2px solid #EBAB2C !important;
+            }
+
+            .form-warning + .form-error, .input-validation-error + .form-error {
+                padding: 3px;
+            }
+
+
+            &:after,
+            &:before {
+                display: table;
+                clear: both;
+            }
+
+            .optional {
+                color: #6f777b;
+            }
+
+            label {
+                display: inline-block;
+                width: 100% !important;
+                margin-right: 0;
+                margin-bottom: 5px;
+            }
+
+            select {
+                background: #eee;
+                width: 100% !important;
+                max-width: 420px;
+            }
+
+            input {
+                font-family: inherit;
+                font-size: 100%;
+                margin: 0;
+
+                &[type="datetime"],
+                &[type="text"] {
+                    width: 100%;
+                    max-width: 420px;
+                    line-height: normal;
+                    border: 1px solid #ccc;
+                    padding: 2px;
+                    height: 34px;
+                    text-indent: 5px;
+                    min-width: 220px;
+                }
+
+                &:focus {
+                    outline: #ebab00 solid 3px;
+
+                    & + .input-tooltip[data-tooltip] {
+                        display: block;
+                    }
+                }
+            }
+
+            textarea {
+                height: 120px;
+                width: 100%;
+                max-width: 420px;
+                overflow: auto;
+                vertical-align: top;
+                padding: 5px;
+                border: 1px solid #ccc;
+                padding: 7px;
+
+                &:focus {
+                    outline: #ebab00 solid 3px;
+
+                    & + .textarea-tooltip[data-tooltip] {
+                        display: block;
+                    }
+                }
+            }
+
+            p {
+                margin: 0 0 5px 0;
+            }
+        }
+    }
+}

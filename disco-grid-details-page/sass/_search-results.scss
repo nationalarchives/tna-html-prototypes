@@ -1,0 +1,428 @@
+$break-small : 380px;
+$break-tiny : 400px;
+$break-medium : 768px;
+$break-large : 960px;
+
+.search-form-container {
+    padding-top: 1.5em;
+}
+
+.search-form-container a {
+    font-size: 0.85em;
+}
+
+.filter-toggle {
+    margin-left: 0.5em;
+}
+
+#search-filters li {
+    list-style-type: none;
+}
+
+#search-filters label {
+    display: inline-block;
+    max-width: 80%;
+}
+
+#search-filters input[type=submit] {
+    margin: 0.5em 0 1em 0;
+	@extend .discoveryPrimaryCallToActionLink;
+}
+
+#rodtodate, #rodfromdate, #rodDate {
+    width: 7em;
+    margin-bottom: 0.5em;
+}
+
+#search-filters form {
+    position: relative;
+}
+
+#search-filters .breather {
+    font-size: 0.85em;
+}
+
+#search-filters input[type=checkbox] {
+    vertical-align: top;
+    margin: 0.6em 0.3em;
+}
+
+#search-filters .breather > ul li {
+	background: #fff;
+	border-bottom: 2px solid #ddd;
+	margin-top: 1em;
+		ul li {
+			border: none;
+			padding: 0;
+			margin-top: 0;
+		}
+}
+
+.available-filters {
+    h3 {
+        margin: 0;
+    }
+}
+
+.filter-toggler {
+    @include background-transition(background-image, 300ms);
+    margin-top: 0;
+    text-align: left;
+    display: block;
+    padding: 0.8em;
+    background-color: #eee;
+    color: #000;
+    border-bottom: 1px solid #DDD;
+	border-top:1px solid #fff;
+    background-image: url('https://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-24-accordion-open.png');
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: 99% center;
+}
+
+.filter-toggler.expanded {
+    background-image: url('https://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-24-accordion-close.png');
+}
+
+.filter-togglee {
+    padding: .5em 0em .5em .75em;
+	text-align: right;
+	ul {
+	text-align:left;
+	}
+}
+
+#search-filters li#heldby ul li, #search-filters li#source ul li {
+	margin: 0 0 .5em 1.5em;
+    list-style-image: url('https://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/list-link-bullet.png');
+}
+
+#search-filters li#heldby ul li.download-only-filter {
+		margin-left: 14%;
+	}
+
+.name-authorities a h3 {
+	max-width: 80%;
+}
+
+#search-results {
+   @include search-results-list;
+   	span.creator-type {
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-family:  'Open Sans',sans-serif;
+		margin: 0;
+		font-size: 0.8em;
+		background: #efefef;
+		padding: 4px;
+		color: #000000;
+		border-left: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+	}
+}
+
+#simple-results {
+    @include search-results-list;
+    li {
+        a {
+            h3 {
+                display: inline-block;
+                box-sizing: border-box;
+                width: 68%;
+				line-height:1.5;
+            }
+            > span {
+                display: inline-block;
+                width: 14.5%;
+                box-sizing: border-box;
+                margin-top: 0.6em;
+                text-align: right;
+                vertical-align: top;
+            }
+        }
+    }
+}
+
+.new-search {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+/* END OF Firefox hack */
+body:not(:-moz-handler-blocked) form {
+}
+/* START OF Firefox hack */
+
+#generic-tabs li:last-child {
+    margin-right: 0;
+}
+
+#search-control-panel {
+    text-align: center;
+    padding: 0.5em 1em 0em 1em;
+    font-size: 0.9em;
+	background: #eee;
+}
+
+#search-control-panel li {
+	display: inline-block;
+    display: -moz-inline-stack; /* FF hackette to stop floated <li>s aligning to the baseline of the parent element - DW  */
+    text-align: center;
+    max-width: 45%;
+	margin: 0 .2em;
+}
+
+#search-control-panel li a {
+    margin-bottom: 0.5em;
+    padding: 5px;
+		&:hover {
+			text-decoration:underline;
+		}
+}
+
+li#detailed-view {
+	border: 1px solid #bfbfbf
+}
+
+#sort-form {
+    position: relative;
+}
+
+#sort-form fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+#sort-form select:disabled {
+    width: 110px;
+}
+
+#sort-form .emphasis-block {
+    text-align: left;
+    position: absolute;
+    left: 0;
+}
+
+#search-refine {
+    padding: 0.2em 1em;
+}
+
+#search-refine ul {
+	padding:0 0 1em 0;
+}
+
+#search-refine li {
+    border: 1px solid transparent;
+    display: inline-block;
+    padding: 0.2em 1.2em 0.2em 0.5em;
+    position: relative;
+    margin-bottom: 0.3em;
+}
+#search-refine li:last-child {
+	background: url('https://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/close-img.png') no-repeat;
+	padding: .2em 0 .2em 1.5em;
+	font-size: .9em;
+	float:right;
+
+}
+#search-refine #remove-all-filters {
+    border: none;
+}
+
+#search-refine span {
+    padding-right: 0.4em;
+}
+
+#search-refine img {
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    right: 5px;
+}
+
+.js #sort {
+    display: none;
+}
+
+#search-keyword {
+    padding: 0 0 0.3em 0;
+}
+
+.paginationWrapper {
+    text-align: center;
+}
+
+.pagination li {
+    font-family: 'Bitter', serif;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 40px;
+    margin: 0 2px 4px 2px;
+    border-radius: 50%;
+    font-size: 1.25em;
+    min-width: 40px;
+    color: #FFF;
+	&:hover {
+		color: #000;
+		background-color: #FCE45C;
+	}
+	a {
+		display: block;
+	}
+}
+
+.pagination li.next,
+.pagination li.previous {
+    background-color: transparent;
+    margin: 0 0.5em;
+	a:hover {
+	text-decoration:underline;
+	}
+}
+
+.number-of-results {
+    text-align: center;
+}
+
+.number-of-results span {
+    font-family: 'Bitter', serif;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 40px;
+    margin: 0 4px 4px 0;
+    background-color: #099;
+    border-radius: 50%;
+    font-size: 1.25em;
+    min-width: 40px;
+
+		a {
+			display: block;
+		}
+}
+
+.highlight {
+    border: 1px solid transparent;
+    transition: background-color 1.5s ease 0s;
+}
+
+
+
+.results-form fieldset {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.results-form fieldset a, .results-form .find-an-archive a {
+    color: #FCE45C;
+}
+
+.results-form input[type=submit] {
+    width: 40px;
+    height: 40px;
+    background: url(https://discovery.nationalarchives.gov.uk/Content/images/search-white.png) no-repeat center;
+    background-size: cover;
+    background-color: #099;
+    color: transparent;
+    border-radius: 0;
+    padding: .39em;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#search-results-search-query {
+    border-color: #FFF;
+    width: 100%;
+	height: 40px;
+	padding-right: 40px;
+}
+
+.result-links a {
+    margin-right: 1em;
+}
+
+#export {
+    margin-top: 1em;
+    padding: 1em 1em 0 1em;
+    position: relative;
+    fieldset {
+        background-color: transparent;
+        border: none;
+        margin-bottom: 0.2em;
+    }
+    legend {
+        font-family: Bitter, serif;
+        font-size: 19px;
+        display: block;
+    }
+    #close-export {
+        display: none;
+        .js & {
+            display: inline-block;
+            position: absolute;
+            top: 0.5em;
+            right: 0.5em;
+        }
+    }
+    .thousand-records {
+        border-bottom: dotted 1px #999;
+    }
+    .thousand-records div:first-child p {
+        padding: 5px 0;
+    }
+    .grid-within-grid-two-item>div {
+        margin: 0 2% 0 0;
+    }
+    .disabled {
+        opacity: 0.5;
+    }
+}
+
+#paging-and-results-number {
+    padding: 0.5em 0;
+    margin-bottom: 1em;
+}
+
+
+#places-submit {
+	text-align: right;
+	.discoveryPrimaryCallToActionLink {
+		margin-bottom: 1em;
+	}
+}
+
+.town-filter {
+	margin-top: 2%;
+	.town-selector {
+		li {
+			margin: 0 0 .5em 1.5em;
+			list-style-image: url('https://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/list-link-bullet.png');
+			@media screen and (min-width: $break-small) {
+				width: 44%;
+				float: left;
+			}
+			@media screen and (min-width: $break-large) {
+				width: 22%;
+				float: left;
+			}
+		}
+	}
+	#town-lookup {
+		width: 95%;
+		@media screen and (min-width: $break-small) {
+			width: 60%;
+		}
+		@media screen and (min-width: $break-large) {
+			width: 40%;
+		}
+	}
+}
+
+.search-within {
+	fieldset {
+		margin-bottom: 0;
+	}
+}

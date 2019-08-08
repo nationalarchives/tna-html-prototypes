@@ -1,0 +1,780 @@
+﻿main {
+    min-height: inherit;
+}
+
+.details-row {
+    overflow: hidden;
+    position: relative;
+
+    h2, h3 {
+        font-size: 1em;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: bold;
+    }
+
+    #hierarchy {
+        margin: 0;
+        background: 0 0;
+        border-left: none;
+        padding: .3em;
+
+        nav {
+
+            > a {
+                display: block;
+
+                &::before {
+                    content: "";
+                    background: url(https://discovery.nationalarchives.gov.uk/images/fontawesome/folder-open-o.png) no-repeat center center;
+                    display: inline-block;
+                    width: 16px;
+                    height: 13px;
+                    margin-top: .2em;
+                    margin-right: .5em;
+
+                    @media(max-width: 768px) {
+                        content: "";
+                        background: url(https://discovery.nationalarchives.gov.uk/images/fontawesome/folder-closed.png) no-repeat center center;
+                    }
+                }
+            }
+
+            ul {
+                margin-top: .5em;
+                padding-left: 1em;
+
+                @media(max-width: 768px) {
+                    margin-bottom: 3em;
+                    box-sizing: border-box;
+                    padding-left: 2em;
+                }
+
+
+                li {
+                    list-style-image: none;
+                    text-indent: -16px;
+                    margin-top: .5em;
+
+                    &:before {
+                        content: "";
+                        background: url(https://discovery.nationalarchives.gov.uk/images/fontawesome/arrow-right.png) no-repeat center;
+                        display: inline-block;
+                        width: 16px;
+                        height: 16px;
+                        top: 3px;
+                        position: relative;
+                        left: -8px;
+                    }
+
+                    &:last-child {
+                        color: #000;
+                    }
+
+                    &:nth-child(1) {
+                        margin-left: 1.5em;
+                    }
+
+                    &:nth-child(2) {
+                        margin-left: 3em;
+                    }
+
+                    &:nth-child(3) {
+                        margin-left: 4.5em;
+                    }
+
+                    &:nth-child(4) {
+                        margin-left: 5.9em;
+                    }
+
+                    &:nth-child(5) {
+                        margin-left: 7.3em;
+                    }
+
+                    &:nth-child(6) {
+                        margin-left: 8.8em;
+                    }
+
+                    &:nth-child(7) {
+                        margin-left: 10em;
+                    }
+
+                    &:nth-child(8) {
+                        margin-left: 10.9em;
+                    }
+
+                    @media(max-width: 768px) {
+                        @for $i from 1 through 8 {
+                            &:nth-child(#{$i}) {
+                                margin-left: .5em;
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+            .openFolder {
+                &::before {
+                    content: "";
+                    background: url(https://discovery.nationalarchives.gov.uk/images/fontawesome/folder-open-o.png) no-repeat center center;
+                }
+            }
+        }
+
+        button {
+            display: none;
+
+            @media(max-width: 768px) {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                color: #999;
+                font-family: 'Open Sans',sans-serif;
+                word-wrap: break-word;
+                font-size: 1.85em;
+                margin-right: .3em;
+                display: block;
+                background: url(https://discovery.nationalarchives.gov.uk/images/fontawesome/arrow-down-lg.png) no-repeat center center;
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+        .upToggle {
+            background: url(https://discovery.nationalarchives.gov.uk/images/fontawesome/arrow-up-lg.png) no-repeat center center;
+        }
+    }
+
+    h1 {
+        border-top: 2px solid #000;
+        padding-bottom: .5em;
+        padding-top: .5em;
+        font-size: 1.6em;
+        color: #000;
+
+        span.heading-span {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 16px;
+            font-weight: bold;
+            display: block;
+            margin: .3em 0;
+            background: none;
+            /*@media(max-width: 580px){
+                margin-top: 2em;
+            }*/
+        }
+    }
+
+    p.section-heading, h2.section-heading {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1em;
+        font-weight: bold;
+        display: inline-block;
+        margin: .3em 0;
+        color: #000;
+        padding-top: .5em;
+
+        a {
+            color: #2A5DB0;
+        }
+    }
+
+    p.details-browseByReference {
+        float: right;
+    }
+
+    .details-wrapper {
+        padding: .3em;
+        overflow: hidden;
+
+        .edit-delete {
+            float: right;
+            font-size: 13.6px;
+            position: relative;
+
+            @media(max-width:580px){
+                width: 100%;
+                margin-bottom: 1em;
+            }
+
+            .edit {
+                margin-right: 1em;
+
+                &::before {
+                    background: url(https://discovery.nationalarchives.gov.uk/images/fontawesome/edit-sm.png) no-repeat center;
+                }
+            }
+
+            .delete {
+                &::before {
+                    background: url(https://discovery.nationalarchives.gov.uk/images/fontawesome/trash-delete-sm.png) no-repeat center;
+                }
+            }
+
+            .edit, .delete {
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    top: 3px;
+                    position: relative;
+                    left: -3px;
+                }
+            }
+        }
+
+        #sign-in-or-register {
+            li {
+                display: block;
+                padding-top: .5em;
+                padding-bottom: .5em;
+            }
+        }
+
+        #discovery-explore-survey {
+            margin-top: 1em;
+        }
+    }
+
+    .order-option-wrapper {
+        padding-bottom: 0;
+        background-color: #dde5d5;
+        border: 2px solid #000;
+
+        .expander-link-wrapper {
+            margin-left: .5em;
+            box-shadow: 0px 0 0 rgba(212, 221, 228, 0), -8px 0 0 #ddd;
+
+            .expander-link {
+                padding: 0 1.5em 0 0;
+            }
+        }
+    }
+
+    .asset-details {
+        background-color: #fff;
+        margin-bottom: 2em;
+
+        th {
+            padding-left: 1em;
+        }
+
+        .medalRow:last-of-type {
+            border-bottom: none;
+        }
+    }
+
+    .suggestion-form-div {
+        position: relative;
+        padding: 1.6em 1em;
+        margin: 0 0 1.5em;
+        background-color: #fff;
+        border: solid 1px #ddd;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+
+        fieldset {
+            margin-bottom: 0;
+
+            .first-form-field-group {
+                select {
+                    &:focus {
+                        outline: 2px solid #FCE45C;
+                    }
+                }
+            }
+
+            label {
+                font-family: 'Roboto Mono', monospace;
+            }
+
+            .form-field-group {
+
+                textarea {
+                    &:focus {
+                        outline: 1px solid #007bff;
+                    }
+                }
+            }
+
+            .suggestion-form-wrapper {
+                div {
+                    margin-bottom: 0.5em;
+                }
+            }
+        }
+    }
+
+    .ttt-item {
+        .content-container {
+            padding: 0;
+            margin-bottom: 1em;
+            border: none;
+        }
+    }
+
+    #sign-in-or-register {
+        p {
+            display: inline-block;
+        }
+    }
+}
+
+.details-page {
+    #page_wrap {
+        .row:last-child {
+            .details-breather {
+                border-top: 2px solid #000;
+            }
+        }
+    }
+}
+
+/* Search box*/
+.details-form-spacing {
+    border: 10px solid #eee;
+    padding: .5em 1em 0 1em;
+    margin-bottom: 1em;
+    background-color: #f3f3f3;
+
+    form {
+        fieldset {
+            background: none;
+            border: none;
+            margin-bottom: 0;
+
+
+            legend {
+                display: block;
+                font-family: 'Open Sans',sans-serif;
+                font-size: 1em;
+                display: inline-block;
+                margin: .3em 0;
+                color: #000;
+            }
+
+            .validation-summary-errors {
+                border-left: 4px solid #EBAB2C;
+                background-color: #FFF8D0;
+                padding: .5em;
+
+                ul {
+                    margin: 0;
+                }
+            }
+
+            .field-row {
+                margin-bottom: 0;
+                box-sizing: border-box;
+
+                &::before {
+                    content: " ";
+                    display: table;
+                }
+
+                &::after {
+                    content: " ";
+                    display: table;
+                }
+
+                label {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    margin-top: 7px;
+                }
+
+                .full-width {
+                    width: 100%;
+                }
+
+                .half-width {
+                    width: 50%;
+                }
+
+                .three-forth-width {
+                    width: 75%;
+                }
+
+                .display-block {
+                    display: block
+                }
+
+                .display-inline {
+                    display: inline;
+                }
+
+                .column {
+                    margin-top: 0;
+                    display: inline-block;
+                    max-width: 150px;
+                    margin-right: 6px;
+
+
+
+                    label {
+                        width: 100%;
+                        display: inline-block;
+                    }
+
+
+
+                    .column-label, .column-field {
+                        margin: 0;
+                    }
+
+                    .column-field {
+                        max-width: 150px;
+                        min-width: 150px;
+
+                        input {
+                            max-width: 150px;
+                            min-width: 150px;
+                        }
+                    }
+                }
+
+                label, .date-range, .example {
+                    color: #555;
+                    margin-bottom: .2em;
+                    padding-left: 0;
+                }
+
+                .example {
+                    margin: 0;
+                    color: #6f777b;
+                }
+            }
+
+            .button-holder {
+                margin-top: 1em;
+            }
+        }
+    }
+}
+
+.block-item {
+    display: block;
+}
+
+.margin-bottom {
+    margin-bottom: 1.5em;
+}
+
+.details-sidebar-list {
+    margin-top: 0;
+
+    li {
+        margin-bottom: .3em;
+    }
+}
+
+.details-col-wrapper {
+    margin-top: 2em;
+    width: 100%;
+
+    article {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        padding: 1rem;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+
+    h1 {
+        font-size: 1.75rem;
+        margin: 0 0 0.75rem 0;
+    }
+    /* Column styles */
+    .col-1 {
+        float: right;
+        width: 390px;
+
+        @media(max-width:1439px) {
+            width: 32%;
+        }
+
+        @media(max-width: 956px) {
+            width: 100%;
+            float: none;
+            display: block;
+
+            #staffViewOfOtherUserDOsWrapper {
+                margin-bottom: 1em;
+            }
+        }
+    }
+
+    .col-2 {
+        float: left;
+        width: 794px;
+
+        @media(max-width:1439px) {
+            width: 65%;
+        }
+
+        @media(max-width: 956px) {
+            width: 100%;
+            float: none;
+            display: block;
+        }
+
+        .viewer-message {
+            background-color: #EFEFEF;
+            border-left: 4px solid #DDD;
+            display: none;
+        }
+    }
+
+    .col-3 {
+        @extend .col-1;
+        clear: right;
+    }
+}
+//Survey widget
+#initial-question {
+    button {
+        border: 1px solid #999;
+    }
+
+    button:hover {
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #eee;
+    }
+}
+
+#initial-question {
+    margin-bottom: 0;
+
+    > legend {
+        display: block;
+        margin-bottom: .5em;
+    }
+}
+
+#reasons-for-dissatisfaction {
+    padding: 1em;
+    border: 1px solid #ccc;
+
+    legend {
+        display: block;
+        border: 1px solid #ccc;
+        padding: .4em;
+
+        + div {
+            margin-top: 1em;
+        }
+    }
+
+
+    input[type=submit], input[type=reset] {
+        margin-top: 1em;
+    }
+
+    input[type=reset] {
+        background-color: #ddd;
+        color: #000;
+    }
+
+    div.checkbox {
+        position: relative;
+        display: block;
+        margin-top: 10px;
+        max-width: 92%;
+        margin: 0 auto;
+
+        input[type=text] {
+            margin-left: 1em;
+            width: 100%;
+            min-height: 4em;
+        }
+
+        input[type=checkbox] {
+            position: absolute;
+            margin-left: 0;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 10px -7px 0;
+        }
+
+
+        label {
+            display: inline-block;
+            min-height: 20px;
+            width: 100%;
+            margin-right: 0;
+            margin-left: 1em;
+        }
+
+        p {
+            margin-left: 1em;
+            margin-top: 0;
+            color: #6F777D;
+            padding: 5px 3px;
+        }
+    }
+}
+
+#suggest-a-correction-form {
+    input[type=email] {
+        border: 2px solid #000;
+        padding: .2em;
+        width: 80%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .optional {
+        color: #6f777b;
+    }
+}
+
+.expander-link-wrapper {
+    margin-left: .5em;
+    box-shadow: 0px 0 0 rgba(0, 0, 0, 0.5), -8px 0 0 #ddd;
+}
+
+#initial-question {
+    background: none;
+}
+
+
+.addfocus {
+    &:focus {
+        outline: 2px solid #FCE45C;
+    }
+}
+
+#imageViewverFeedbackWidget {
+    display: none;
+    border-left: 4px solid #DDD;
+    background: #EFEFEF;
+    padding: 1em;
+
+    p {
+        margin-top: 0;
+    }
+
+    label {
+        margin-right: .5em;
+    }
+
+    form {
+        fieldset {
+            border: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            background: none;
+
+            .textFeedback {
+                display: none;
+
+                margin-top: .5em;
+
+                #imageViewerTextField {
+                    width: 100%;
+                    min-height: 4em;
+                }
+
+                p {
+                    color: #6F777D;
+                }
+            }
+
+            .radioSet {
+                display: inline;
+
+                @media screen and (max-width: 425px) {
+                    display: block;
+                    margin-top: .5em;
+                }
+            }
+
+            input[type=submit] {
+                float: right;
+
+                &:disabled {
+                    background-color: #ddd;
+                }
+            }
+        }
+    }
+}
+
+#imageviewerOverlay {
+    background-color: #ddd;
+    padding: 1em;
+    text-align: center;
+    z-index: 999;
+    position: absolute;
+    top: 13em;
+    width: 97%;
+    left: -.5em;
+}
+
+
+
+.viewer-message {
+    p {
+
+        a.imageViewerExpander {
+            display: block;
+            background-repeat: no-repeat;
+            background-image: url(https://discovery.nationalarchives.gov.uk/Content/images/menu-collapsed-small-dark.png);
+            background-position: center right;
+
+            @media screen and (max-width: 425px) {
+                background-position: bottom right;
+            }
+        }
+
+        a.expandedImageViewer {
+            background-image: url(https://discovery.nationalarchives.gov.uk/Content/images/menu-expanded-small-dark.png);
+        }
+    }
+}
+
+.catalogue-trial {
+    .viewer-message {
+        background-color: #EFEFEF;
+        border-left: 4px solid #DDD;
+        width: 90%;
+    }
+}
+
+
+
+/*Media Quries*/
+@media (min-width: 768px) {
+    .details-breather {
+        padding: 1em;
+    }
+}
+
+@media (max-width: 767px) {
+    .details-breather {
+        padding: .5em;
+    }
+}
+/*No JS*/
+.no-js {
+    #show-suggestion-form {
+        display: none;
+    }
+
+    #imageviewerOverlay {
+        display: none;
+    }
+}

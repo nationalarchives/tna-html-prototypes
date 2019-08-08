@@ -1,0 +1,164 @@
+/*User account pages - not sure if this is the best place for these styles - DW 11/07-14*/
+
+.account-pages {
+  h2 {
+    color: $black;
+  }
+  .accountInteractionBar {
+    display: block;
+    height: 2em;
+    margin: 1em 0 2.5em 2%;
+    .taggingPagination {
+      margin-left: 2%;
+      a {
+        border: 1px solid #ccc;
+        padding: 0% 1%;
+        background: $white;
+        margin: 0 .3em 0 0;
+      }
+    }
+  }
+  ul#bookmarks li.bookmark {
+    width: 92%;
+    margin: 0 1em 1em 1em;
+    background: #fff;
+    border: 1px solid #ddd;
+    display: inline-block;
+    padding: 0em 2%;
+    .bookmarkMain {
+      float: left;
+      width: 60%;
+    }
+    .bookmarkSupplemental {
+      float: right;
+      width: 33%;
+      border-left: 1px solid $line-color;
+      padding-left: 2%;
+      p {
+        font-size: 0.85em;
+        .description {
+          font-weight: bold;
+        }
+      }
+    }
+    .disco-button {
+      padding: 1% 1em;
+      background: #efefef;
+      margin: 2% 2% 2% 0;
+    }
+  }
+  .order {
+    h2 {
+      margin: 0 1em .5em 1em;
+    }
+    h3 {
+      margin: 0 1em 0.5em 1.4em;
+    }
+  }
+  .orderItem {
+    border-top: 4px solid $blue;
+    background: #fff;
+    padding: 1.4em 0 1em 2%;
+    margin: 0.5em 1em;
+    position: relative;
+    h3 {
+      margin: .5em 0;
+    }
+    label {
+      font-weight: bold;
+    }
+    .filesWithinOrder {
+      overflow: hidden;
+      .recordlargemessage {
+        @extend .emphasis-block;
+        margin-top: 1em;
+        max-width: 100%;
+        margin-right: 1em;
+      }
+    }
+  }
+  .summaryInformation {
+    background: $almost-white;
+    border-top: 4px solid $blue;
+    margin: 0 1em 1em 1em;
+    padding: 1em 0 0 2%;
+    h4 {
+      margin: 0;
+    }
+  }
+  .instructions, #searchResultsWrapper {
+    margin: 1em 2%;
+  }
+  .hidden {
+    display: none;
+  }
+  .summaryPaymentInformation {
+    margin-bottom: 1em;
+  }
+    .taggingInteractionBar {
+        text-align: center;
+        span:first-child {
+            margin-right: 1em;
+        }
+    }
+    .downloadFile {
+        float: right;
+        margin-right: 1em;
+    }
+    .more-detials-toggle {
+        cursor: pointer;
+    }
+}
+
+ul.sibling {
+  padding-left: 1.5em;
+  li {
+    font-family: 'Bitter', Georgia, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding-bottom: 0 !important;
+    list-style-image: url($image-path + 'list-link-bullet.png');
+    margin-bottom: 1em;
+    a {
+      display: block;
+      /* increases the selectable area for the benefit of smaller screen users */
+    }
+  }
+}
+
+
+.fileInformation {
+    margin-bottom: 0.5em;
+  p {
+    font-size: .85em;
+    margin: 0;
+  }
+}
+
+#pastOrders li .orderStatus, .currentOrders li .orderStatus {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-top: none;
+  border-right: none;
+  padding: 4px 8px;
+  background-color: $blue;
+  color: #fff;
+  font-size: .8em;
+}
+
+#downloadInformation {
+  padding: 1em 2%;
+}
+
+
+li.taggedRecord {
+  ul.tag-result li {
+    overflow: hidden;
+    margin-left: 2em;
+  }
+  a.disco-button {
+    padding: 1% 1em;
+    background: $light-grey;
+    float: right;
+  }
+}

@@ -1,0 +1,581 @@
+﻿#skip-link-container {
+    a {
+        background: transparent;
+        color: transparent;
+        display: inline-block;
+        position: absolute;
+        margin: auto;
+        font-size: 0.85em;
+        &:focus {
+            @extend .focussed-element;
+        }
+    }
+}
+
+#account-controls-wrapper {
+    text-align: right;
+
+    #account-controls {
+        font-size: 0.9em;
+        position: relative;
+
+        ul {
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                margin: 0 0 0 10px;
+
+                a {
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#account-controls > ul > li > a, #account-controls > ul > li > span {
+    display: inline-block;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+#account-controls li img {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#signedIn {
+    position: relative;
+
+}
+
+#signedIn ul {
+    z-index: 4000;
+}
+
+#signInLink {
+    padding-right: 22px;
+    padding-left: 6px;
+    background: url(https://discovery.nationalarchives.gov.uk/Content/images/menu-collapsed-small.png) no-repeat center right;
+}
+
+#miniBasketLink {
+    padding-right: 22px;
+    padding-left: 6px;
+    background: url(https://discovery.nationalarchives.gov.uk/Content/images/menu-collapsed-small.png) no-repeat center right;
+}
+
+#miniBasketLink.expanded {
+    background: url(https://discovery.nationalarchives.gov.uk/Content/images/menu-expanded-small.png) no-repeat center right;
+}
+
+#signInLink.expanded {
+    background: url(https://discovery.nationalarchives.gov.uk/Content/images/menu-expanded-small.png) no-repeat center right;
+}
+
+#miniBasketWrapper {
+    top: 37px;
+    right: 0;
+    position: absolute;
+    width: 200px;
+    z-index: 4000;
+    padding: 0.5em 0.5em 1em 0.5em;
+}
+
+#miniBasketWrapper ul li {
+    margin: 0;
+}
+
+#account-controls #signedFormWrapper {
+    top: 37px;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    min-width: 200px;
+    padding-top: 5px;
+}
+
+#signedFormWrapper li {
+    margin: 0 0 0 5px;
+    width:175px
+}
+
+#signedFormWrapper {
+    li {
+        &:last-child {
+            margin-bottom: 7px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 0.5em;
+            width: 175px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+#mobile-search-wrapper {
+    max-width: 99%;
+    position: relative;
+    #mobileSearchSubmit {
+        position: absolute;
+        right: 0;
+        width: 40px;
+        height: 41px;
+        background: url(https://discovery.nationalarchives.gov.uk/Content/images/search-white.png) no-repeat center;
+
+        @media(max-width:480px) {
+            height: 41px;
+        }
+    }
+}
+
+#mobile-search-field {
+    width: 95%;
+    padding: 0.51em;
+}
+
+#page-header {
+    padding: 0.7em 0 0;
+    /* Mega menu button (mobile view only) */
+    #mega-menu-mobile {
+        height: 40px;
+        width: 40px;
+        background: url('https://discovery.nationalarchives.gov.uk/Content/images/menu-trigram-lrg.png') center no-repeat #cb0d07;
+        border: 0px;
+        z-index: 2;
+        border-radius: 100%;
+        float: left;
+        display: block;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+
+        @media only screen and (min-width: 768px) {
+            display: none;
+        }
+
+        @media(max-width:468px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .pull-down {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    #logo-holder {
+        img {
+            @media (max-width:768px) {
+                max-width: 100%;
+            }
+        }
+
+        a {
+
+            @media (max-width:769px) {
+                vertical-align: middle;
+                display: inline-block;
+                text-align: center;
+                width: 88%;
+            }
+
+            @media (max-width:460px) {
+                width: 81%;
+            }
+
+            @media (max-width:378px) {
+                width: 74%;
+            }
+            /*@media(max-width:468px) {
+                margin-bottom: 10px;
+            }*/
+            img {
+                max-width: 347px;
+
+                @media (max-width:767px) {
+                    width: 300px
+                }
+
+                @media (max-width:420px) {
+                    width: 250px;
+                    margin-top: 4px;
+                }
+
+                @media (max-width:378px) {
+                    width: 180px;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+
+    #mobile-global-search {
+        #mobile-search-outer-wrapper {
+            width: 100%;
+        }
+
+        #change-destination {
+            padding-bottom: 10px;
+        }
+    }
+
+    .hide-element-frontend {
+        display: none;
+    }
+}
+
+#mega-menu-pull-down {
+    border: 0;
+    font-size: .9em;
+    position: relative;
+    text-align: center;
+    height: 2.4em;
+    width: 2.4em;
+    z-index: 2000;
+    margin: 0 auto -30px;
+    padding: .8em;
+    border-radius: 50%;
+
+    button {
+        background-image: url(https://discovery.nationalarchives.gov.uk/Content/images/menu-collapsed.png);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-position: 51.5% 100%;
+        text-decoration: none;
+        border: none;
+        font-size: 1em;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 3000;
+        -webkit-animation-name: subtle-bounce;
+        -moz-animation-name: subtle-bounce;
+        -ms-animation-name: subtle-bounce;
+        -o-animation-name: subtle-bounce;
+        animation-name: subtle-bounce;
+        -webkit-animation-duration: 300ms;
+        -moz-animation-duration: 300ms;
+        -ms-animation-duration: 300ms;
+        -o-animation-duration: 300ms;
+        animation-duration: 300ms;
+        -webkit-animation-iteration-count: 3;
+        -moz-animation-iteration-count: 3;
+        -ms-animation-iteration-count: 3;
+        -o-animation-iteration-count: 3;
+        animation-iteration-count: 3;
+        -webkit-animation-delay: 4s;
+        -moz-animation-delay: 4s;
+        -ms-animation-delay: 4s;
+        -o-animation-delay: 4s;
+        animation-delay: 4s;
+        padding: 14px 9px 20px;
+
+        &:focus {
+            color: #FFF !important;
+            outline: 2px solid #FCE45C;
+        }
+    }
+}
+
+@-webkit-keyframes subtle-bounce {
+    0%, 100% { background-position: 50% 100%  }
+    50% { background-position: 50% 110% }
+}
+@-moz-keyframes subtle-bounce {
+    0%, 100% { background-position: 50% 100%  }
+    50% { background-position: 50% 110% }
+}
+@-o-keyframes subtle-bounce {
+    0%, 100% { background-position: 50% 100%  }
+    50% { background-position: 50% 110% }
+}
+@keyframes subtle-bounce {
+    0%, 100% { background-position: 50% 100%  }
+    50% { background-position: 50% 110% }
+}
+
+
+#mega-menu-pull-down button, x:-moz-any-link {
+    background-position: 51.5% 100%;
+}
+
+#mega-menu-pull-down button.expanded {
+    background-image: url(https://discovery.nationalarchives.gov.uk/Content/images/menu-expanded.png);
+}
+
+#holds-logo-and-search {
+    z-index: 1;
+    margin-bottom:6px;
+    #search-expander{
+        @media(max-width:468px){
+            margin-bottom:10px;
+        }
+    }
+}
+
+#search-field-wrapper {
+    position: relative;
+    border: 1px solid transparent;
+    min-height: 40px;
+    margin: 0;
+}
+
+#scope-selector {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 15.75em;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-image: url(https://discovery.nationalarchives.gov.uk/Content/images/scope-selector.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+
+    &.expanded {
+        background-image: url(https://discovery.nationalarchives.gov.uk/Content/images/scope-selector-expanded.png);
+    }
+}
+
+
+#search-field-wrapper #tnaSearch {
+    position: absolute;
+    top: 0;
+    right: 41px;
+    width: 210px;
+    height: 40px;
+    text-indent: 10px;
+    border-radius: 0;
+    font-family: 'Open Sans' , sans-serif !important;
+    border:none;
+}
+
+
+
+#miniBasketWrapper span.miniBasketHeader {
+    font-weight: normal;
+    font-size: 1.3em;
+    margin-bottom: 0.3em;
+    padding-right: 0.5em;
+}
+
+#miniBasket {
+    float: none !important;
+
+    a {
+        padding-right: 22px;
+        padding-left: 10px;
+    }
+}
+
+
+.basketColumn {
+    border-right: 1px solid #454545;
+    padding-right: 1em;
+    margin-bottom: 1em;
+    width: 60%;
+    display: inline-block;
+}
+
+.miniBasketPrice {
+    padding-right: 1em;
+    vertical-align: top;
+    padding-left: 0.5em;
+}
+
+.miniBasketItemQuantity {
+    display: block;
+}
+
+#miniBasketWrapper {
+    #miniBasketSubtotal {
+        font-weight: normal;
+        padding: 0.3em 0 0.3em 0;
+        font-size: 1.3em;
+    }
+
+    #miniBasketOptions {
+        padding-top: 1em;
+        border-top: 1px solid #454545;
+    }
+}
+
+input.search-button {
+    width: 40px;
+    height: 40px;
+    background: url(https://discovery.nationalarchives.gov.uk/Content/images/search-white.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 1px;
+    border-radius: 0;
+    padding: .39em;
+}
+
+a#cookieCutter {
+    text-decoration: none;
+    background: url(https://discovery.nationalarchives.gov.uk/Content/images/close-img.png) no-repeat 0 2px;
+    padding-left: 22px;
+    margin-left: 10px;
+}
+
+.mega-menu {
+    position: relative;
+    padding: 1.8em 1em 0;
+
+    .js & {
+        display: none;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    h3 {
+        text-shadow: none;
+        font-size: 1.25em;
+        background: url(https://discovery.nationalarchives.gov.uk/Content/images/mega-menu-plus.png) no-repeat 5px 12px;
+        cursor: pointer;
+        margin: 0;
+        padding: 5px 5px 5px 22px;
+
+        &.hyphenate {
+            -moz-hyphens: auto;
+            hyphens: auto;
+        }
+
+        &.expanded {
+            background-image: url(https://discovery.nationalarchives.gov.uk/Content/images/mega-menu-minus.png);
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            padding: 0;
+        }
+    }
+
+    ul {
+        display: none;
+        margin: 10px 0;
+        padding: 0 0 10px;
+
+        li {
+            list-style-type: none;
+            font-size: 85%;
+            border-top: 1px dotted transparent;
+
+            img {
+                max-width: 100%;
+            }
+
+            &:first-child {
+                border-top-width: 0px;
+            }
+
+            &:last-child {
+                border-bottom: none !important;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+        padding: 4px;
+        -webkit-transition: background-color 180ms linear;
+        -moz-transition: background-color 180ms linear;
+        -o-transition: background-color 180ms linear;
+        -ms-transition: background-color 180ms linear;
+        transition: background-color 180ms linear;
+
+        &:focus {
+            @extend .focussed-element;
+        }
+
+        &:hover {
+            background: none;
+            text-decoration: underline;
+        }
+    }
+}
+
+#mega-menu-pull-down button.hasBeenInteractedWith {
+    -webkit-animation-iteration-count: 0;
+    -moz-animation-iteration-count: 0;
+    -ms-animation-iteration-count: 0;
+    -o-animation-iteration-count: 0;
+    animation-iteration-count: 0;
+}
+
+#search-options {
+    display: none;
+    position: absolute;
+    top: 24px;
+    right: 80px;
+    width: 202px;
+    z-index: 2002;
+    padding: 5px;
+
+    li {
+        list-style-type: none;
+
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+#changeDestination {
+    padding-top: .5em;
+
+    label {
+        margin: 0 .5em;
+    }
+}
+
+#banner-message {
+	text-align: center;
+	letter-spacing: 0.025em;
+	span {
+		background-color: #FCE45C;
+		color: #000;
+		display: inline-block;
+		padding: .25em .75em;
+		margin-bottom: 0.75em;
+		border: 1px dashed #222;
+	}
+}
+
+/*
+ * Hide magnifying icon if the search form is
+*/
+.dsaFoi1939 {
+    #search-expander {
+        display: none;
+    }
+}
+.search-results {
+    #search-expander {
+        display: none;
+    }
+}

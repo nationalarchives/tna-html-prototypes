@@ -1,0 +1,255 @@
+.advanced-search-form legend {
+	background: $white;
+	padding: 0.5em;
+
+	.no-js & {
+		display: block !important;
+	}
+}
+
+.advanced-search-form li {
+	list-style-type: none;
+}
+
+.initially-hidden {
+	.js & {
+		display: none;
+	}
+}
+
+#record-opening-date {
+	margin: 0;
+
+	li {
+		height: 2.5em;
+	}
+}
+
+.auto-check {
+	#rodDate {
+		width: auto;
+	}
+}
+
+.field-row {
+	margin-bottom: 0.5em;
+
+	label {
+		display: inline-block;
+		margin: 0;
+		width: 47%;
+	}
+}
+
+.advanced-search {
+	.field-validation-error {
+		display: block;
+
+		@media only screen and (min-width: $break-medium) {
+			margin-bottom: 0.5em;
+			display: inline-block;
+			margin-left: 48%;
+		}
+	}
+}
+
+
+.has-radio label {
+	display: inline;
+	padding-left: 0.6em;
+}
+
+label.inline {
+	display: inline-block;
+	width: auto;
+}
+
+.dates input {
+	margin-right: 0;
+}
+
+.date {
+	width: 6.5em;
+	margin-bottom: 5px;
+}
+
+.long-list {
+	font-size: 0.85em;
+	list-style-type: none;
+	padding: 0.1em 1em 1em 1em;
+	background-color: $light-grey;
+}
+
+#search-within-reference {
+	background-color: $light-grey;
+	padding: 1.2em 10px 10px 10px;
+}
+
+#search-within {
+	.holds-dynamic-elements label {
+		display: inline;
+	}
+}
+
+.repositories select {
+	font-size: 0.85em;
+	max-width: 60%;
+	overflow: hidden;
+}
+
+.repositories option {
+	max-width: 80%;
+}
+
+input[type=checkbox]:disabled + label {
+	color: #777;
+}
+
+#rodfromdate {
+	margin-right: 0;
+}
+
+.waiting {
+	background-image: url($image-path + 'ajax-load.gif');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.date-periods li {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.date-periods label {
+	width: auto;
+}
+
+.advanced-search-form li {
+	list-style: none;
+}
+
+.field-row div {
+	display: inline-block;
+	margin: .5em 4% 0 0;
+}
+
+#departments, #assoc-places, .linked-selectors {
+	.no-js & {
+		display: none;
+	}
+}
+
+#assoc-places {
+	display: none;
+}
+
+button {
+	background: transparent;
+
+	&:focus {
+		@extend .focussed-element;
+	}
+}
+
+#unit-tests {
+	background-color: $white;
+}
+
+.buttons-at-top {
+	position: absolute;
+	top: 1em;
+	right: 0.5em;
+}
+
+.button-holder {
+	text-align: right;
+
+	input {
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+#tabs-pointed {
+	ul {
+		margin: 1em 0 -14px 0;
+		position: relative;
+	}
+
+	li {
+		display: inline-block;
+		text-align: center;
+		min-width: 150px;
+
+		@media only screen and (min-width: $break-medium) {
+			min-width: 200px;
+		}
+	}
+
+	button {
+		margin: .5em 2.5%;
+		padding: .5em 2.5%;
+		width: 90%;
+		background: #fff;
+	}
+}
+
+#taxonomy-subjects {
+	li {
+		@media only screen and (min-width: $break-medium) {
+			display: inline-block; 
+			width: 44%;
+		}
+		@media only screen and (min-width: $break-large) {
+			display: inline-block; 
+			width: 32%;
+		}
+		label {
+			width: auto;
+		}
+	}
+}
+
+.tri-down-fff {
+	width: 0;
+	height: 0;
+	position: relative;
+	bottom: -8px;
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-top: 16px solid $white;
+}
+
+
+div.field-row {
+    div.form-field-label {
+        label {
+            width:auto;
+        }
+    }
+    div.form-field-right {
+        float:right;
+        width: 52%;
+        margin-right:0;
+        input {
+            width: 30%;
+            margin-right:3%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    div.form-field-label {
+        display:block;
+    }
+    div.field-row {
+         display:block;
+         div.form-field-right {
+            width: auto;
+            input {
+                width: 100%; 
+               }
+         }
+    }
+}
