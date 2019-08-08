@@ -1,0 +1,123 @@
+﻿// Newsletter form CSS namespace
+.newsletter-template {
+  background: #dde5d5;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 1.6em 40px 0 40px;
+  .news-icon {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    img {
+      width: 60px;
+      height: 48px;
+    }
+    @media (max-width: 1155px) {
+      display: none;
+    }
+  }
+  .news-content {
+    width: 40%;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    padding-left: 1.6em;
+    h2 {
+      line-height: 1;
+      color: #000;
+      margin-bottom: .5rem;
+      margin-top: 0;
+      @media (max-width: 1155px) {
+        padding: 10px 15px 10px 20px;
+      }
+      @media (max-width: 974px) {
+        width:100%;
+        display:block;
+      }
+    }
+    p {
+      padding: 2px 0 0 0;
+      margin-top:5px;
+      @media (max-width: 1155px) {
+        padding: 0 0 0 20px;
+      }
+      @media (max-width: 974px) {
+        width:100%;
+        display:block;
+      }
+
+       @media (max-width:600px) {
+        width:80%;
+      }
+    }
+    @media(max-width:1155px){
+      width:47%;
+    }
+    @media (max-width: 974px) {
+      width:100%;
+      display:block;
+    }
+  }
+  .news-form {
+    width: 35%;
+    display: inline-block;
+    float: right;
+    margin-bottom: 1.6em;
+    form {
+      label {
+        display: none;
+      }
+      input {
+        &[type="email"] {
+          border: 2px solid #000;
+          padding: 0.6em;
+          text-indent: 5px;
+          min-width: 220px;
+          display: inline-block;
+          margin-bottom: 10px;
+
+          width: 73% !important;
+          height: 37px !important;
+          &::-webkit-input-placeholder {
+              color:#ccc;
+          }
+          @media (max-width: 976px) {
+            width: 100%;
+            max-width: 480px;
+            display: block;
+            margin-bottom: 10px;
+          }
+          @media (max-width: 370px) {
+            width: 100%;
+          }
+        }
+        &[type="submit"] {
+          height: 36px;
+          display: inline-block;
+          font-family: 'Roboto Mono', monospace;
+          border: none;
+          background: #000;
+          font-size: 16px;
+          padding: 0 10px 0 10px;
+        }
+      }
+    }
+    .small-margin {
+        font-size: 85%;
+    }
+    @media (max-width: 1155px) {
+      width: 48%;
+    }
+    @media (max-width: 974px) {
+      padding: 0px 0 16px 20px;
+      width:70%;
+      display:block;
+      float:left;
+    }
+    @media (max-width: 370px) {
+      width: 100%;
+      padding-right:10px;
+    }
+  }
+}
