@@ -1,0 +1,132 @@
+$background-grey : #ECECEC;
+
+.separator-illusion {
+  height: 2%;
+  background-color: $background-grey;
+}
+
+.grid-within-grid-two-item > div,
+.grid-within-grid-three-item > div {
+  width: 99%;
+  margin: 0 2% 10px 0;
+  float: left;
+}
+
+.grid-within-grid-four-item > div,
+.grid-within-grid-six-item > div,
+.grid-within-grid-eight-item > div {
+  width: 49%;
+  margin: 0 2% 10px 0;
+  float: left;
+}
+
+.grid-within-grid-two-item,
+.grid-within-grid-three-item,
+.grid-within-grid-four-item,
+.grid-within-grid-six-item,
+.grid-within-grid-eight-item {
+  padding: 0;
+}
+
+.grid-within-grid-two-item > div:nth-child(2n),
+.grid-within-grid-four-item > div:nth-child(2n),
+.grid-within-grid-six-item > div:nth-child(2n),
+.grid-within-grid-eight-item > div:nth-child(2n) {
+  margin-right: 0;
+}
+
+.starts-at-full {
+  width: 100%;
+}
+
+.starts-at-half {
+  width: 49.0%;
+  $width: 48.9%;
+  margin-left: 2%;
+}
+
+.starts-at-half:nth-child(odd) {
+  margin-left: 0%;
+}
+
+.starts-at-third {
+  width: 33%;
+}
+
+/*END OF Mobile first*/
+@media only screen and (min-width: 480px) {
+  .ends-at-one-quarter:nth-child(odd) {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ends-at-one-quarter:nth-child(3) {
+    margin-left: 2%;
+  }
+  .col {
+    margin-left: 2%;
+  }
+
+  .grid-within-grid-two-item > div {
+    width: 48%;
+  }
+
+  .grid-within-grid-three-item > div,
+  .grid-within-grid-three-item > .griditem,
+  .grid-within-grid-six-item > div {
+    width: 31.3%;
+    margin: 0 2% 10px 0;
+    float: left;
+  }
+
+  .grid-within-grid-four-item > div,
+  .grid-within-grid-eight-item > div {
+    width: 23.0%;
+    margin: 0 2% 2% 0;
+    float: left;
+  }
+
+  /*Note: this rule must appear before the 4n rule since the reset would be overwritten otherwise*/
+  .grid-within-grid-four-item > div:nth-child(2n),
+  .grid-within-grid-six-item > div:nth-child(2n),
+  .grid-within-grid-eight-item > div:nth-child(2n) {
+    margin-right: 2%;
+  }
+
+  /*Note: this rule must appear after the 2n rule since the reset would be overwritten otherwise*/
+  .grid-within-grid-six-item > div:nth-child(6n),
+  .grid-within-grid-eight-item > div:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .ends-at-one-third {
+    width: 32.0%;
+  }
+
+  .ends-at-half {
+    width: 49.0%;
+    &:nth-child(odd) {
+      margin-left: 0%;
+    }
+  }
+
+
+
+  .ends-at-two-thirds {
+    width: 66.0%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .ends-at-one-quarter {
+    width: 23.5%;
+  }
+  .ends-at-one-third {
+    width: 32.0%;
+  }
+  .grid-within-grid-six-item > div {
+    width: 14.6%;
+  }
+
+}
