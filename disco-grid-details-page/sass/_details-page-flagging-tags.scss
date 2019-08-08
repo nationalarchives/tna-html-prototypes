@@ -1,0 +1,99 @@
+﻿#user-contributions {
+
+    .selected-for-flagging {
+        background-color: #eee;
+        border: 1px solid #757575;
+    }
+
+    #report-tag {
+        margin-bottom: 2%;
+
+        fieldset {
+            border: 1px solid #BBB;
+            padding: .5em;
+
+            .form-field-group {
+                input[type=reset] {
+                    background-color: #ddd;
+                    color: #000;
+                }
+            }
+
+            legend {
+                font-weight: bold;
+                display: block;
+                background-color: #eee;
+                padding: .5em;
+                border: 1px solid #BBB;
+            }
+        }
+
+        &.not-available {
+            display: none;
+        }
+
+        input [type=reset] {
+            background-color: #ddd;
+            color: #000;
+        }
+    }
+
+    div [class*="-tag-list-item"] span > span {
+        height: auto;
+        margin-left: .2em;
+    }
+
+    .deleteTag {
+        background: url(https://discovery.nationalarchives.gov.uk/Content/images/delete.png) center no-repeat;
+    }
+
+    span.deleteTag {
+        margin-left: 1px;
+        height: auto;
+
+        a.deleteTag {
+            min-height: 1em;
+            background-size: .2em .2em;
+        }
+    }
+}
+
+#thisRecord, #allRecords {
+    float: left;
+    height: 1.5em;
+    clear: both;
+}
+label[for=allRecords], label[for=thisRecord] {
+    margin-left: 25px;
+    display: block;
+}
+
+#userName, #userEmail {
+    width: 80%;
+}
+
+.tag-added-confirm {
+    color: #333;
+    background-color: #fce45c;
+
+    p {
+        padding: .5em;
+    }
+}
+
+.tag-request-declined {
+    color: #333;
+    background-color: #ffc8c8;
+    p{
+        padding: .5em;
+    }
+}
+
+//JS & No JS stuff
+.js #report-tag {
+    display: none;
+}
+
+.no-js #user-contributions #report-tag.not-available {
+    display: block;
+}

@@ -1,0 +1,21 @@
+﻿.notification-banner {
+    background-color: #fce45c;
+    padding: 0.3em 0;
+
+    .notice {
+       margin: 0.3em 0;      
+       
+            .title {
+                background-color: #fff;
+                text-transform: uppercase;
+                padding: 0 0.4em;
+                margin-right: 1em;            
+            }
+        
+    }
+}
+
+.notification-banner-lg {
+    @extend .notification-banner;
+    padding: 0.7em 0;
+} 
