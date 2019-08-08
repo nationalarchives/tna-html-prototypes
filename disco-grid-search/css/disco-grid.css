@@ -999,7 +999,7 @@ form .emphasis-block, form .account-pages .orderItem .filesWithinOrder .recordla
 }
 
 #page_wrap .results-form {
-  background: #555;
+  background: #dddddd;
   padding: 0 0 1em 0;
   display: inline-block;
   margin-bottom: 0;
@@ -1090,6 +1090,8 @@ div.general-tag-list-item span.flagTag a {
 
 #generic-tabs {
   margin: 0;
+  border-bottom: 2px solid black;
+  overflow: hidden;
 }
 #generic-tabs li {
   display: inline-block;
@@ -2043,7 +2045,7 @@ a:hover {
 }
 
 h1, h2, h1 a, h2 a {
-  color: #fff;
+  color: #000;
 }
 
 .call-to-action-link, .browse .sit-right, .advanced-search-form input[type=submit], .advanced-search-form input[type=reset] {
@@ -2284,7 +2286,7 @@ h4 {
 }
 
 #generic-tabs li.selected {
-  background-color: #000;
+  background-color: #555;
   color: #fff;
 }
 
@@ -3117,6 +3119,7 @@ fieldset {
   overflow: hidden;
   display: block;
   padding: 0.2em 1em 1em;
+  text-decoration: none;
 }
 #search-results > li table {
   width: 100%;
@@ -3178,6 +3181,7 @@ fieldset {
   overflow: hidden;
   display: block;
   padding: 0.2em 1em 1em;
+  text-decoration: none;
 }
 #simple-results > li table {
   width: 100%;
@@ -3403,11 +3407,6 @@ li#detailed-view {
 }
 
 .results-form fieldset a, .results-form .find-an-archive a {
-  font-family: "Roboto Mono", monospace;
-  background-color: #000;
-  color: #fff;
-  border: 2px solid #000;
-  padding: 0.5em 0.9em;
   display: inline-block;
   min-width: 24px;
   text-align: center;
