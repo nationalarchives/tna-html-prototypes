@@ -1545,6 +1545,9 @@ span.tab-description {
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+  border: 2px solid white;
+  height: 2.25em;
+  margin-right: -0.1em;
 }
 #scope-selector.expanded {
   background-image: url(https://discovery.nationalarchives.gov.uk/Content/images/scope-selector-expanded.png);
@@ -1615,6 +1618,10 @@ input.search-button {
   right: 1px;
   border-radius: 0;
   padding: 0.39em;
+}
+
+#search-button {
+  border: 2px solid #fff;
 }
 
 a#cookieCutter {
