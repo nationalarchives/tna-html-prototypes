@@ -2008,8 +2008,12 @@ a:hover {
   text-decoration: underline;
 }
 
+#holds-breadcrumb {
+  margin: 0.5em 0;
+}
+
 #account-controls-wrapper {
-  background-color: #111;
+  background-color: #555;
   color: #FFF;
 }
 
