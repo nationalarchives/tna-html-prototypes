@@ -135,6 +135,10 @@ p {
     padding-top: .6em;
 }
 
+#holds-breadcrumb {
+  margin: .5em 0;
+}
+
 #holds-breadcrumb .col {
     margin-bottom: 0;
     padding: 0;
@@ -525,6 +529,12 @@ div[id$=box-discovery] .call-to-action-link {
     padding: 0 1em;
 }
 
+#search-results {
+  .breather {
+    padding: 0;
+  }
+}
+
 .breather-all {
 	padding:1em
 }
@@ -639,10 +649,15 @@ form .emphasis-block {
 }
 
 #page_wrap .results-form {
-    background: #dddddd;
+    background: #fff;
 	padding: 0 0 1em 0;
 	display: inline-block;
 	margin-bottom: 0;
+    border-top: 2px solid #000;
+
+    .breather {
+      padding: 0;
+    }
 
 		h1 {
 			margin-bottom: .5em;
@@ -770,7 +785,7 @@ span.tab-description {
 }
 
 .row-tabbed-content {
-    padding: 1em;
+    padding: 1em 0;
     background-color: #fff;
 
 }

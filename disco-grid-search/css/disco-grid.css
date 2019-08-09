@@ -525,6 +525,10 @@ p {
   padding-top: 0.6em;
 }
 
+#holds-breadcrumb {
+  margin: 0.5em 0;
+}
+
 #holds-breadcrumb .col {
   margin-bottom: 0;
   padding: 0;
@@ -886,6 +890,10 @@ div[id$=box-discovery] .call-to-action-link, div[id$=box-discovery] .browse .sit
   padding: 0 1em;
 }
 
+#search-results .breather, #search-results .receipt-page #createAnAccountCallToAction, .receipt-page #search-results #createAnAccountCallToAction {
+  padding: 0;
+}
+
 .breather-all {
   padding: 1em;
 }
@@ -999,10 +1007,14 @@ form .emphasis-block, form .account-pages .orderItem .filesWithinOrder .recordla
 }
 
 #page_wrap .results-form {
-  background: #dddddd;
+  background: #fff;
   padding: 0 0 1em 0;
   display: inline-block;
   margin-bottom: 0;
+  border-top: 2px solid #000;
+}
+#page_wrap .results-form .breather, #page_wrap .results-form .receipt-page #createAnAccountCallToAction, .receipt-page #page_wrap .results-form #createAnAccountCallToAction {
+  padding: 0;
 }
 #page_wrap .results-form h1 {
   margin-bottom: 0.5em;
@@ -1126,7 +1138,7 @@ span.tab-description {
 }
 
 .row-tabbed-content {
-  padding: 1em;
+  padding: 1em 0;
   background-color: #fff;
 }
 
@@ -1997,7 +2009,7 @@ a#cookieCutter {
 }
 
 body {
-  background: #ececec;
+  background: #fff;
 }
 
 a {
@@ -2009,7 +2021,7 @@ a:hover {
 }
 
 #account-controls-wrapper {
-  background-color: #111;
+  background-color: #555;
   color: #FFF;
 }
 
@@ -3010,6 +3022,10 @@ fieldset {
   margin-left: 0.5em;
 }
 
+#search-filters {
+  border-top: 2px solid #000;
+}
+
 #search-filters li {
   list-style-type: none;
   line-height: 1.5;
@@ -3432,7 +3448,7 @@ li#detailed-view {
 }
 
 #search-results-search-query {
-  border-color: #FFF;
+  border: 2px solid #000;
   width: 100%;
   height: 40px;
   padding-right: 40px;
