@@ -4815,8 +4815,6 @@ form .checkbox input[type="checkbox"]:focus + label::before {
   font-size: 1.5em; }
 .education-landing .bottom-spacing {
   margin-bottom: 2em; }
-.education-landing .image-spacing {
-  margin-bottom: 1em; }
 .education-landing .video {
   position: relative; }
   .education-landing .video .icon-square {
