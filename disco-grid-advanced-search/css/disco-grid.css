@@ -762,6 +762,7 @@ p {
 }
 
 .heading-holding-banner {
+  border-top: 2px solid #000;
   padding: 2px 0;
 }
 
@@ -817,7 +818,6 @@ p {
 }
 
 .heading-holding-banner h1 {
-  border-bottom: 2px solid black;
   margin: 0.5em;
 }
 
@@ -2004,7 +2004,7 @@ a#cookieCutter {
 }
 
 body {
-  background: #ececec;
+  background: #fff;
 }
 
 a {
@@ -2902,6 +2902,7 @@ input[type=submit], input[type=reset] {
 
 .advanced-search-form {
   border: solid 1px #ddd;
+  border-top: none;
   padding-top: 1em;
 }
 .advanced-search-form input[type=submit], .advanced-search-form input[type=reset] {
@@ -2914,6 +2915,15 @@ input[type=submit], input[type=reset] {
 .advanced-search-form input[type=submit]:hover, .advanced-search-form input[type=reset]:hover {
   background-color: #fff;
   border: 2px solid #000;
+}
+.advanced-search-form fieldset {
+  padding: 0 1em;
+}
+.advanced-search-form .breather, .advanced-search-form .receipt-page #createAnAccountCallToAction, .receipt-page .advanced-search-form #createAnAccountCallToAction {
+  padding: 0;
+}
+.advanced-search-form .form-heading span {
+  padding: 0;
 }
 
 .buttons-at-top input:first-of-type {
@@ -2961,7 +2971,8 @@ input[type=reset]::-moz-focus-inner {
   font-size: 1.6em;
   margin-bottom: 0.6em;
   width: auto;
-  padding: 0;
+  border-top: 2px solid #000;
+  padding: 0.5em 0 0;
 }
 
 .form-heading > span > span {
@@ -5465,12 +5476,11 @@ label.inline {
 .long-list {
   font-size: 0.85em;
   list-style-type: none;
-  background-color: #fbe2bc;
-  border: solid 2px #000;
+  background-color: #dde5d5;
   padding: 1.6em;
   margin-left: 0;
+  margin-right: 0;
   max-width: 100%;
-  width: 90%;
 }
 
 #search-within-reference {
@@ -5524,6 +5534,10 @@ input[type=checkbox]:disabled + label {
   margin: 0.5em 4% 0 0;
 }
 
+.field-row .long-list {
+  margin-right: 0;
+}
+
 .no-js #departments, .no-js #assoc-places, .no-js .linked-selectors {
   display: none;
 }
@@ -5553,9 +5567,15 @@ button {
   margin-right: 0;
 }
 
+#departments {
+  padding: 1.6em;
+}
+
 #tabs-pointed ul {
-  margin: 1em 0 -14px 0;
+  margin: 0;
   position: relative;
+  border-bottom: 2px solid #000;
+  overflow: hidden;
 }
 #tabs-pointed li {
   display: inline-block;
@@ -5590,12 +5610,7 @@ button {
 }
 
 .tri-down-fff {
-  width: 0;
-  height: 0;
-  position: relative;
-  bottom: -8px;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
+  display: none;
 }
 
 div.field-row div.form-field-label label {
