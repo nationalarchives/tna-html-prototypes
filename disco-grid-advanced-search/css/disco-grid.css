@@ -817,10 +817,6 @@ p {
   color: #000;
 }
 
-.heading-holding-banner h1 {
-  margin: 0.5em;
-}
-
 #query {
   width: 82%;
   padding: 0.6em;
@@ -881,10 +877,6 @@ h3 a:hover, h4 a:hover, .pictorial-list li a:hover {
 
 div[id$=box-discovery] .call-to-action-link, div[id$=box-discovery] .browse .sit-right, .browse div[id$=box-discovery] .sit-right, div[id$=box-discovery] .advanced-search-form input[type=submit], .advanced-search-form div[id$=box-discovery] input[type=submit], div[id$=box-discovery] .advanced-search-form input[type=reset], .advanced-search-form div[id$=box-discovery] input[type=reset] {
   float: right;
-}
-
-.breather, .receipt-page #createAnAccountCallToAction {
-  padding: 0 1em;
 }
 
 .breather-all {
@@ -2013,6 +2005,10 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+#holds-breadcrumb {
+  margin: 0.5em 0;
 }
 
 #account-controls-wrapper {
