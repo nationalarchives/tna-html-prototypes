@@ -6,7 +6,7 @@
     h1 {
       display: inline-block;
       background-color: #fff;
-      border: 2px solid #000;
+      border: $grid_line;
       padding: 8px 34px;
       margin-bottom: 5em;
     }
@@ -24,7 +24,7 @@
       background-repeat: no-repeat;
     }
     .entry-content {
-      border-top: 2px solid #000;
+      border-top: $grid_line;
       padding-top: 0.6em;
     }
   }
@@ -35,7 +35,7 @@
     display: inline-block;
     color: #fff;
     padding: 3px 7px;
-    background-color: #000;
+    background-color: $col_blk;
     background-color: rgba(0,0,0,.5);
     a {
       color: $col_yellow;

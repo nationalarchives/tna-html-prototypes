@@ -3725,7 +3725,8 @@ template {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  line-height: 1.6; }
+  line-height: 1.6;
+  color: #26262a; }
   body h1, body h2, body h3, body h4 {
     font-family: "Roboto Mono", monospace;
     font-weight: 400;
@@ -3768,7 +3769,7 @@ body {
         color: #fff;
         background-color: #000;
         text-align: center;
-        border: 2px solid #000;
+        border: 2px solid #26262a;
         font-size: 1.25em;
         line-height: 44px;
         width: 48px;
@@ -3833,7 +3834,7 @@ pre {
   color: #fff; }
 
 header {
-  background-color: #000;
+  background-color: #26262a;
   color: #fff;
   padding: 1em 0;
   /* Mega menu button (mobile view only) */
@@ -3846,7 +3847,7 @@ header {
     right: 55px;
     width: 226px;
     height: 42px;
-    color: #000;
+    color: #26262a;
     border: #fff solid 2px; }
   header #search-field-wrapper input[type='submit'] {
     position: absolute;
@@ -3869,13 +3870,13 @@ header {
       list-style-type: none;
       list-style-image: none; }
       header #search-field-wrapper ul li a {
-        color: #000;
+        color: #26262a;
         font-size: 0.9em;
         padding: 0.5em;
         display: block; }
         header #search-field-wrapper ul li a:hover {
           background-color: #fce45c;
-          color: #000; }
+          color: #26262a; }
   header #mega-menu-pull-down {
     background-image: url("../img/icon-chevron-down.png");
     background-position: 50% 90%;
@@ -3928,12 +3929,12 @@ header {
       font-size: 0.9em; }
   @media (max-width: 480px) {
     header#mobile-logo-holder {
-      padding: 0px; } }
+      padding: 0; } }
   header #mega-menu-mobile {
     height: 42px;
     width: 42px;
     background: url("../img/icon-menu.png") center no-repeat #cb0d07;
-    border: 0px;
+    border: 0;
     z-index: 2;
     border-radius: 100%;
     float: left;
@@ -4074,7 +4075,7 @@ header {
     width: 16.6666666667%; }
 
 footer {
-  background-color: #000;
+  background-color: #26262a;
   color: #fff;
   padding: 1.6em; }
   footer a, footer a:hover {
@@ -4115,7 +4116,7 @@ footer {
   footer .follow-us a {
     display: inline-block; }
     footer .follow-us a img {
-      background-color: #000;
+      background-color: #26262a;
       border: 2px solid #fff;
       border-radius: 50%;
       padding: 7px;
@@ -4240,14 +4241,14 @@ footer {
   font-size: .9em; }
 
 .page .entry-header {
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-left: 2px solid #26262a;
+  border-right: 2px solid #26262a;
+  border-bottom: 2px solid #26262a;
   padding: 0.6em 1.6em;
   background: #fff; }
 .page .entry-content {
-  border-left: solid 2px #000;
-  border-right: 2px solid #000;
+  border-left: 2px solid #26262a;
+  border-right: 2px solid #26262a;
   padding: 1.6em;
   background: #fff;
   margin-bottom: 1.6em; }
@@ -4262,7 +4263,7 @@ footer {
   right: 15px; }
 .page blockquote {
   font-family: 'Roboto Mono', monospace;
-  border: solid 2px #000;
+  border: 2px solid #26262a;
   padding: 1.6em 3.2em;
   margin-bottom: 1.6em;
   margin-left: -3.2em;
@@ -4296,7 +4297,7 @@ footer {
   min-height: 288px;
   margin-bottom: 1.6em; }
   .level-one .banner .entry-header {
-    border: 2px solid #000;
+    border: 2px solid #26262a;
     padding: 8px 34px;
     margin: 34px 0 16px 34px;
     background-color: #fff;
@@ -4312,7 +4313,7 @@ footer {
       display: inline-block;
       background-color: #fff;
       margin: 0;
-      border: 2px solid #000;
+      border: 2px solid #26262a;
       padding: 0.5em 0.9em; }
     .level-one .banner .entry-content .button {
       margin-top: -2px; }
@@ -4320,7 +4321,7 @@ footer {
   background: #fff;
   margin-bottom: 3.2em; }
 .level-one main .entry-header {
-  border-top: 2px solid #000;
+  border-top: 2px solid #26262a;
   padding-top: 0.6em;
   margin-bottom: 1.6em; }
   .level-one main .entry-header h1 {
@@ -4334,7 +4335,7 @@ footer {
   list-style-type: none;
   padding: 0; }
 .level-one main .entry-content .well {
-  border: 2px solid #000;
+  border: 2px solid #26262a;
   padding: 1.6em;
   margin-top: -1.6em; }
 
@@ -4357,9 +4358,9 @@ form label {
   font-family: "Roboto Mono", monospace; }
 form input[type="submit"] {
   font-family: "Roboto Mono", monospace;
-  background-color: #000;
+  background-color: #26262a;
   color: #fff;
-  border: 2px solid #000;
+  border: 2px solid #26262a;
   padding: 0.5em 0.9em;
   display: inline-block;
   min-width: 24px;
@@ -4373,16 +4374,16 @@ form input[type=color],
 form input[type=email],
 form input[type=date],
 form input.width-half {
-  border: 2px solid #000;
+  border: 2px solid #26262a;
   padding: 0.6em;
   text-indent: 5px;
   min-width: 220px;
   width: auto; }
 form textarea {
-  border: 2px solid #000;
+  border: 2px solid #26262a;
   padding: 0.6em; }
 form select {
-  border: 2px solid #000;
+  border: 2px solid #26262a;
   height: 2.4em; }
 form .form-row {
   max-width: 100%;
@@ -4432,7 +4433,7 @@ form .form-row {
   form .form-row select {
     -webkit-border-radius: 0;
     border: 0;
-    outline: 2px solid #000;
+    outline: 2px solid #26262a;
     outline-offset: -1px; }
   form .form-row .button-right {
     float: right; }
@@ -4443,7 +4444,7 @@ form .form-row {
   form .form-row .optional {
     color: #6f777b; }
   form .form-row .form-error {
-    color: #000;
+    color: #26262a;
     width: 100%;
     max-width: 420px;
     display: block;
@@ -4468,14 +4469,14 @@ form .checkbox label::after {
 form .checkbox label::before {
   height: 24px;
   width: 24px;
-  border: 2px solid #000;
+  border: 2px solid #26262a;
   left: 0px;
   top: 2px; }
 form .checkbox label::after {
   height: 7px;
   width: 13px;
-  border-left: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-left: 2px solid #26262a;
+  border-bottom: 2px solid #26262a;
   transform: rotate(-45deg);
   left: 6px;
   top: 9px; }
@@ -4488,23 +4489,23 @@ form .checkbox input[type="checkbox"]:focus + label::before {
 
 .button {
   font-family: "Roboto Mono", monospace;
-  background-color: #000;
+  background-color: #26262a;
   color: #fff;
-  border: 2px solid #000;
+  border: 2px solid #26262a;
   padding: 0.5em 0.9em;
   display: inline-block;
   min-width: 24px;
   text-align: center; }
   .button:hover {
     background-color: #fff;
-    color: #000;
+    color: #26262a;
     text-decoration: none; }
 
 .primary {
   background-color: #fff;
-  color: #000; }
+  color: #26262a; }
   .primary:hover {
-    background-color: #000;
+    background-color: #26262a;
     color: #fff; }
 
 .secondary {
@@ -4512,7 +4513,7 @@ form .checkbox input[type="checkbox"]:focus + label::before {
   background-color: #fff;
   color: #555; }
   .secondary:hover {
-    background-color: #000;
+    background-color: #26262a;
     color: #fff; }
 
 .tertiary {
@@ -4520,7 +4521,7 @@ form .checkbox input[type="checkbox"]:focus + label::before {
   background-color: #eee;
   color: #555; }
   .tertiary:hover {
-    background-color: #000;
+    background-color: #26262a;
     color: #fff; }
 
 .invert {
@@ -4528,7 +4529,7 @@ form .checkbox input[type="checkbox"]:focus + label::before {
   background-color: transparent;
   color: #fff; }
   .invert:hover {
-    background-color: #000;
+    background-color: #26262a;
     color: #fff; }
 
 .notification-banner {
@@ -4555,7 +4556,7 @@ form .checkbox input[type="checkbox"]:focus + label::before {
   padding: 0.3em 0;
   color: #222; }
 .cards h3 {
-  border-top: 2px solid #000;
+  border-top: 2px solid #26262a;
   padding-top: 0.6em; }
   .cards h3:hover {
     text-decoration: underline; }
@@ -4572,7 +4573,7 @@ form .checkbox input[type="checkbox"]:focus + label::before {
     .cards .hero-banner .entry-image, .cards .hero-banner .hero-banner-entry {
       display: table-cell; }
     .cards .hero-banner .hero-banner-entry {
-      border-left: 2px solid #000; }
+      border-left: 2px solid #26262a; }
       .cards .hero-banner .hero-banner-entry .content-type, .cards .hero-banner .hero-banner-entry h3, .cards .hero-banner .hero-banner-entry p {
         padding-left: 24px; }
     .cards .hero-banner .entry-image {
@@ -4588,7 +4589,7 @@ form .checkbox input[type="checkbox"]:focus + label::before {
 
 .icon-circle {
   display: inline-block;
-  background-color: #000;
+  background-color: #26262a;
   background-size: 68% 68%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -4679,7 +4680,7 @@ form .checkbox input[type="checkbox"]:focus + label::before {
     position: absolute;
     right: 0;
     background-color: #fff;
-    border: 2px solid #000;
+    border: 2px solid #26262a;
     padding: 0.6em;
     z-index: 5000;
     font-size: .9em;
@@ -4750,7 +4751,7 @@ form .checkbox input[type="checkbox"]:focus + label::before {
   .portal-landing .banner h1 {
     display: inline-block;
     background-color: #fff;
-    border: 2px solid #000;
+    border: 2px solid #26262a;
     padding: 8px 34px;
     margin-bottom: 5em; }
   .portal-landing .banner .portal-logo img {
@@ -4764,7 +4765,7 @@ form .checkbox input[type="checkbox"]:focus + label::before {
     background-size: cover;
     background-repeat: no-repeat; }
   .portal-landing .intro-card .entry-content {
-    border-top: 2px solid #000;
+    border-top: 2px solid #26262a;
     padding-top: 0.6em; }
 .portal-landing .tna-breadcrumb {
   margin: 0; }
@@ -4772,7 +4773,7 @@ form .checkbox input[type="checkbox"]:focus + label::before {
   display: inline-block;
   color: #fff;
   padding: 3px 7px;
-  background-color: #000;
+  background-color: #26262a;
   background-color: rgba(0, 0, 0, 0.5); }
   .portal-landing .breadcrumbs a {
     color: #fbe2bc; }

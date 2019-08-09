@@ -7,15 +7,15 @@
 }
 .page {
   .entry-header {
-    border-left: 2px solid #000;
-    border-right: 2px solid #000;
-    border-bottom: 2px solid #000;
+    border-left: $grid_line;
+    border-right: $grid_line;
+    border-bottom: $grid_line;
     padding: 0.6em 1.6em;
     background: #fff;
   }
   .entry-content {
-    border-left: solid 2px #000;
-    border-right: 2px solid #000;
+    border-left: $grid_line;
+    border-right: $grid_line;
     padding: 1.6em;
     background: #fff;
     margin-bottom: 1.6em;
@@ -32,7 +32,7 @@
   }
   blockquote {
     font-family: 'Roboto Mono', monospace;
-    border: solid 2px #000;
+    border: $grid_line;
     padding: 1.6em 3.2em;
     margin-bottom: 1.6em;
     margin-left: -3.2em;
@@ -128,7 +128,7 @@
         padding: 0;
       }
       .well {
-        border: 2px solid #000;
+        border: $grid_line;
         padding: 1.6em;
         margin-top: -1.6em;
       }

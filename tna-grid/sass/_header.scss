@@ -1,5 +1,5 @@
 header {
-  background-color: #000;
+  background-color: $col_blk;
   color: #fff;
   padding: 1em 0;
   .logo {
@@ -12,7 +12,7 @@ header {
       right: 55px;
       width: 226px;
       height: 42px;
-      color: #000;
+      color: $col_blk;
       border: #fff solid 2px;
     }
     input[type='submit'] {
@@ -37,13 +37,13 @@ header {
         list-style-type: none;
         list-style-image: none;
         a {
-          color: #000;
+          color: $col_blk;
           font-size: 0.9em;
           padding: 0.5em;
           display: block;
           &:hover {
             background-color: #fce45c;
-            color: #000;
+            color: $col_blk;
           }
         }
       }
@@ -103,7 +103,7 @@ header {
   }
   &#mobile-logo-holder {
     @media (max-width: 480px) {
-      padding: 0px;
+      padding: 0;
     }
   }
   /* Mega menu button (mobile view only) */
@@ -111,7 +111,7 @@ header {
     height: 42px;
     width: 42px;
     background: $tna_icon_menu center no-repeat #cb0d07;
-    border: 0px;
+    border: 0;
     z-index: 2;
     border-radius: 100%;
     float: left;
