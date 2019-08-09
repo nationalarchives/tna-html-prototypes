@@ -135,6 +135,10 @@ p {
     padding-top: .6em;
 }
 
+#holds-breadcrumb {
+  margin: .5em 0;
+}
+
 #holds-breadcrumb .col {
     margin-bottom: 0;
     padding: 0;
@@ -645,10 +649,15 @@ form .emphasis-block {
 }
 
 #page_wrap .results-form {
-    background: #dddddd;
+    background: #fff;
 	padding: 0 0 1em 0;
 	display: inline-block;
 	margin-bottom: 0;
+    border-top: 2px solid #000;
+
+    .breather {
+      padding: 0;
+    }
 
 		h1 {
 			margin-bottom: .5em;
