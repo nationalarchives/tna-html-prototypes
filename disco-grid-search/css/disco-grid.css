@@ -886,6 +886,10 @@ div[id$=box-discovery] .call-to-action-link, div[id$=box-discovery] .browse .sit
   padding: 0 1em;
 }
 
+#search-results .breather, #search-results .receipt-page #createAnAccountCallToAction, .receipt-page #search-results #createAnAccountCallToAction {
+  padding: 0;
+}
+
 .breather-all {
   padding: 1em;
 }
@@ -1126,7 +1130,7 @@ span.tab-description {
 }
 
 .row-tabbed-content {
-  padding: 1em;
+  padding: 1em 0;
   background-color: #fff;
 }
 
@@ -1997,7 +2001,7 @@ a#cookieCutter {
 }
 
 body {
-  background: #ececec;
+  background: #fff;
 }
 
 a {
