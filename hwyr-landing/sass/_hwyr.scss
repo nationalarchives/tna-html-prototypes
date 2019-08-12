@@ -1,0 +1,20 @@
+.hwyr-landing {
+    .hwyr-banner {
+        article {
+            .hwyr-banner-overlay {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                opacity: 0.8;
+                padding: 1em;
+                .overlay-box {
+                    padding-left: 2em;
+                    border-right: 1px solid #fff;
+                    &:last-of-type {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

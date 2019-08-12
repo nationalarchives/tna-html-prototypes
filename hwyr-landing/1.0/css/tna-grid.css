@@ -4832,4 +4832,16 @@ form .checkbox input[type="checkbox"]:focus + label::before {
     width: 41px;
     height: 41px; }
 
+.hwyr-landing .hwyr-banner article .hwyr-banner-overlay {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  opacity: 0.8;
+  padding: 1em; }
+  .hwyr-landing .hwyr-banner article .hwyr-banner-overlay .overlay-box {
+    padding-left: 2em;
+    border-right: 1px solid #fff; }
+    .hwyr-landing .hwyr-banner article .hwyr-banner-overlay .overlay-box:last-of-type {
+      border: none; }
+
 /*# sourceMappingURL=tna-grid.css.map */
