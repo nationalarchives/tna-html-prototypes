@@ -4832,16 +4832,55 @@ form .checkbox input[type="checkbox"]:focus + label::before {
     width: 41px;
     height: 41px; }
 
-.hwyr-landing .hwyr-banner article .hwyr-banner-overlay {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  opacity: 0.8;
-  padding: 1em; }
-  .hwyr-landing .hwyr-banner article .hwyr-banner-overlay .overlay-box {
-    padding-left: 2em;
-    border-right: 1px solid #fff; }
-    .hwyr-landing .hwyr-banner article .hwyr-banner-overlay .overlay-box:last-of-type {
-      border: none; }
+.hwyr-landing .bottom-spacing {
+  margin-bottom: 2em; }
+.hwyr-landing .cover-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+.hwyr-landing .hwyr-card {
+  margin-bottom: 2em;
+  display: block; }
+  .hwyr-landing .hwyr-card > div {
+    background-size: cover;
+    background-position: center center;
+    text-align: left;
+    min-height: 200px;
+    position: relative; }
+    .hwyr-landing .hwyr-card > div > span {
+      position: absolute;
+      bottom: 0;
+      background: #000;
+      padding: 5px;
+      color: #fff;
+      font-size: 1em; }
+  .hwyr-landing .hwyr-card:hover > div {
+    opacity: 0.9;
+    cursor: pointer; }
+    .hwyr-landing .hwyr-card:hover > div span {
+      text-decoration: underline; }
+.hwyr-landing .hwyr-banner article {
+  margin-bottom: 0; }
+  .hwyr-landing .hwyr-banner article .hwyr-banner-overlay {
+    background: rgba(0, 0, 0, 0.66);
+    padding: 1em; }
+.hwyr-landing .overlay-box {
+  padding: 1em 1em 1em 2em;
+  border-right: 1px solid #fff; }
+  .hwyr-landing .overlay-box:last-of-type {
+    border: none; }
+.hwyr-landing main .entry-header h2 {
+  display: inline-block; }
+.hwyr-landing main .entry-header .hwyr-form-wrapper {
+  float: right; }
+  .hwyr-landing main .entry-header .hwyr-form-wrapper [type='submit'] {
+    background: url(http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/search-white.png) center no-repeat #000;
+    width: 47px;
+    height: 47px;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .hwyr-landing main .entry-header .hwyr-form-wrapper [type='text'] {
+    min-width: 300px; }
 
 /*# sourceMappingURL=tna-grid.css.map */
