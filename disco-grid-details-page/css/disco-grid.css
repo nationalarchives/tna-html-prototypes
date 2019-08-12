@@ -1995,7 +1995,7 @@ a:hover {
 }
 
 #account-controls-wrapper {
-  background-color: #111;
+  background-color: #555;
   color: #FFF;
 }
 
@@ -4256,7 +4256,6 @@ div.contact-details.grid-within-grid-two-item > div {
   position: relative;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  border-left: 8px solid #2c3a58;
   background-color: #EFEFEF;
   margin-bottom: 1em;
 }
@@ -4606,7 +4605,6 @@ main {
 .details-row .order-option-wrapper {
   padding-bottom: 0;
   background-color: #dde5d5;
-  border: 2px solid #000;
 }
 .details-row .order-option-wrapper .expander-link-wrapper {
   margin-left: 0.5em;
@@ -4627,10 +4625,9 @@ main {
 }
 .details-row .suggestion-form-div {
   position: relative;
-  padding: 1.6em 1em;
+  padding: 1.6em 0;
   margin: 0 0 1.5em;
   background-color: #fff;
-  border: solid 1px #ddd;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -4660,6 +4657,7 @@ main {
 
 .details-page #page_wrap .row:last-child .details-breather {
   border-top: 2px solid #000;
+  padding: 1em 0 0 0;
 }
 
 /* Search box*/
