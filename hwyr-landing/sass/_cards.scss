@@ -1,0 +1,54 @@
+.cards {
+  .card {
+    margin-bottom: 3.2em;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .entry-image {
+    display: block;
+    width: 100%;
+    min-height: 185px;
+    background: #ddd center center;
+    background-size: cover;
+  }
+  .content-type {
+    padding: 0.3em 0;
+    color: #222;
+  }
+  h3 {
+    border-top: $grid_line;
+    padding-top: 0.6em;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  p {
+    color: #222;
+  }
+  .entry-header h3 {
+    padding: 0.6em 0;
+  }
+  @media (min-width: 768px) {
+    .hero-banner {
+      display: table;
+      width: 100%;
+      .hero-banner a {
+        display: table-row;
+      }
+      .entry-image, .hero-banner-entry {
+        display: table-cell;
+      }
+      .hero-banner-entry {
+        border-left: $grid_line;
+        .content-type, h3, p {
+          padding-left: 24px;
+        }
+      }
+      .entry-image {
+        width: 68%;
+        height: 240px;
+      }
+    }
+  }
+}
