@@ -16,7 +16,7 @@ p, .article div p {
 }
 
 a:link, a:visited, a:active, .mimic-link {
-  color: #2A5DB0;
+  color: #007bff;
   text-decoration: none;
 }
 
@@ -34,7 +34,7 @@ a[href^="mailto"] {
 }
 /* Default headings */
 h1, h2, h3, h4 {
-  font-family: 'Bitter', serif;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   z-index: 2;
   line-height: 1.5;
@@ -104,9 +104,18 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets {
   width: 96%;
 }
 
+#index {
+  div {
+    div {
+      ul.child {
+        padding-left: 0;
+      }
+    }
+  }
+}
 
 ul.child li, ul.sibling li, ul.triplets li, ul.quadruplets li, ul.full li {
-  list-style-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/list-link-bullet.png");
+  list-style: none;
   width: 96%;
   float:left;
   margin-bottom: 1em;

@@ -20,7 +20,7 @@ audio:not([controls]) {
 }
 
 html {
-  background: #eee;
+  background: #fff;
   color: #000;
   line-height: 1.6;
   font-family: sans-serif;
@@ -463,7 +463,7 @@ p, .article div p {
 }
 
 a:link, a:visited, a:active, .mimic-link {
-  color: #2A5DB0;
+  color: #007bff;
   text-decoration: none;
 }
 
@@ -484,7 +484,7 @@ a[href^=mailto] {
 
 /* Default headings */
 h1, h2, h3, h4 {
-  font-family: "Bitter", serif;
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
   z-index: 2;
   line-height: 1.5;
@@ -551,8 +551,12 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets {
   width: 96%;
 }
 
+#index div div ul.child {
+  padding-left: 0;
+}
+
 ul.child li, ul.sibling li, ul.triplets li, ul.quadruplets li, ul.full li {
-  list-style-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/list-link-bullet.png");
+  list-style: none;
   width: 96%;
   float: left;
   margin-bottom: 1em;
@@ -755,10 +759,6 @@ p > cite, blockquote + cite {
 }
 
 /* Padding container */
-.breather {
-  padding: 20px;
-}
-
 /* Background container */
 .box {
   background: #fff;
@@ -1023,8 +1023,11 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
 }
 
 .banner h1 {
-  display: block;
-  margin: 10px 0;
+  border: 2px solid #26262a;
+  padding: 8px 34px;
+  margin: 34px 0 16px 34px;
+  background-color: #fff;
+  display: inline-block;
 }
 
 .large {
@@ -1058,6 +1061,10 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
   text-transform: uppercase;
   padding: 0 0.4em;
   margin-right: 1em;
+}
+
+#page_wrap .row:nth-of-type(3) {
+  display: none;
 }
 
 /* places skip link off page - keep*/
@@ -1423,12 +1430,11 @@ a#cookie-cutter {
 
 /* Footer container */
 #footer-wrapper {
-  background-color: #222;
   background-repeat: no-repeat;
   background-position: -6em 20px;
-  color: #fcfcfc;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  background-color: #26262a;
+  color: #fff;
+  padding: 1.6em;
 }
 
 /* Custom footer h4 headings  */
@@ -1584,6 +1590,7 @@ a#cookie-cutter {
   background-size: cover !important;
   background-position: center center !important;
   height: 180px;
+  margin-bottom: 1em;
 }
 
 .ends-at-one-third a + p {
@@ -1660,31 +1667,6 @@ p.standfirst {
 }
 
 /* Custom heading styles */
-h1 > span, h2 > span, h3 > span {
-  background-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/heading-flourish.png");
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  padding-bottom: 14px;
-  margin-left: -10px;
-}
-
-/* Custom heading spans to add accompanying padding and color */
-h1 > span > span, h2 > span > span, h3 > span > span {
-  padding: 4px 10px 4px 10px;
-  display: inline-block;
-  background-color: #405480;
-  color: #fff;
-  line-height: 125%;
-}
-
-h1 > span > span a:link, h2 > span > span a:link, h1 > span > span a:hover, h2 > span > span a:hover, h1 > span > span a:visited, h2 > span > span a:visited, a > .image-container > h2 > span > span, a > .heading-holding-banner > h2 > span > span {
-  color: #fff;
-  background-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-24-heading-link.png");
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
-  padding-right: 32px;
-}
-
 h1 span.heading-constant {
   display: block;
   margin: 10px 0 -10px 0;
@@ -1883,15 +1865,13 @@ padding: 0 0 .25em 0;
 
 /* Full width heading holder */
 .heading-holding-banner {
-  padding: 10px 0;
-  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/dot-grey.png");
-  /* Remove when id specific backgrounds are introduced */
+  border-top: 2px solid #000;
+  padding-bottom: 0.6em;
+  padding-top: 0.6em;
 }
 
 hr {
   padding: 5px 0;
-  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/dot-grey.png");
-  /* Remove when id specific backgrounds are introduced */
 }
 
 .dark {
@@ -3518,8 +3498,8 @@ span.guidance-description {
 
   /* Child list splits to half */
   ul.child li {
-    width: 40%;
-    margin-right: 10%;
+    width: 100%;
+    margin: 0;
     float: left;
   }
 
@@ -5001,19 +4981,13 @@ span.guidance-description {
 }
 
 .newsletter-template {
-  margin-top: 1em;
-  background: #dddddd;
+  background: #dde5d5;
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
-}
-@media (max-width: 1155px) {
-  .newsletter-template {
-    border-left: 15px solid #008484;
-  }
+  padding: 1.6em 40px 0 40px;
 }
 .newsletter-template .news-icon {
-  background: #008484;
   vertical-align: middle;
   text-align: center;
   width: 157px;
@@ -5040,13 +5014,11 @@ span.guidance-description {
   overflow: hidden;
 }
 .newsletter-template .news-content h2 {
-  margin: 0;
-  padding: 0;
-  padding: 36px 0 0 20px;
-  font-weight: 300;
-  font-size: 24px;
-  font-family: "Bitter", serif;
-  text-align: left;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  z-index: 2;
+  line-height: 1.6;
+  letter-spacing: -0.025em;
 }
 @media (max-width: 1155px) {
   .newsletter-template .news-content h2 {
@@ -5094,8 +5066,14 @@ span.guidance-description {
   display: none;
 }
 .newsletter-template .news-form form input[type=email] {
+  border: 2px solid #000;
+  padding: 0.6em;
+  text-indent: 5px;
+  min-width: 220px;
+  display: inline-block;
+  margin-bottom: 10px;
   width: 73% !important;
-  height: 37px !important;
+  line-height: inherit;
 }
 @media (max-width: 1155px) {
   .newsletter-template .news-form form input[type=email] {
@@ -5108,10 +5086,11 @@ span.guidance-description {
   }
 }
 .newsletter-template .news-form form input[type=submit] {
-  height: 36px;
+  height: 48px;
+  display: inline-block;
+  font-family: "Roboto Mono", monospace;
   border: none;
-  background: #008484;
-  color: #fff;
+  background: #000;
   font-size: 16px;
   padding: 0 10px 0 10px;
 }
@@ -5281,11 +5260,12 @@ span.guidance-description {
   display: inline-block;
 }
 .follow-us a img {
-  background-color: #008484;
+  background-color: #26262a;
+  border: 2px solid #fff;
   border-radius: 50%;
-  padding: 6px;
+  padding: 7px;
   margin: 0 0.2em 0.3em 0;
-  width: 27px;
+  width: 40px;
   transition: 0.4s ease-in-out;
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;

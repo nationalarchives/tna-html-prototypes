@@ -8,7 +8,6 @@
 }
 /* Padding container */
 .breather {
-  padding: 20px;
 }
 
 /* Background container */
@@ -241,8 +240,11 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
   z-index: 3000;
 }
 .banner h1 {
-  display:block;
-  margin: 10px 0;
+  border: 2px solid #26262a;
+  padding: 8px 34px;
+  margin: 34px 0 16px 34px;
+  background-color: #fff;
+  display: inline-block;
 }
 .large {
   min-height: 400px;
@@ -272,5 +274,11 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
       padding: 0 0.4em;
       margin-right: 1em;
     }
+  }
+}
+
+#page_wrap {
+  .row:nth-of-type(3) {
+    display: none;
   }
 }
