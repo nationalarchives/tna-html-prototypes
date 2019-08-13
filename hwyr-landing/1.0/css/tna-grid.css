@@ -4838,6 +4838,10 @@ form .checkbox input[type="checkbox"]:focus + label::before {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+.hwyr-landing .still-need-help {
+  margin-top: 1.5em; }
+.hwyr-landing .card-spacing {
+  padding: 1em; }
 .hwyr-landing .hwyr-card {
   margin-bottom: 2em;
   display: block; }
@@ -4869,6 +4873,8 @@ form .checkbox input[type="checkbox"]:focus + label::before {
   border-right: 1px solid #fff; }
   .hwyr-landing .overlay-box:last-of-type {
     border: none; }
+.hwyr-landing main .remove-border-top {
+  border: none; }
 .hwyr-landing main .entry-header h2 {
   display: inline-block; }
 .hwyr-landing main .entry-header .hwyr-form-wrapper {
