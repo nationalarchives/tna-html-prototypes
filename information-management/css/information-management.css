@@ -554,6 +554,9 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets {
 #index div div ul.child {
   padding-left: 0;
 }
+#index div div ul.child li a {
+  display: none;
+}
 
 ul.child li, ul.sibling li, ul.triplets li, ul.quadruplets li, ul.full li {
   list-style: none;
@@ -727,10 +730,10 @@ select {
 
 /* Other default tags */
 address {
-  font-family: "Bitter", Georgia, Verdana, Arial, Helvetica, serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   line-height: 150%;
-  font-size: 1.166em;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
@@ -1451,9 +1454,7 @@ a#cookie-cutter {
 #footer-wrapper li {
   list-style-image: none;
   list-style-type: none;
-  padding: 4px 0;
-  font-size: 0.9em;
-  border-top: 1px dotted #666;
+  font-size: 16px;
 }
 
 #footer-wrapper li:first-child {
@@ -1462,7 +1463,7 @@ a#cookie-cutter {
 
 /* Custom footer links */
 #footer-wrapper a {
-  color: #fce45c;
+  color: #fbe2bc;
 }
 
 .footer-left a {
@@ -1590,7 +1591,7 @@ a#cookie-cutter {
   background-size: cover !important;
   background-position: center center !important;
   height: 180px;
-  margin-bottom: 1em;
+  margin-bottom: 4em;
 }
 
 .ends-at-one-third a + p {
@@ -1713,7 +1714,7 @@ div + h2:first-of-type {
 
 .image-container h2 {
   display: block;
-  padding-top: 10px;
+  padding-top: 190px;
 }
 
 a > .image-container > h2 > span > span,
@@ -1863,9 +1864,33 @@ padding: 0 0 .25em 0;
   /* Adds margin when no breadcrumb needed */
 }
 
+#index div .heading-holding-banner {
+  background-size: cover !important;
+  background-position: center center !important;
+  height: 180px;
+  margin-bottom: 4em;
+}
+#index div .heading-holding-banner h2 {
+  padding-top: 190px;
+}
+#index div:nth-of-type(1) .heading-holding-banner {
+  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/information-management/im-training.jpg") no-repeat top center;
+}
+#index div:nth-of-type(2) .heading-holding-banner {
+  background: url("../img/store.jpg") no-repeat top center;
+}
+#index div:nth-of-type(4) .heading-holding-banner {
+  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/information-management/im-training.jpg") no-repeat top center;
+}
+#index div:nth-of-type(5) .heading-holding-banner {
+  background: url("../img/parliament.jpg") no-repeat top center;
+}
+#index div:nth-of-type(6) .heading-holding-banner {
+  background: url("../img/phone.jpg") no-repeat top center;
+}
+
 /* Full width heading holder */
 .heading-holding-banner {
-  border-top: 2px solid #000;
   padding-bottom: 0.6em;
   padding-top: 0.6em;
 }
@@ -4993,7 +5018,6 @@ span.guidance-description {
   width: 157px;
   height: 127px;
   display: inline-block;
-  padding: 38px 0 0 0;
   float: left;
   overflow: hidden;
   box-sizing: border-box;
@@ -5019,6 +5043,7 @@ span.guidance-description {
   z-index: 2;
   line-height: 1.6;
   letter-spacing: -0.025em;
+  margin-top: 0;
 }
 @media (max-width: 1155px) {
   .newsletter-template .news-content h2 {
@@ -5030,9 +5055,6 @@ span.guidance-description {
     width: 100%;
     display: block;
   }
-}
-.newsletter-template .news-content p {
-  padding: 2px 0 0 20px;
 }
 @media (max-width: 1155px) {
   .newsletter-template .news-content p {
@@ -5059,7 +5081,6 @@ span.guidance-description {
 .newsletter-template .news-form {
   width: 35.8790322581%;
   display: inline-block;
-  padding: 45px 0 0 0;
   float: right;
 }
 .newsletter-template .news-form form label {
@@ -5265,7 +5286,7 @@ span.guidance-description {
   border-radius: 50%;
   padding: 7px;
   margin: 0 0.2em 0.3em 0;
-  width: 40px;
+  width: 25px;
   transition: 0.4s ease-in-out;
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;

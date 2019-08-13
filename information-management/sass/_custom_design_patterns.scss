@@ -63,7 +63,7 @@ background-size:cover;
   background-size: cover !important;
   background-position: center center !important;
   height: 180px;
-  margin-bottom: 1em;
+  margin-bottom: 4em;
 }
 .ends-at-one-third a + p {
   margin-top:10px; /* primarily for paragraphs under image containers without sub-headings */
@@ -182,7 +182,7 @@ div + h2:first-of-type {
 
 .image-container h2 {
   display: block;
-  padding-top: 10px;
+  padding-top: 190px;
 }
 
 a > .image-container  >  h2  >  span  >  span,
@@ -322,9 +322,50 @@ padding: 0 0 .25em 0;
 .no-breadcrumb {
   margin-top: 46px; /* Adds margin when no breadcrumb needed */
 }
+
+#index {
+  div {
+    .heading-holding-banner {
+      background-size: cover !important;
+      background-position: center center !important;
+      height: 180px;
+      margin-bottom: 4em;
+
+      h2 {
+        padding-top: 190px;
+      }
+    }
+  }
+
+  div:nth-of-type(1) {
+    .heading-holding-banner {
+      background: url('http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/information-management/im-training.jpg') no-repeat top center;
+    }
+  }
+  div:nth-of-type(2) {
+    .heading-holding-banner {
+      background: url('../img/store.jpg') no-repeat top center;
+    }
+  }
+  div:nth-of-type(4) {
+    .heading-holding-banner {
+      background: url('http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/information-management/im-training.jpg') no-repeat top center;
+    }
+  }
+  div:nth-of-type(5) {
+    .heading-holding-banner {
+      background: url('../img/parliament.jpg') no-repeat top center;
+    }
+  }
+  div:nth-of-type(6) {
+    .heading-holding-banner {
+      background: url('../img/phone.jpg') no-repeat top center;
+    }
+  }
+}
+
 /* Full width heading holder */
 .heading-holding-banner {
-  border-top: 2px solid #000;
   padding-bottom: .6em;
   padding-top: .6em;
 }
