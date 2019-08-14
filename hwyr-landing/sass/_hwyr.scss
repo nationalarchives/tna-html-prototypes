@@ -58,6 +58,9 @@
         }
     }
     main {
+        .tool-bar {
+            padding: 1em;
+        }
         .remove-border-top {
             border: none;
         }
@@ -65,18 +68,28 @@
             h2 {
                 display: inline-block;
             }
-            .hwyr-form-wrapper {
-                float: right;
+        }
+        .hwyr-form-wrapper {
+            form {
+                label {
+                    display: inline-block;
+                    position: absolute;
+                    right: 375px;
+                    top: 9px;
+                }
                 [type='submit'] {
                     background: url(http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/search-white.png) center no-repeat #000;
-                    width: 47px;
-                    height: 47px;
+                    width: 42px;
+                    height: 42px;
                     position: absolute;
-                    right: 0;
-                    top: 0;
+                    right: 15px;
+                    background-position: center;
                 }
                 [type='text'] {
                     min-width: 300px;
+                    position: absolute;
+                    right: 57px;
+                    height: 42px;
                 }
             }
         }
