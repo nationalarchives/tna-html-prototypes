@@ -1,7 +1,8 @@
 #nav {
-  background-color: $tna_blue;
+  background-color: #222;
   display: none;
   padding: .5em 1em 1em;
+  border-top: 2px solid #fff;
 }
 .mega-menu {
   display: inline-block;
@@ -14,11 +15,13 @@
           li {
             font-size: 0.9em;
             a {
-              border-top: 1px dotted black;
               padding: 4px;
               display: block;
               color: $tna_palette_white;
             }
+          }
+          li.imgContent {
+            display: none;
           }
         }
       }
@@ -27,7 +30,7 @@
 
 .mega-menu {
   > ul > li > a, > ul > li > div {
-    font-family: "Bitter", "Open Sans", arial, serif;
+    font-family: "Roboto Mono", monospace;
     font-size: 1.3em;
     font-weight: 400;
     z-index: 2;
