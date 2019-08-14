@@ -21,7 +21,7 @@
 /* Header container */
 #page-header {
   padding: 0.7em 0 4px 0;
-  background-color: #222;
+  background-color: #000;
 }
 #page-header .col {
   margin-bottom: 0;
@@ -76,6 +76,7 @@
   background-image: url('http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/search-white.png');
   background-repeat: no-repeat;
   background-position: center;
+  border: 2px solid #fff;
 }
 /* Custom text fields for global search */
 
@@ -85,6 +86,7 @@
   right: 40px;
   width: 205px;
   height: 34px;
+  border: 1px solid #fff;
 }
 #mobile-search-wrapper input[type='text'] {
   width: 94.1%;
@@ -127,7 +129,7 @@
 }
 
 #mega-menu-pull-down {
-  background-color: #cb0d07;
+  background-color: red;
   display: none;
   margin: -20px auto 0 auto;
   position: relative;
@@ -268,12 +270,13 @@ x:-moz-any-link {
   top: 0;
   right: 266px;
   width: 40px;
-  height: 40px;
+  height: 36px;
   line-height: 40px;
   background-image: url('http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/scope-selector.png');
   background-color: #555;
   background-size: cover;
   cursor: pointer;
+  border: 2px solid #fff;
 }
 #scope-selector.expanded {
   background-image: url('http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/scope-selector-expanded.png');

@@ -627,7 +627,7 @@ ul.form-selectable li span input[type=checkbox] {
 
 /* Default form tags */
 input[type=submit] {
-  background-color: #008484;
+  background-color: #000;
   color: #fff;
   padding: 0.3em 0.5em;
   border: 0;
@@ -1096,7 +1096,7 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
 /* Header container */
 #page-header {
   padding: 0.7em 0 4px 0;
-  background-color: #222;
+  background-color: #000;
 }
 
 #page-header .col {
@@ -1165,6 +1165,7 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
   background-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/search-white.png");
   background-repeat: no-repeat;
   background-position: center;
+  border: 2px solid #fff;
 }
 
 /* Custom text fields for global search */
@@ -1174,6 +1175,7 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
   right: 40px;
   width: 205px;
   height: 34px;
+  border: 1px solid #fff;
 }
 
 #mobile-search-wrapper input[type=text] {
@@ -1220,7 +1222,7 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
 }
 
 #mega-menu-pull-down {
-  background-color: #cb0d07;
+  background-color: red;
   display: none;
   margin: -20px auto 0 auto;
   position: relative;
@@ -1364,12 +1366,13 @@ x:-moz-any-link {
   top: 0;
   right: 266px;
   width: 40px;
-  height: 40px;
+  height: 36px;
   line-height: 40px;
   background-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/scope-selector.png");
   background-color: #555;
   background-size: cover;
   cursor: pointer;
+  border: 2px solid #fff;
 }
 
 #scope-selector.expanded {
@@ -5137,9 +5140,10 @@ span.guidance-description {
 }
 
 #nav {
-  background-color: #405480;
+  background-color: #222;
   display: none;
   padding: 0.5em 1em 1em;
+  border-top: 2px solid #fff;
 }
 
 .mega-menu {
@@ -5156,14 +5160,16 @@ span.guidance-description {
   font-size: 0.9em;
 }
 .mega-menu > ul li ul li a {
-  border-top: 1px dotted black;
   padding: 4px;
   display: block;
   color: #fff;
 }
+.mega-menu > ul li ul li.imgContent {
+  display: none;
+}
 
 .mega-menu > ul > li > a, .mega-menu > ul > li > div {
-  font-family: "Bitter", "Open Sans", arial, serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 1.3em;
   font-weight: 400;
   z-index: 2;
