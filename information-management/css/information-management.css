@@ -1871,10 +1871,10 @@ padding: 0 0 .25em 0;
   margin-bottom: 4em;
 }
 #index div .heading-holding-banner h2 {
-  padding-top: 190px;
+  padding-top: 200px;
 }
 #index div:nth-of-type(1) .heading-holding-banner {
-  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/information-management/im-training.jpg") no-repeat top center;
+  background: url("../img/manageinformation.png") no-repeat top center;
 }
 #index div:nth-of-type(2) .heading-holding-banner {
   background: url("../img/store.jpg") no-repeat top center;
@@ -1883,10 +1883,11 @@ padding: 0 0 .25em 0;
   background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/information-management/im-training.jpg") no-repeat top center;
 }
 #index div:nth-of-type(5) .heading-holding-banner {
-  background: url("../img/parliament.jpg") no-repeat top center;
+  background: url("../img/grorecystore.jpg") no-repeat top center;
 }
 #index div:nth-of-type(6) .heading-holding-banner {
-  background: url("../img/phone.jpg") no-repeat top center;
+  background-position: top !important;
+  background: url("../img/keepintouch.png") no-repeat top center;
 }
 
 /* Full width heading holder */
