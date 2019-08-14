@@ -9,9 +9,6 @@
 /* Padding container */
 .breather {
   padding: 20px;
-  h2 {
-    margin-left: -20px;
-  }
 }
 
 /* Background container */
@@ -102,6 +99,7 @@ ul.no-bullet,
 #footer-wrapper ul,
 .footer-base .right,
 .image-container,
+.breather  >  h2:first-child,
 .breather  >  h3:first-child,
 .overlay ul,
 .statistic,

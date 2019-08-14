@@ -140,15 +140,20 @@ p.standfirst {
 
 
 h1  >  span, h2  >  span, h3  >  span {
+  background-image: url('http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/heading-flourish.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
   padding-bottom: 14px;
+  margin-left: -10px;
 }
 
 /* Custom heading spans to add accompanying padding and color */
 h1  >  span  >  span, h2  >  span  >  span, h3  >  span  >  span {
+  padding: 4px 10px 4px 10px;
   display: inline-block;
-  color: #000;
+  background-color: #405480;
+  color: #fff;
   line-height: 125%;
-  padding-top: 14px;
 }
 h1  >  span  >  span a:link, h2  >  span  >  span a:link, h1  >  span  >  span a:hover, h2  >  span  >  span a:hover, h1  >  span  >  span a:visited, h2  >  span  >  span a:visited, a > .image-container  >  h2  >  span  >  span, a  >  .heading-holding-banner  >  h2  >  span  >  span {
   color: #fff;
@@ -243,7 +248,7 @@ span > h2,
 
 .breather  >  h2:first-child,
 .breather  >  h3:first-child  {
-  //margin: .25em 0 1em 0; /* added due to padding on paragraphs of body text increasing the space between headings and paragraphs lower down the page */
+  margin: .25em 0 1em 0; /* added due to padding on paragraphs of body text increasing the space between headings and paragraphs lower down the page */
 }
 
 p + h2, p + h3, ul + h2, ul + h3 {
@@ -344,11 +349,7 @@ padding: 0 0 .25em 0;
 /* Full width heading holder */
 .heading-holding-banner {
   padding: 10px 0;
-
-  h1 {
-    border-top: 2px solid black;
-  }
-
+  background: url('http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/dot-grey.png'); /* Remove when id specific backgrounds are introduced */
 }
 
 hr {
@@ -694,9 +695,8 @@ a.button:hover {
 #menu-disc li a:hover, #disc-menu li a:hover, #menu-disc .selected, #a-z-menu .selected a,
 #a-z-menu .selected, #a-z-menu a:hover  {
   color: #000;
-  background-color: #FFF;
+  background-color: #FCE45C;
   border-radius: 50%;
-  border: solid black 1px;
 }
 
 #menu-disc li a, #menu-disc li span.disabled
@@ -1205,7 +1205,7 @@ a:focus h3 > span > span, h3 > span > span > a:focus, a:focus > div > h3 > span 
   color: #111;
 }
 .hue-grey-light {
-  background-color: #eee;
+  background-color: #ddd;
   color: #111;
 }
 .hue-grey-lighter {
@@ -1213,7 +1213,7 @@ a:focus h3 > span > span, h3 > span > span > a:focus, a:focus > div > h3 > span 
   color: #111;
 }
 .hue-grey-lightest {
-  background-color: #fff;
+  background-color: #f3f3f3;
   color: #111;
 }
 

@@ -20,7 +20,7 @@ audio:not([controls]) {
 }
 
 html {
-  background: #fff;
+  background: #eee;
   color: #000;
   line-height: 1.6;
   font-family: sans-serif;
@@ -463,8 +463,14 @@ p, .article div p {
 }
 
 a:link, a:visited, a:active, .mimic-link {
-  color: #007bff;
+  color: #2A5DB0;
   text-decoration: none;
+}
+
+a:focus, .mimic-link:focus {
+  background-color: #FCE45C;
+  outline: 3px solid #ebab00;
+  color: #000;
 }
 
 a:hover, .mimic-link:hover {
@@ -478,7 +484,7 @@ a[href^=mailto] {
 
 /* Default headings */
 h1, h2, h3, h4 {
-  font-family: "Roboto Mono", serif;
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
   z-index: 2;
   line-height: 1.5;
@@ -614,7 +620,7 @@ ul.form-selectable li span input[type=checkbox] {
 
 /* Default form tags */
 input[type=submit] {
-  background-color: #000;
+  background-color: #008484;
   color: #fff;
   padding: 0.3em 0.5em;
   border: 0;
@@ -624,7 +630,7 @@ input[type=submit] {
 }
 
 input[type=text], input.width-half, #Email {
-  border: 1px solid #000;
+  border: 1px solid #ccc;
   padding: 2px;
   height: 34px;
   text-indent: 5px;
@@ -752,9 +758,6 @@ p > cite, blockquote + cite {
 .breather {
   padding: 20px;
 }
-.breather h2 {
-  margin-left: -20px;
-}
 
 /* Background container */
 .box {
@@ -855,6 +858,7 @@ ul.no-bullet,
 #footer-wrapper ul,
 .footer-base .right,
 .image-container,
+.breather > h2:first-child,
 .breather > h3:first-child,
 .overlay ul,
 .statistic,
@@ -1353,7 +1357,7 @@ x:-moz-any-link {
   height: 40px;
   line-height: 40px;
   background-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/scope-selector.png");
-  background-color: #000;
+  background-color: #555;
   background-size: cover;
   cursor: pointer;
 }
@@ -1657,15 +1661,20 @@ p.standfirst {
 
 /* Custom heading styles */
 h1 > span, h2 > span, h3 > span {
+  background-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/heading-flourish.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
   padding-bottom: 14px;
+  margin-left: -10px;
 }
 
 /* Custom heading spans to add accompanying padding and color */
 h1 > span > span, h2 > span > span, h3 > span > span {
+  padding: 4px 10px 4px 10px;
   display: inline-block;
-  color: #000;
+  background-color: #405480;
+  color: #fff;
   line-height: 125%;
-  padding-top: 14px;
 }
 
 h1 > span > span a:link, h2 > span > span a:link, h1 > span > span a:hover, h2 > span > span a:hover, h1 > span > span a:visited, h2 > span > span a:visited, a > .image-container > h2 > span > span, a > .heading-holding-banner > h2 > span > span {
@@ -1761,6 +1770,12 @@ span > h2,
   display: block;
   line-height: 1.6;
   letter-spacing: -0.025em;
+}
+
+.breather > h2:first-child,
+.breather > h3:first-child {
+  margin: 0.25em 0 1em 0;
+  /* added due to padding on paragraphs of body text increasing the space between headings and paragraphs lower down the page */
 }
 
 p + h2, p + h3, ul + h2, ul + h3 {
@@ -1869,9 +1884,8 @@ padding: 0 0 .25em 0;
 /* Full width heading holder */
 .heading-holding-banner {
   padding: 10px 0;
-}
-.heading-holding-banner h1 {
-  border-top: 2px solid black;
+  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/dot-grey.png");
+  /* Remove when id specific backgrounds are introduced */
 }
 
 hr {
@@ -2234,9 +2248,8 @@ a.button:hover {
 #menu-disc li a:hover, #disc-menu li a:hover, #menu-disc .selected, #a-z-menu .selected a,
 #a-z-menu .selected, #a-z-menu a:hover {
   color: #000;
-  background-color: #FFF;
+  background-color: #FCE45C;
   border-radius: 50%;
-  border: solid black 1px;
 }
 
 #menu-disc li a, #menu-disc li span.disabled {
@@ -2740,7 +2753,7 @@ a:focus h3 > span > span, h3 > span > span > a:focus, a:focus > div > h3 > span 
 }
 
 .hue-grey-light {
-  background-color: #eee;
+  background-color: #ddd;
   color: #111;
 }
 
@@ -2750,7 +2763,7 @@ a:focus h3 > span > span, h3 > span > span > a:focus, a:focus > div > h3 > span 
 }
 
 .hue-grey-lightest {
-  background-color: #fff;
+  background-color: #f3f3f3;
   color: #111;
 }
 
@@ -4988,90 +5001,137 @@ span.guidance-description {
 }
 
 .newsletter-template {
-  background: #dde5d5;
+  margin-top: 1em;
+  background: #dddddd;
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
-  padding: 1.6em 40px 0 40px;
+}
+@media (max-width: 1155px) {
+  .newsletter-template {
+    border-left: 15px solid #008484;
+  }
 }
 .newsletter-template .news-icon {
+  background: #008484;
+  vertical-align: middle;
+  text-align: center;
+  width: 157px;
+  height: 127px;
   display: inline-block;
+  padding: 38px 0 0 0;
   float: left;
   overflow: hidden;
+  box-sizing: border-box;
 }
 .newsletter-template .news-icon img {
   width: 60px;
   height: 48px;
 }
-@media (max-width: 976px) {
+@media (max-width: 1155px) {
   .newsletter-template .news-icon {
     display: none;
   }
 }
 .newsletter-template .news-content {
-  width: 40%;
+  width: 45.8790322581%;
   display: inline-block;
   float: left;
   overflow: hidden;
-  padding-left: 1.6em;
 }
 .newsletter-template .news-content h2 {
-  line-height: 1;
-  color: #000;
+  margin: 0;
+  padding: 0;
+  padding: 36px 0 0 20px;
+  font-weight: 300;
+  font-size: 24px;
+  font-family: "Bitter", serif;
+  text-align: left;
 }
-@media (max-width: 976px) {
+@media (max-width: 1155px) {
+  .newsletter-template .news-content h2 {
+    padding: 10px 15px 10px 20px;
+  }
+}
+@media (max-width: 974px) {
+  .newsletter-template .news-content h2 {
+    width: 100%;
+    display: block;
+  }
+}
+.newsletter-template .news-content p {
+  padding: 2px 0 0 20px;
+}
+@media (max-width: 1155px) {
+  .newsletter-template .news-content p {
+    padding: 0 0 0 20px;
+  }
+}
+@media (max-width: 974px) {
+  .newsletter-template .news-content p {
+    width: 100%;
+    display: block;
+  }
+}
+@media (max-width: 1155px) {
+  .newsletter-template .news-content {
+    width: 47%;
+  }
+}
+@media (max-width: 974px) {
   .newsletter-template .news-content {
     width: 100%;
-    padding-left: 0;
     display: block;
   }
 }
 .newsletter-template .news-form {
-  width: 35%;
+  width: 35.8790322581%;
   display: inline-block;
+  padding: 45px 0 0 0;
   float: right;
-  margin-bottom: 1.6em;
 }
 .newsletter-template .news-form form label {
   display: none;
 }
 .newsletter-template .news-form form input[type=email] {
-  max-width: 73%;
-  padding: 0.6em;
-  text-indent: 5px;
-  border: 2px solid #000;
-  min-width: 220px;
+  width: 73% !important;
+  height: 37px !important;
 }
-@media (max-width: 976px) {
+@media (max-width: 1155px) {
   .newsletter-template .news-form form input[type=email] {
-    width: 100%;
-    max-width: 480px;
-    display: block;
     margin-bottom: 10px;
   }
 }
+@media (max-width: 370px) {
+  .newsletter-template .news-form form input[type=email] {
+    width: 100%;
+  }
+}
 .newsletter-template .news-form form input[type=submit] {
-  height: 48px;
-  font-family: "Roboto Mono", monospace;
-  background-color: #000;
+  height: 36px;
+  border: none;
+  background: #008484;
   color: #fff;
-  border: 2px solid #000;
-  padding: 0.5em 0.9em;
-  display: inline-block;
-  min-width: 24px;
-  text-align: center;
-  margin: 0;
+  font-size: 16px;
+  padding: 0 10px 0 10px;
 }
 @media (max-width: 1155px) {
   .newsletter-template .news-form {
     width: 48%;
   }
 }
-@media (max-width: 976px) {
+@media (max-width: 974px) {
+  .newsletter-template .news-form {
+    padding: 0px 0 16px 20px;
+    width: 70%;
+    display: block;
+    float: left;
+  }
+}
+@media (max-width: 370px) {
   .newsletter-template .news-form {
     width: 100%;
-    display: block;
-    margin-left: 1.6em;
+    padding-right: 10px;
   }
 }
 
@@ -5217,111 +5277,18 @@ span.guidance-description {
   display: block;
 }
 
-#footer-wrapper {
-  background-color: #000;
-  background-position: -6em 20px;
-  background-repeat: no-repeat;
-  color: #FCFCFC;
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-
-#footer-wrapper h4 {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 400;
-  font-size: 1.16em;
-  margin-bottom: 0.5rem;
-  margin-top: 0;
-  color: #ffffff;
-}
-
-#footer-wrapper ul {
-  padding: 0;
-  margin-top: 10px;
-  min-height: 220px;
-}
-
-#footer-wrapper li {
-  list-style-type: none;
-  padding: 0.2em 0;
-  font-size: 16px;
-  width: 90%;
-}
-
-#footer-wrapper li:first-child {
-  border-top: none;
-}
-
-#footer-wrapper a:link, #footer-wrapper a:visited, #footer-wrapper a:active {
-  text-decoration: none;
-}
-
-#footer-wrapper a:hover {
-  text-decoration: underline;
-}
-
-#footer-wrapper p img {
-  max-width: 95%;
-  margin: 0;
-}
-
-.external-branding {
-  border-top: 1px dotted #545454;
-  padding: 20px 0 0 0;
-  font-size: 0.85em;
-}
-
-.footer-base {
-  border-top: 1px dotted #555;
-  padding: 20px 0 0;
-  font-size: 0.85em;
-}
-.footer-base .left {
-  float: left;
-  width: 50%;
-}
-.footer-base .left img {
-  float: left;
-  margin: 5px 25px 10px 0;
-}
-.footer-base .left p {
-  display: block;
-  float: left;
-  margin: 0;
-}
-.footer-base .right {
-  float: right;
-  width: 50%;
-  text-align: right;
-  margin: -10px -10px 0 0;
-  /*adjustments to align with OGL logo on left hand side */
-  padding: 0;
-}
-
-.caption {
-  font-size: 0.85em;
-}
-
-#version {
-  display: block;
-  font-size: 0.8em;
-  color: transparent;
-  text-align: center;
-  background-color: #222;
-}
-
 .follow-us a {
   display: inline-block;
 }
 .follow-us a img {
-  background-color: #000;
-  border: 2px solid #fff;
+  background-color: #008484;
   border-radius: 50%;
-  padding: 7px;
+  padding: 6px;
   margin: 0 0.2em 0.3em 0;
-  width: 25px;
+  width: 27px;
   transition: 0.4s ease-in-out;
-  -webkit-transition: 0.4s;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
 }
 .follow-us a img:hover {
   background: #555;
@@ -5345,14 +5312,6 @@ span.guidance-description {
     margin-bottom: 10px;
   }
 }
-#footer-wrapper address {
-  margin-bottom: 1rem;
-  font-style: normal;
-  line-height: inherit;
-}
-#footer-wrapper #flickr-image a img {
-  max-width: 100%;
-}
 @media (max-width: 767px) {
   #footer-wrapper .ends-at-one-quarter {
     width: 100%;
@@ -5364,25 +5323,25 @@ span.guidance-description {
   float: left;
   width: 100%;
 }
-@media (max-width: 1023px) {
-  #footer-wrapper .ends-at-one-quarter .footer-left {
-    width: 50%;
-  }
-}
-@media (max-width: 767px) {
-  #footer-wrapper .ends-at-one-quarter .footer-left {
-    min-height: 150px;
-    width: 100%;
-  }
-}
 @media (max-width: 480px) {
   #footer-wrapper .ends-at-one-quarter .footer-left {
     padding: 4px;
   }
 }
-#footer-wrapper .ends-at-one-quarter .footer-left img {
+@media (max-width: 767px) {
+  #footer-wrapper .ends-at-one-quarter .footer-left {
+    min-height: 150px;
+  }
+}
+@media (max-width: 1023px) {
+  #footer-wrapper .ends-at-one-quarter .footer-left {
+    width: 100%;
+  }
+}
+#footer-wrapper .ends-at-one-quarter .footer-left #logo {
   max-width: 157px;
-  margin-bottom: 23px;
+  margin-top: 6px;
+  margin-bottom: 20px;
 }
 @media (max-width: 767px) {
   #footer-wrapper .footer-col {
@@ -5402,13 +5361,15 @@ span.guidance-description {
 #footer-wrapper .footer-col .opening-times .open_table .open_tableHeading {
   display: table-header-group;
 }
-#footer-wrapper .footer-col .opening-times .open_table .open_tableCell, #footer-wrapper .footer-col .opening-times .open_table .open_tableHead {
+#footer-wrapper .footer-col .opening-times .open_table .open_tableCell,
+#footer-wrapper .footer-col .opening-times .open_table .open_tableHead {
   display: table-cell;
-  padding: 7px 0;
+  padding: 3px 0;
   width: 49%;
 }
 @media (max-width: 1100px) {
-  #footer-wrapper .footer-col .opening-times .open_table .open_tableCell, #footer-wrapper .footer-col .opening-times .open_table .open_tableHead {
+  #footer-wrapper .footer-col .opening-times .open_table .open_tableCell,
+#footer-wrapper .footer-col .opening-times .open_table .open_tableHead {
     width: 0;
   }
 }
@@ -5440,11 +5401,6 @@ span.guidance-description {
 @media (max-width: 767px) {
   #footer-wrapper .footer-col:first-child {
     height: auto;
-  }
-}
-@media (max-width: 767px) {
-  #footer-wrapper ul {
-    min-height: auto;
   }
 }
 
@@ -5590,7 +5546,7 @@ input#f1 {
 .research-guide-filter-left input[type=text] {
   width: 97%;
   min-width: initial;
-  padding-right: 10px;
+  padding-right: 0;
   position: absolute;
   left: 0;
 }
@@ -5647,6 +5603,17 @@ input#f1 {
 @media only screen and (min-width: 1024px) {
   .banner-category {
     max-width: 25%;
+  }
+}
+.keywords-selectable li {
+  float: left;
+  width: 32% !important;
+}
+
+@media only screen and (min-width: 1024px) {
+  .keywords-selectable li {
+    float: left;
+    width: 23.8% !important;
   }
 }
 /* -- Recommended labels -- */
@@ -5710,7 +5677,7 @@ input#f1 {
 .resource-results li {
   float: left;
   width: 100%;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #ddd;
   list-style: none;
   padding: 0.5em 0;
   margin: 0;
@@ -5811,8 +5778,8 @@ ul.form-selectable li input {
 }
 
 .bg-blue {
-  background: #eee;
-  color: #000;
+  background: #405480 url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-grey-down-arrow.png") no-repeat center top;
+  color: #fff;
 }
 
 .bg-blue .contained {
@@ -5822,7 +5789,7 @@ ul.form-selectable li input {
 
 .utilities {
   float: left;
-  margin: 10px 20px 0 20px;
+  margin: 10px 20px 0 10px;
 }
 
 .utilities ul {
@@ -5836,27 +5803,15 @@ ul.form-selectable li input {
   font-weight: bold;
 }
 
-.utilities li:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  left: -30px;
-  border-radius: 100px;
-  background: #000 url("../../../tna-grid/1.0/img/icon-chevron-down.png") no-repeat 2.5px 2.5px;
-}
-
 .utilities li {
-  position: relative;
   list-style: none;
+  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-24-accordion-open.png") no-repeat left top;
   background-size: 24px;
-  padding: 0px 20px 4px 0px;
+  background-position: 0 2px;
+  padding: 2px 0 4px 32px;
   float: left;
   display: block;
   margin: 0 20px 0 0;
-}
-.utilities li button, .utilities li a {
-  margin-left: 5px;
 }
 
 .utilities li:hover {
@@ -5864,14 +5819,10 @@ ul.form-selectable li input {
   text-decoration: underline;
 }
 
-.utilities li.active:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  left: -30px;
-  border-radius: 100px;
-  background: #000 url("../../../tna-grid/1.0/img/icon-chevron-up.png") no-repeat 2.5px 2.5px;
+.utilities li.active {
+  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-24-accordion-close.png") no-repeat left top;
+  background-size: 24px;
+  background-position: 0 2px;
 }
 
 .utilities .mimic-link {
@@ -5989,7 +5940,7 @@ a.filter-button-secondary {
 }
 
 .increase {
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 .disc-container {
@@ -6022,21 +5973,18 @@ a.filter-button-secondary {
   line-height: 35px;
   margin: 10px 1px;
   font-family: "Open sans", sans-serif;
-  background: #000;
-  color: #fff;
-  border: solid #eee 1px;
+  background: #fff;
+  color: #222;
 }
 
 #menu-disc li a.selected {
-  background-color: #dde5d5;
-  color: #000;
-  border: 1px solid black;
+  background-color: #405480;
+  color: #fff;
 }
 
 #menu-disc li span.disabled {
-  border: 1px solid #555;
-  background-color: #eee;
-  color: #555;
+  background-color: #ccc;
+  color: #fff;
 }
 
 .contained {
@@ -6076,10 +6024,6 @@ a.filter-button-secondary {
 /**.step-two, .step-three {
 	display: none;
 }**/
-.breather h2 {
-  padding-top: 14px;
-}
-
 .width-full-to-auto {
   width: 100%;
 }
@@ -6100,10 +6044,6 @@ a.filter-button-secondary {
 .margin-none {
   /* use existing style in base.css */
   margin: 0px;
-}
-
-#step-two {
-  margin-top: 14px;
 }
 
 .no-padding-bottom {
@@ -6176,6 +6116,10 @@ a.filter-button-secondary {
     display: none;
   }
 
+  .category-filter-footer {
+    background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-blue-down-arrow.png") no-repeat center top;
+  }
+
   #toggle-container {
     display: block !important;
   }
@@ -6186,7 +6130,7 @@ a.filter-button-secondary {
 
   .keywords-selectable li a {
     margin: 0 !important;
-    color: #007bff;
+    color: #fff;
   }
 
   #mobile-keywords {
@@ -6226,6 +6170,10 @@ a.filter-button-secondary {
     padding: 0.1em 0.3em;
     font-size: 1.4em;
     max-width: 500px !important;
+  }
+
+  .increase {
+    font-size: 2em;
   }
 
   .width-full-to-auto {

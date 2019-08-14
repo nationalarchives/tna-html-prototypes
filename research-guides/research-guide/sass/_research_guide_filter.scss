@@ -118,7 +118,7 @@ input#f1 {
 .research-guide-filter-left input[type="text"] {
   width: 97%;
   min-width: initial;
-  padding-right: 10px;
+  padding-right: 0;
   position: absolute;
   left: 0;
 }
@@ -130,7 +130,6 @@ input#f1 {
   text-align: left;
   font-size: 0.95em;
 }
-
 .research-guide-filter-left .toggle-subcategories {
   background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-24-accordion-open.png") no-repeat top right;
   padding-bottom: 24px;

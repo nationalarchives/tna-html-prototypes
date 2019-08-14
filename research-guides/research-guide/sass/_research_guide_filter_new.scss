@@ -53,7 +53,7 @@
 .resource-results li {
   float: left;
   width: 100%;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #ddd;
   list-style: none;
   padding: .5em 0;
   margin: 0;
@@ -138,9 +138,8 @@ ul.form-selectable li input	{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#d4d4d4',GradientType=0 ); /* IE6-9 */
 }
 .bg-blue {
-  //border: 1px solid black;
-  background: #eee;
-  color: #000;
+  background: #405480 url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-grey-down-arrow.png") no-repeat center top;
+  color: #fff;
 }
 .bg-blue .contained {
   background: none;
@@ -149,7 +148,7 @@ ul.form-selectable li input	{
 
 .utilities 	{
   float:left;
-  margin: 10px 20px 0 20px;
+  margin: 10px 20px 0 10px;
 }
 
 .utilities ul 	{
@@ -162,33 +161,15 @@ ul.form-selectable li input	{
   margin: 0 !important;
   font-weight: bold;
 }
-
-.utilities li:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  left: -30px;
-  border-radius: 100px;
-  background: #000 url("../../../tna-grid/1.0/img/icon-chevron-down.png") no-repeat 2.5px 2.5px;
-}
-
 .utilities li	{
-  position: relative;
   list-style: none;
-
+  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-24-accordion-open.png") no-repeat left top;
   background-size: 24px;
-
-  padding: 0px 20px 4px 0px;
+  background-position: 0 2px;
+  padding: 2px 0 4px 32px;
   float: left;
   display:block;
   margin: 0 20px 0 0;
-
-  button, a {
-    margin-left: 5px;
-
-  }
-
 }
 
 
@@ -196,14 +177,10 @@ ul.form-selectable li input	{
   cursor: pointer;
   text-decoration: underline;
 }
-.utilities li.active:before	{
-  content: "";
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  left: -30px;
-  border-radius: 100px;
-  background: #000 url("../../../tna-grid/1.0/img/icon-chevron-up.png") no-repeat 2.5px 2.5px;
+.utilities li.active	{
+  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-24-accordion-close.png") no-repeat left top;
+  background-size: 24px;
+  background-position: 0 2px;
 }
 .utilities .mimic-link {
   padding: 0;
@@ -303,7 +280,7 @@ a.filter-button-secondary {
   display: none;
 }
 .increase	/* group with text size styles (.text-large, .text-175pc) in base or replace */ {
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 .disc-container {
   text-align: center;
@@ -330,20 +307,18 @@ a.filter-button-secondary {
   line-height: 35px;
   margin: 10px 1px;
   font-family: 'Open sans', sans-serif;
-  background: #000;
-  color: #fff;
-  border: solid #eee 1px;
+  background: #fff;
+  color: #222;
 }
 #menu-disc li a.selected {
-  background-color: #dde5d5;
-  color: #000;
-  border: 1px solid black;
+  background-color: #405480;
+  color: #fff;
 }
 
 #menu-disc li span.disabled{
-  border: 1px solid #555;
-  background-color: #eee;
-  color: #555;
+
+  background-color: #ccc;
+  color: #fff;
 }
 .contained {
   color: #444;
@@ -376,18 +351,6 @@ a.filter-button-secondary {
 /**.step-two, .step-three {
 	display: none;
 }**/
-
-
-.breather {
-  h2 {
-    padding-top:  14px;
-  }
-}
-
-#guide-form div:first-of-type {
-  //padding-top: 0;
-}
-
 .width-full-to-auto	{
   width: 100%;
 }
@@ -409,18 +372,7 @@ a.filter-button-secondary {
 
 .margin-none{ /* use existing style in base.css */
   margin:0px;
-
-  //.hue-grey-light {
-  //  border: 1px solid black;
-  //}
-
-
 }
-
-#step-two {
-  margin-top: 14px;
-}
-
 .no-padding-bottom { /* use existing style in base.css */
   padding-bottom:0px;
 }
@@ -495,9 +447,8 @@ a.filter-button-secondary {
     display: none;
   }
   .category-filter-footer {
-
+    background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-blue-down-arrow.png") no-repeat center top;
   }
-
   #toggle-container {
     display: block !important;
   }
@@ -506,7 +457,7 @@ a.filter-button-secondary {
   }
   .keywords-selectable li a {
     margin: 0 !important;
-    color: #007bff;
+    color: #fff;
   }
   #mobile-keywords {
     display: none;
@@ -545,7 +496,9 @@ a.filter-button-secondary {
     max-width: 500px !important;
   }
 
-
+  .increase	{
+    font-size: 2em;
+  }
   .width-full-to-auto	{
     width: auto;
   }

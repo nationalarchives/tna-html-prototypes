@@ -16,14 +16,14 @@ p, .article div p {
 }
 
 a:link, a:visited, a:active, .mimic-link {
-  color: #007bff;
+  color: #2A5DB0;
   text-decoration: none;
 }
 
 a:focus, .mimic-link:focus {
-  //background-color: #FCE45C;
-  //outline: 3px solid #ebab00;
-  //color: #000;
+  background-color: #FCE45C;
+  outline: 3px solid #ebab00;
+  color: #000;
 }
 a:hover, .mimic-link:hover {
   text-decoration: underline;
@@ -34,7 +34,7 @@ a[href^="mailto"] {
 }
 /* Default headings */
 h1, h2, h3, h4 {
-  font-family: 'Roboto Mono', serif;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   z-index: 2;
   line-height: 1.5;
@@ -169,7 +169,7 @@ ul.form-selectable li span input[type=checkbox] {
 
 /* Default form tags */
 input[type="submit"] {
-  background-color: #000;
+  background-color: #008484;
   color: #fff;
   padding: 0.3em .5em;
   border: 0;
@@ -177,7 +177,7 @@ input[type="submit"] {
   margin: 0;
 }
 input[type="text"], input.width-half, #Email /* the Email ID has been applied to single-field email sign-up forms */ {
-  border: 1px solid #000;
+  border: 1px solid #ccc;
   padding: 2px;
   height:34px;
   text-indent: 5px;
