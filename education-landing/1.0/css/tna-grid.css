@@ -4811,8 +4811,10 @@ form .checkbox input[type="checkbox"]:focus + label::before {
     cursor: pointer; }
     .education-landing a.education:hover > div span {
       text-decoration: underline; }
-.education-landing .subject-information p {
-  font-size: 1.5em; }
+.education-landing .subject-information {
+  border-left: 2px solid #555555; }
+  .education-landing .subject-information p {
+    padding: 1em; }
 .education-landing .bottom-spacing {
   margin-bottom: 2em; }
 .education-landing .video {
