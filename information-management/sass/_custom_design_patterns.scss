@@ -62,7 +62,7 @@ background-size:cover;
   background-color: #ddd !important;
   background-size: cover !important;
   background-position: center center !important;
-  height: 180px;
+  height: 198px;
   margin-bottom: 4em;
 }
 .ends-at-one-third a + p {
@@ -182,7 +182,7 @@ div + h2:first-of-type {
 
 .image-container h2 {
   display: block;
-  padding-top: 190px;
+  padding-top: 210px;
 }
 
 a > .image-container  >  h2  >  span  >  span,
@@ -339,28 +339,56 @@ padding: 0 0 .25em 0;
 
   div:nth-of-type(1) {
     .heading-holding-banner {
+      background: url('../img/grocerystore.jpg') no-repeat top center;
+    }
+  }
+
+  div:nth-of-type(2) {
+    margin-left: 3% !important;
+    .heading-holding-banner {
       background: url('../img/manageinformation.png') no-repeat top center;
     }
   }
-  div:nth-of-type(2) {
+
+  div:nth-of-type(3) {
+    float: right;
+    margin-right: 0;
     .heading-holding-banner {
-      background: url('../img/store.jpg') no-repeat top center;
+      background: url('../img/store3.png') no-repeat top center;
     }
   }
   div:nth-of-type(4) {
     .heading-holding-banner {
       background: url('http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/information-management/im-training.jpg') no-repeat top center;
     }
+
+    .breather {
+      margin-left: 0 !important;
+    }
   }
   div:nth-of-type(5) {
+    margin-left: 3% !important;
+
+    .breather {
+      margin-left: 0 !important;
+    }
+  }
+  div:nth-of-type(6) {
+    float: right;
+    margin-right: 0;
     .heading-holding-banner {
       background: url('../img/grocerystore.jpg') no-repeat top center;
     }
   }
-  div:nth-of-type(6) {
+  div:nth-of-type(7) {
     .heading-holding-banner {
-      background-position: top !important;
       background: url('../img/keepintouch.png') no-repeat top center;
+    }
+
+    .breather {
+      p {
+        padding-top: .5em;
+      }
     }
   }
 }
