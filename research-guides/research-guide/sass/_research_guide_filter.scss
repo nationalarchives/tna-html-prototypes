@@ -1,0 +1,186 @@
+
+.rg-recommended{
+  position:relative;
+  border-left:5px solid #F4D57F;
+  background-color:#EEE;
+  margin-bottom: 5px !important;
+  padding: 25px 2.7% 10px 1% !important;
+  width: 96% !important;
+}
+.rg-recommended .tag {
+  background-color: inherit;
+}
+.rg-recommended-label, .highlight{
+  color:#333;
+  background-color: #FF9933;
+  font-size: 9pt;
+  padding:3px;
+  position: absolute;
+  left:0px;
+  top:0px;
+}
+.rg-label-all {
+  background-color: transparent;
+  background-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-availability-all.png");
+  padding-left: 28px;
+}
+.rg-label-some {
+  background-color: transparent;
+  background-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-availability-some.png");
+  padding-left: 28px;
+}
+.rg-label-none {
+  background-color: transparent;
+  background-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-availability-none.png");
+  padding-left: 28px;
+}
+.toggle-subcategories {
+  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-24-accordion-open.png") no-repeat center bottom;
+  padding-bottom: 24px;
+  background-size: 24px;
+  color:#fce45c !important;
+  font-size: 1em;
+
+}
+.toggle-subcategories.expanded {
+  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-24-accordion-close.png") no-repeat center bottom;
+  padding-bottom: 24px;
+  background-size: 24px;
+}
+.toggle-subcategories:before {
+  content: "Show more "
+}
+.toggle-subcategories.expanded:before {
+  content: "Show fewer "
+}
+.nav-extend {
+  background-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-24-nav-extend-teal.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.nav-controls {
+  text-align: center;
+}
+#resources-form {
+  background-color: transparent;
+  text-align: left;
+}
+#resources-form label {
+  font-size: .9em;
+  margin: 0 1.5em 0 .5em;
+}
+.resource-results ul {
+  margin: 0;
+  padding: 0;
+}
+.resource-results li {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+  padding: .5em 0;
+  margin: 0;
+  display: inline-block;
+}
+.resource-results li a h3 {
+  margin: 0 .75em .25em 0;
+  line-height: 1.5;
+}
+.resource-results li a .has-background {
+  width: 100%;
+  background-size: cover;
+}
+input#f1 {
+  margin-top:-20px;
+}
+
+/* -- Start Left Hand Filter version -- */
+.research-guide-filter-left ul.form-selectable {
+  width: auto;
+  margin: auto;
+  padding: 1em 2.5em;
+}
+.research-guide-filter-left ul.form-selectable li {
+  width: 100%;
+}
+.research-guide-filter-left ul.form-selectable li input	{
+  margin-left: -22px;
+}
+.research-guide-filter-left .ends-at-one-third	{
+  width: 100%;
+}
+.research-guide-filter-left .fixed-height {
+  height: 40px;
+}
+.research-guide-filter-left select {
+  width: 100%;
+}
+.research-guide-filter-left input[type="text"] {
+  width: 97%;
+  min-width: initial;
+  padding-right: 0;
+  position: absolute;
+  left: 0;
+}
+.research-guide-filter-left .search-button-medium {
+  position: absolute;
+  right: 0;
+}
+.research-guide-filter-left .nav-controls	{
+  text-align: left;
+  font-size: 0.95em;
+}
+.research-guide-filter-left .toggle-subcategories {
+  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-24-accordion-open.png") no-repeat top right;
+  padding-bottom: 24px;
+  background-size: 22px;
+  color: #fce45c !important;
+  font-size: 1em;
+  padding-right: 24px;
+}
+.research-guide-filter-left .toggle-subcategories.expanded {
+  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-24-accordion-close.png") no-repeat top right;
+  background-size: 22px;
+}
+/* -- End Left Hand Filter version -- */
+
+@media only screen and (min-width: 480px) {
+  .banner-category {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .banner-category {
+    display: inherit;
+    max-width: 33%;
+    *width:180px;
+    min-height: 180px;
+    margin-top: -180px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* -- End Left Hand Filter version - 768px -- */
+  .research-guide-filter-left .ends-at-one-third	{
+    width: 32%;
+  }
+  /* -- End Left Hand Filter version - 768px -- */
+
+}
+@media only screen and (min-width: 1024px) {
+  .banner-category {
+    max-width: 25%;
+  }
+}
+
+h1 {
+    span {
+      span {
+        padding-left: 30px;
+      }
+    }
+  .pad-large {
+    padding-top: 0;
+  }
+}

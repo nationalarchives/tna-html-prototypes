@@ -1,0 +1,627 @@
+/* -- Recommended labels -- */
+.rg-recommended {
+  position: relative;
+  border-left: 2px solid #FF9933;
+  margin-bottom: 5px !important;
+  padding: 25px 2.7% 10px 1% !important;
+  width: 96% !important;
+}
+.rg-recommended .tag {
+  background-color: #e5e5e5;
+}
+.rg-recommended-label, .highlight {
+  color: #333;
+  background-color: #FF9933;
+  padding: 3px 8px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-size: small;
+}
+
+
+/* -- Indicator tags -- */
+.rg-label-all {
+  background-color: transparent;
+  background-image: url('http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-availability-all.png');
+  padding-left: 28px;
+}
+.rg-label-some {
+  background-color: transparent;
+  background-image: url('http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-availability-some.png');
+  padding-left: 28px;
+}
+.rg-label-none {
+  background-color: transparent;
+  background-image: url('http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-availability-none.png');
+  padding-left: 28px;
+}
+
+/* -- Research guide results  -- */
+#resources-form {
+  background-color: transparent;
+  text-align: left;
+}
+#resources-form label {
+  font-size: .9em;
+  margin: 0 1.5em 0 .5em;
+}
+.resource-results ul {
+  margin: 0;
+  padding: 0;
+}
+.resource-results li {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  list-style: none;
+  padding: .5em 0;
+  margin: 0;
+  display: inline-block;
+}
+.resource-results li > a, .resource-results .guide-container > a {
+  font-size: 1.25em;
+  letter-spacing: -.02em;
+  margin-bottom: 5px;
+  /* padding, float and width used to increase space between this and keywords below */
+  padding-bottom: .25em;
+  /* float: left;
+   width: 100%;*/
+}
+
+.resource-results li a h3 {
+  margin: .25em .75em .25em 0;
+  line-height: 1.5;
+}
+.resource-results li a .has-background {
+  width: 100%;
+  background-size: cover;
+}
+.resource-results .tag a{
+
+  font-size: 1em;
+}
+
+.thumb-container{
+  display:none;
+}
+/* -- Start Left Hand Filter version -- */
+
+ul.no-bullet li {
+  padding: 5px 0 3px 0;
+}
+ul.form-selectable {
+  width: auto;
+  margin: auto;
+  padding: 1em 2.5em;
+}
+ul.form-selectable li {
+  width: 100%;
+}
+ul.form-selectable li input	{
+  margin-left: -22px;
+}
+.subject-links{
+
+  text-align: center;
+}
+.subject-links a {
+  margin-left:10px;
+  display:inline-block;
+  padding:4px;
+  background-color: #fff;
+  margin-bottom:10px;
+  width:85%;
+}
+
+.research-guide-filter .ends-at-one-third	{
+  width: 100%;
+}
+.research-guide-filter select {
+  width: 100%;
+}
+.research-guide-filter input[type="text"] {
+  width: 25%;
+}
+/* -- End Left Hand Filter version -- */
+
+/* -- Start of new Left Hand filter version -- */
+
+.bg-medium-grey {
+  background: rgb(209,209,209); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(209,209,209,1) 0%, rgba(212,212,212,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(209,209,209,1)), color-stop(100%,rgba(212,212,212,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(209,209,209,1) 0%,rgba(212,212,212,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(209,209,209,1) 0%,rgba(212,212,212,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(209,209,209,1) 0%,rgba(212,212,212,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(209,209,209,1) 0%,rgba(212,212,212,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#d4d4d4',GradientType=0 ); /* IE6-9 */
+}
+.bg-blue {
+  //border: 1px solid black;
+  background: #ddd;
+  color: #000;
+}
+.bg-blue .contained {
+  background: none;
+  color: #fff;
+}
+
+.utilities 	{
+  float:left;
+  margin: 10px 20px 0 20px;
+}
+
+.utilities ul 	{
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.utilities p	{
+  margin: 0 !important;
+  font-weight: bold;
+}
+
+.utilities li:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: -30px;
+  border-radius: 100px;
+  background: #000 url("../../../tna-grid/1.0/img/icon-chevron-down.png") no-repeat 2.5px 2.5px;
+}
+
+.utilities li	{
+  position: relative;
+  list-style: none;
+
+  background-size: 24px;
+
+  padding: 0px 20px 4px 0px;
+  float: left;
+  display:block;
+  margin: 0 20px 0 0;
+
+  button, a {
+    margin-left: 5px;
+
+  }
+
+}
+
+
+.utilities li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.utilities li.active:before	{
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: -30px;
+  border-radius: 100px;
+  background: #000 url("../../../tna-grid/1.0/img/icon-chevron-up.png") no-repeat 2.5px 2.5px;
+}
+.utilities .mimic-link {
+  padding: 0;
+}
+#search-toggle {
+  margin-left: 0;
+}
+.category-filter {
+  background-color: #405480;
+  color: #fff;
+  width: 100%;
+}
+.category-filter h2 {
+  margin: 0 0 5px 0 !important;
+}
+.category-filter-footer {
+  width: 100%;
+  background: none;
+  height: 20px;
+}
+.form-selectable /* This is to override the style in base.css - line 504 */ {
+  background: none !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.filter-container  {
+  background: #fff;
+  margin: 15px 0 0 0 !important;
+}
+input.filter-button-primary {
+  margin: 10px;
+  padding: 5px 15px !important;
+  height: 29px;
+  width: 64px;
+  text-align: left;
+  color: #fff;
+  font-size: 0.8em;
+  background: #099;
+
+}
+input.filter-button-primary:hover {
+  text-decoration: underline;
+}
+a.filter-button-secondary {
+  margin: 10px 5px;
+  padding: 3px 15px !important;
+  text-align: left;
+  color: #666;
+  font-size: 0.8em;
+}
+#research-guidance-subcategories h3	{
+  margin: 0!important;
+  padding: 0 !important;
+}
+.search-container	{
+  width: 100%;
+  margin: 0 auto;
+}
+.search-container input[type="text"] {
+  float: left;
+  width: 83%;
+  font-size: 1.3em;
+  font-weight: normal;
+  color: #333 !important;
+
+}
+.search-container input[type="submit"] {
+  float: left;
+}
+#mobile-only {
+  display: block;
+  background-size: 24px;
+  margin: 0.5em 0 0 0;
+  width: 100%;
+  background: #e1e1e1;
+  text-align: center;
+}
+#mobile-only p {
+  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-24-accordion-open.png") no-repeat left center;
+  background-size: 24px;
+  cursor: pointer;
+  display: inline;
+  color: #2A5DB0;
+  width: auto;
+  padding: 2px 0 2px 30px;
+  margin: 0 5px;
+  font-size: 0.8em;
+}
+#mobile-only p.active {
+  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-24-accordion-close.png") no-repeat left center;
+  background-size: 23px;
+}
+#mobile-only p:hover {
+  text-decoration: underline;
+}
+#toggle-container {
+  display: none;
+}
+.increase	/* group with text size styles (.text-large, .text-175pc) in base or replace */ {
+  font-size: 1.4em;
+}
+.disc-container {
+  text-align: center;
+  width: 100%;
+}
+.disc-container > .pad-large	{
+  margin:0 auto !important;
+}
+.pad-bottom-none {
+  padding-bottom: 0px !important;
+}
+#menu-disc {
+  margin: 0 auto;
+  width: 100%;
+  float: none;
+  min-height: initial;
+}
+#menu-disc li {
+  float: none;
+  margin: 0;
+}
+#menu-disc li a, #menu-disc li span.disabled {
+  width: 35px;
+  line-height: 35px;
+  margin: 10px 1px;
+  font-family: 'Open sans', sans-serif;
+  background: #000;
+  color: #fff;
+  border: solid #eee 1px;
+}
+#menu-disc li a.selected {
+  background-color: #fbe2bc;
+  color: #000;
+  border: 1px solid black;
+}
+
+#menu-disc li span.disabled{
+  border: 1px solid #555;
+  background-color: #eee;
+  color: #555;
+}
+.contained {
+  color: #444;
+  background-image: none;
+  margin: 10px 0 0 10px !important;
+  display: inline-block;
+  padding: 5px 10px;
+}
+.border-bottom-blue {
+  border-bottom: 3px solid #ccc;
+}
+.keywords-selectable {
+  float: left;
+  list-style: none inside;
+  display: inline;
+  width: 100%;
+  /*  margin: 0 0.2% 2px 0;*/
+  line-height: 1.5;
+}
+.keywords-selectable li {
+  border: 0 !important;
+  /**float: left;**/
+}
+#mobile-keywords {
+  display: block;
+}
+#desktop-keywords {
+  display: none;
+}
+/**.step-two, .step-three {
+	display: none;
+}**/
+
+#guide-form div:first-of-type {
+  //padding-top: 0;
+}
+
+.width-full-to-auto	{
+  width: 100%;
+}
+
+.research-guide-filter-left input[type="text"] {
+  width: 90%;
+  min-width: initial;
+  position:relative;
+  padding-right:5px;
+  left: 0;
+}
+
+
+.research-guide-filter-left .search-button-medium {
+  position: absolute;
+  right:20px;
+}
+
+
+.margin-none{ /* use existing style in base.css */
+  margin:0px;
+
+  //.hue-grey-light {
+  //  border: 1px solid black;
+  //}
+
+
+}
+
+#step-two {
+  margin-top: 14px;
+}
+
+.no-padding-bottom { /* use existing style in base.css */
+  padding-bottom:0px;
+}
+
+.text-200pc{
+
+  font-size: 200%;
+}
+
+/* -- End of new Left Hand filter version -- */
+
+@media only screen and (min-width: 480px) {
+
+
+
+  .subject-links a {
+    margin-left:10px;
+    display:inline-block;
+    padding:4px;
+    background-color: #fff;
+    margin-bottom:10px;
+    width:auto;
+  }
+  .banner-category {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .guide-container{
+    float:right;
+    box-sizing: border-box;
+    width:71%;
+    padding-left:10px;
+
+  }
+  .thumb-container{
+    float:left;
+    display: block;
+    width:25%;
+    max-width:120px;
+    min-width:120px;
+    height:120px;
+    overflow: hidden;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+  }
+  .banner-category {
+    display: inherit;
+    max-width: 33%;
+    *width:180px;
+    min-height: 180px;
+    margin-top: -180px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* -- Start Left Hand Filter version - 768px -- */
+  .research-guide-filter .ends-at-one-third	{
+    width: 32%;
+  }
+  /* -- End Left Hand Filter version - 768px -- */
+
+  /* -- Start of new Left Hand Filter version - 768px -- */
+
+  .search-container	{
+    width: 50%;
+  }
+  #mobile-only {
+    display: none;
+  }
+  .category-filter-footer {
+
+  }
+
+  #toggle-container {
+    display: block !important;
+  }
+  .keywords-selectable li {
+    /** width: 47.4% !important;	**/
+  }
+  .keywords-selectable li a {
+    margin: 0 !important;
+    color: #007bff;
+  }
+  #mobile-keywords {
+    display: none;
+  }
+  #desktop-keywords{
+    display: block;
+
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
+
+  }
+  .keywords-selectable{
+
+    float:none;
+  }
+
+  .keywords-selectable li.selected {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  #page_wrap	{
+    min-height: 600px;
+  }
+  #utility-category {
+    text-align: center;
+  }
+  #utility-category select {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0.1em 0.3em;
+    font-size: 1.4em;
+    max-width: 500px !important;
+  }
+
+
+  .width-full-to-auto	{
+    width: auto;
+  }
+  /* -- End of new Left Hand Filter version - 768px -- */
+
+}
+@media only screen and (min-width: 1024px) {
+
+
+  .thumb-container{
+
+    width:23%;
+
+  }
+
+  .guide-container{
+
+    width:77% ;
+
+  }
+
+
+
+  .research-guide-filter-left input[type="text"] {
+    width: 96%;
+    min-width: initial;
+    position:relative;
+    padding-right:5px;
+    left: 0;
+  }
+
+  .banner-category {
+    max-width: 25%;
+  }
+
+  /* -- Start of new Left Hand Filter version - 1024px -- */
+
+
+  #desktop-keywords{
+    display: block;
+    -moz-column-count: 4;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    column-count: 4;
+    column-gap: 20px;
+  }
+
+  .keywords-selectable{
+
+    float:none;
+  }
+
+  .keywords-selectable ul{
+
+  }
+
+
+  .keywords-selectable li {
+    /**width: 23.8% !important;	**/
+  }
+  .utilities 	{
+    float: right;
+    margin: -45px 10px 0 0;
+
+
+  }
+  /* -- End of new Left Hand Filter version - 1024px -- */
+
+}
+@media only screen and (min-width: 1280px) {
+
+
+  .thumb-container {
+
+    width: 22%;
+
+  }
+
+  .guide-container {
+
+    width: 82%;
+
+  }
+
+}
