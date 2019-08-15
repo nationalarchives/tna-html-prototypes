@@ -179,7 +179,7 @@
 @media only screen and (min-width:768px) {
 
   .col, .ends-at-one-quarter:nth-child(3) {
-    margin-left: 2%;
+    margin-right: 2%;
   }
 
   .ends-at-one-third, .ends-at-one-third:nth-child(even) {
@@ -208,7 +208,7 @@
   }
 
   .grid-within-grid-two-item > div, .ends-at-half {
-    width: 49%;
+    width: 30%;
   }
   .grid-within-grid-six-item > div, .grid-within-grid-three-item > div, .grid-within-grid-three-item > div {
     width: 31.3%;
@@ -232,7 +232,7 @@
     float:none; /* allows sidebar content to flow correctly without disrupting grid behaviour at smaller screen sizes */
   }
 
-  .grid-within-grid-three-item > div { 
+  .grid-within-grid-three-item > div {
     width: 32%;
     margin: 0 2% 10px 0;
   }

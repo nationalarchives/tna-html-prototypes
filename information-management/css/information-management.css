@@ -362,7 +362,7 @@ table td {
 }
 @media only screen and (min-width: 768px) {
   .col, .ends-at-one-quarter:nth-child(3) {
-    margin-left: 2%;
+    margin-right: 2%;
   }
 
   .ends-at-one-third, .ends-at-one-third:nth-child(even) {
@@ -390,7 +390,7 @@ table td {
   }
 
   .grid-within-grid-two-item > div, .ends-at-half {
-    width: 49%;
+    width: 30%;
   }
 
   .grid-within-grid-six-item > div, .grid-within-grid-three-item > div, .grid-within-grid-three-item > div {
@@ -456,6 +456,7 @@ p, .article div p {
   /* line-height: 1.65em;  recommended alteration */
   margin: 0 0 1.5em 0;
   /* margin: 0 1em 1.5em 1em;  recommended alteration, the indent improves page scanning for longer articles e.g. document releases */
+  padding-top: 3em;
 }
 
 .mimic-link {
@@ -1103,6 +1104,10 @@ ul.child, ul.sibling, ul.triplets, ul.quadruplets,
   margin-bottom: 0;
 }
 
+#page-header section article:nth-of-type(2) {
+  float: right;
+}
+
 /* Reduce size of logo on mobile and position centrally */
 #logo-holder img {
   width: 200px;
@@ -1593,7 +1598,7 @@ a#cookie-cutter {
   background-color: #ddd !important;
   background-size: cover !important;
   background-position: center center !important;
-  height: 180px;
+  height: 198px;
   margin-bottom: 4em;
 }
 
@@ -1717,7 +1722,7 @@ div + h2:first-of-type {
 
 .image-container h2 {
   display: block;
-  padding-top: 190px;
+  padding-top: 210px;
 }
 
 a > .image-container > h2 > span > span,
@@ -1877,20 +1882,45 @@ padding: 0 0 .25em 0;
   padding-top: 200px;
 }
 #index div:nth-of-type(1) .heading-holding-banner {
-  background: url("../img/manageinformation.png") no-repeat top center;
+  background: url("../img/grocerystore.jpg") no-repeat top center;
+}
+#index div:nth-of-type(2) {
+  margin-left: 3% !important;
 }
 #index div:nth-of-type(2) .heading-holding-banner {
-  background: url("../img/store.jpg") no-repeat top center;
+  background: url("../img/manageinformation.png") no-repeat top center;
+}
+#index div:nth-of-type(3) {
+  float: right;
+  margin-right: 0;
+}
+#index div:nth-of-type(3) .heading-holding-banner {
+  background: url("../img/store3.png") no-repeat top center;
 }
 #index div:nth-of-type(4) .heading-holding-banner {
   background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/information-management/im-training.jpg") no-repeat top center;
 }
-#index div:nth-of-type(5) .heading-holding-banner {
-  background: url("../img/grocerystore.jpg") no-repeat top center;
+#index div:nth-of-type(4) .breather {
+  margin-left: 0 !important;
+}
+#index div:nth-of-type(5) {
+  margin-left: 3% !important;
+}
+#index div:nth-of-type(5) .breather {
+  margin-left: 0 !important;
+}
+#index div:nth-of-type(6) {
+  float: right;
+  margin-right: 0;
 }
 #index div:nth-of-type(6) .heading-holding-banner {
-  background-position: top !important;
+  background: url("../img/grocerystore.jpg") no-repeat top center;
+}
+#index div:nth-of-type(7) .heading-holding-banner {
   background: url("../img/keepintouch.png") no-repeat top center;
+}
+#index div:nth-of-type(7) .breather p {
+  padding-top: 0.5em;
 }
 
 /* Full width heading holder */
@@ -5137,6 +5167,10 @@ span.guidance-description {
     width: 100%;
     padding-right: 10px;
   }
+}
+
+#newsletterAccessibility p {
+  padding-top: 0;
 }
 
 #nav {
