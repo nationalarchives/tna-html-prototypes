@@ -750,9 +750,10 @@ p > cite, blockquote + cite {
 
 /* Padding container */
 .breather {
-  padding: 20px;
+  padding: 1px 20px 20px;
 }
 .breather h2 {
+  padding-top: 0px;
   margin-left: -20px;
 }
 
@@ -5811,7 +5812,7 @@ ul.form-selectable li input {
 }
 
 .bg-blue {
-  background: #eee;
+  background: #ddd;
   color: #000;
 }
 
@@ -6028,7 +6029,7 @@ a.filter-button-secondary {
 }
 
 #menu-disc li a.selected {
-  background-color: #dde5d5;
+  background-color: #fbe2bc;
   color: #000;
   border: 1px solid black;
 }
@@ -6076,10 +6077,6 @@ a.filter-button-secondary {
 /**.step-two, .step-three {
 	display: none;
 }**/
-.breather h2 {
-  padding-top: 14px;
-}
-
 .width-full-to-auto {
   width: 100%;
 }

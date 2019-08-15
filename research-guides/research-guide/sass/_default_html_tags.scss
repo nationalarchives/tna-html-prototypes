@@ -16,7 +16,7 @@ p, .article div p {
 }
 
 a:link, a:visited, a:active, .mimic-link {
-  color: #2A5DB0;
+  color: #007bff;
   text-decoration: none;
 }
 
@@ -54,7 +54,7 @@ h2 {
   font-size: 1.6em;
 }
 h3 {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 h4 {
   font-size: 1.16em;
@@ -169,7 +169,7 @@ ul.form-selectable li span input[type=checkbox] {
 
 /* Default form tags */
 input[type="submit"] {
-  background-color: #008484;
+  background-color: #000;
   color: #fff;
   padding: 0.3em .5em;
   border: 0;
@@ -186,7 +186,7 @@ input[type="text"], input.width-half, #Email /* the Email ID has been applied to
 }
 
 input:focus {
-  outline: 3px solid #ebab00;
+  outline: 3px solid #fbe2bc;
 }
 input[type="submit"]:focus, a.button:focus {
   color: #fff;

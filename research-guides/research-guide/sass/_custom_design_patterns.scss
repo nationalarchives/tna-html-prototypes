@@ -140,7 +140,6 @@ p.standfirst {
 
 
 h1  >  span, h2  >  span, h3  >  span {
-  background-image: url('http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/heading-flourish.png');
   background-repeat: no-repeat;
   background-position: bottom left;
   padding-bottom: 14px;
@@ -149,14 +148,12 @@ h1  >  span, h2  >  span, h3  >  span {
 
 /* Custom heading spans to add accompanying padding and color */
 h1  >  span  >  span, h2  >  span  >  span, h3  >  span  >  span {
-  padding: 4px 10px 4px 10px;
   display: inline-block;
-  background-color: #405480;
-  color: #fff;
+  color: #000;
   line-height: 125%;
 }
 h1  >  span  >  span a:link, h2  >  span  >  span a:link, h1  >  span  >  span a:hover, h2  >  span  >  span a:hover, h1  >  span  >  span a:visited, h2  >  span  >  span a:visited, a > .image-container  >  h2  >  span  >  span, a  >  .heading-holding-banner  >  h2  >  span  >  span {
-  color: #fff;
+  color: #007bff;
   background-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-24-heading-link.png");
   background-repeat: no-repeat;
   background-position: 100% 50%;
@@ -179,10 +176,38 @@ div + h2:first-of-type {
   padding-top: 0;
 }
 
+#page_wrap {
+
+ .row:nth-of-type(2) {
+   border-left: 2px solid black;
+
+   .col:first-of-type {
+     border-right: 2px solid black;
+     width: 65%;
+     position: relative;
+
+     &:after {
+       display: block;
+       content: '';
+       background-color: white;
+       height: 75%;
+       width: 2px;
+       position: absolute;
+       bottom: 0;
+       right: -2px;
+       visibility: visible;
+     }
+
+   }
+
+  }
+
+}
+
 .research-guide h1, .research-guide-indepth h1	{
-  background: url('http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/dot-grey.png'); /* Remove when id specific backgrounds are introduced */
   font-size: 1.5em;
-  padding-top: 10px;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
 }
 .research-guide #primary-content h2,
 .research-guide-indepth #primary-content h2,
@@ -195,7 +220,7 @@ div + h2:first-of-type {
   overflow: auto;
 }
 .research-guide h2.indicator, .research-guide-indepth h2.indicator	{
-  background: #405480;
+  background: #555;
   color: #fff;
   font-family: 'Open sans';
   margin: 0 !important;
@@ -348,8 +373,7 @@ padding: 0 0 .25em 0;
 }
 /* Full width heading holder */
 .heading-holding-banner {
-  padding: 10px 0;
-  background: url('http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/dot-grey.png'); /* Remove when id specific backgrounds are introduced */
+  padding-left: 14px;
 }
 
 hr {
@@ -487,7 +511,7 @@ a.button:hover {
   font-family: 'Bitter', serif;
   font-size: 1.16em;
   letter-spacing: -.025em;
-  color: #111;
+  color: #007bff;
   margin: 10px 10px 0 0;
   display: inline-block; /* the translucent strap extends with the character count */
   background-color: rgba(255,255,255,.85);
@@ -1325,7 +1349,7 @@ a.hue-teal, a.hue-red {
 }
 .indicator h3 {
   display: inline-block;
-  color: #111;
+  color: #007bff;
   margin-bottom: 15px;
   background: url('../images/records/icon-availability-all.png') no-repeat;
   background-size: 23px;
@@ -1352,13 +1376,11 @@ a.hue-teal, a.hue-red {
   padding: 10px 0 10px 15px;
 }
 .indicator .indicator-description {
-  background: #f3f3f3;
   display: block;
   width: 100%;
   padding: 0;
   font-size: 0.9em;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  background-color: #eee;
 }
 .indicator .indicator-description .breather {
   float: left;
@@ -1394,15 +1416,15 @@ a.hue-teal, a.hue-red {
   border-right: 0;
 }
 .indicator ul li.none-small {
-  background-color: #CB0D07;
+  background-color: #fad3d4;
   color: #fff;
 }
 .indicator ul li.some-small {
-  background-color: #ebab00;
-  color: #000;
+  background-color: #555;
+  color: #fff;
 }
 .indicator ul li.all-small {
-  background-color: #008484;
+  background-color: #dde5d5;
   color: #fff;
 }
 /* End Research guide availability indicator */
@@ -1416,10 +1438,10 @@ a.hue-teal, a.hue-red {
 .research-guide-form form {
   float:left;
   width:95%;
-  background-color:#eee;
+  background-color:#fff;
   padding: 2.5% 2.5% 0 2.5%;
   margin:0 0 1em 0;
-  border-bottom: 3px solid #ddd;
+  border: 1px solid black;
 }
 
 .research-guide-form form .button-holder {

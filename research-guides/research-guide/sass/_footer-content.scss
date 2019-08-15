@@ -1,21 +1,121 @@
+#footer-wrapper {
+  background-color: #000;
+  background-position: -6em 20px;
+  background-repeat: no-repeat;
+  color: #FCFCFC;
+  padding-top: 2em;
+  padding-bottom: 2em
+}
+
+#footer-wrapper h4 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 1.16em;
+  margin-bottom: .5rem;
+  margin-top: 0;
+  color: #ffffff;
+}
+
+#footer-wrapper ul {
+  padding: 0;
+  margin-top: 10px;
+  min-height: 220px;
+}
+
+#footer-wrapper li {
+  list-style-type: none;
+  padding: 0.2em 0;
+  font-size: 16px;
+  width: 90%;
+}
+
+#footer-wrapper li:first-child {
+  border-top: none;
+}
+
+#footer-wrapper a:link, #footer-wrapper a:visited, #footer-wrapper a:active {
+  text-decoration: none;
+}
+
+#footer-wrapper a:hover {
+  text-decoration: underline;
+}
+
+#footer-wrapper p img {
+  max-width: 95%;
+  margin: 0;
+}
+
+.external-branding {
+  border-top: 1px dotted #545454;
+  padding: 20px 0 0 0;
+  font-size: .85em;
+}
+
+.footer-base {
+  border-top: 1px dotted #555;
+  padding: 20px 0 0;
+  font-size: .85em;
+
+  .left {
+    float: left;
+    width: 50%;
+
+    img {
+      float: left;
+      margin: 5px 25px 10px 0;
+    }
+
+    p {
+      display: block;
+      float: left;
+      margin: 0;
+    }
+  }
+
+  .right {
+    float: right;
+    width: 50%;
+    text-align: right;
+    margin: -10px -10px 0 0; /*adjustments to align with OGL logo on left hand side */
+    padding: 0;
+  }
+}
+
+.caption {
+  font-size: .85em;
+}
+
+#version {
+  display: block;
+  font-size: 0.8em;
+  color: transparent;
+  text-align: center;
+  background-color: #222;
+}
+
+
 .follow-us {
   a {
     display: inline-block;
+
     img {
-      background-color: #008484;
+      background-color: #000;
+      border: 2px solid #fff;
       border-radius: 50%;
-      padding: 6px;
+      padding: 7px;
       margin: 0 0.2em 0.3em 0;
-      width: 27px;
+      width: 25px;
       transition: 0.4s ease-in-out;
-      -webkit-transition: 0.4s ease-in-out;
-      -moz-transition: 0.4s ease-in-out;
+      -webkit-transition: 0.4s;
+
       &:hover {
         background: #555;
       }
     }
   }
 }
+
 
 @media (max-width: 1024px) {
   .open {
@@ -37,73 +137,102 @@
 }
 
 #footer-wrapper {
+  address {
+    margin-bottom: 1rem;
+    font-style: normal;
+    line-height: inherit;
+  }
+
+  #flickr-image{
+    a{
+      img{
+        max-width: 100%;
+      }
+    }
+  }
+
   .ends-at-one-quarter {
     @media (max-width: 767px) {
       width: 100%;
     }
+
     .footer-left {
       min-height: 300px;
       display: inline-block;
       float: left;
       width: 100%;
+
+      @media (max-width: 1023px) {
+        width: 50%;
+      }
+
+      @media (max-width: 767px) {
+        min-height: 150px;
+        width: 100%;
+      }
+
       @media (max-width: 480px) {
         padding: 4px;
       }
-      @media (max-width: 767px) {
-        min-height: 150px;
-      }
-      @media (max-width: 1023px) {
-        width: 100%;
-      }
-      #logo {
+
+      img {
         max-width: 157px;
-        margin-top: 6px;
-        margin-bottom: 20px;
+        margin-bottom: 23px;
       }
     }
   }
+
   .footer-col {
     @media (max-width: 767px) {
       padding: 0 !important;
     }
+
     .opening-times {
       width: 100%;
+
       .open_table {
         display: table;
         width: 100%;
+
         .open_tableRow {
           display: table-row;
         }
+
         .open_tableHeading {
           display: table-header-group;
         }
-        .open_tableCell,
-        .open_tableHead {
+
+        .open_tableCell, .open_tableHead {
           display: table-cell;
-          padding: 3px 0;
+          padding: 7px 0;
           width: 49%;
-          @media (max-width: 1100px) {
+
+          @media (max-width:1100px) {
             width: 0;
           }
         }
+
         .open_tableHeading {
           display: table-header-group;
           font-weight: bold;
         }
+
         .open_tableFoot {
           display: table-footer-group;
           font-weight: bold;
         }
+
         .open_tableBody {
           display: table-row-group;
         }
       }
+
       .open {
         margin-top: 40px;
       }
     }
 
-    @media (max-width: 767px) {
+    @media (max-width:767px) {
       box-sizing: border-box;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -112,9 +241,16 @@
 
     &:first-child {
       height: 304.77px;
-      @media (max-width: 767px) {
+
+      @media (max-width:767px) {
         height: auto;
       }
+    }
+  }
+
+  ul {
+    @media (max-width:767px) {
+      min-height: auto;
     }
   }
 }
