@@ -4875,26 +4875,44 @@ form .checkbox input[type="checkbox"]:focus + label::before {
     border: none; }
 .hwyr-landing main .tool-bar {
   padding: 1em; }
-.hwyr-landing main .remove-border-top {
+  @media only screen and (max-width: 867px) {
+    .hwyr-landing main .tool-bar .button {
+      display: block; } }
+  @media only screen and (max-width: 867px) {
+    .hwyr-landing main .tool-bar .hwyr-form-wrapper {
+      margin-top: 1em; } }
+  .hwyr-landing main .tool-bar .hwyr-form-wrapper form label {
+    display: none; }
+  .hwyr-landing main .tool-bar .hwyr-form-wrapper form [type='submit'] {
+    background: url(http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/search-white.png) center no-repeat #000;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 15px;
+    background-position: center; }
+  .hwyr-landing main .tool-bar .hwyr-form-wrapper form [type='text'] {
+    width: 75%;
+    position: absolute;
+    right: 57px;
+    height: 45px; }
+    .hwyr-landing main .tool-bar .hwyr-form-wrapper form [type='text']::-webkit-input-placeholder {
+      font-family: 'Roboto Mono', monospace; }
+    .hwyr-landing main .tool-bar .hwyr-form-wrapper form [type='text']::-moz-placeholder {
+      font-family: 'Roboto Mono', monospace; }
+    .hwyr-landing main .tool-bar .hwyr-form-wrapper form [type='text']:-ms-input-placeholder {
+      /* IE 10+ */
+      font-family: 'Roboto Mono', monospace; }
+    .hwyr-landing main .tool-bar .hwyr-form-wrapper form [type='text']:-moz-placeholder {
+      /* Firefox 18- */
+      font-family: 'Roboto Mono', monospace; }
+    @media only screen and (max-width: 867px) {
+      .hwyr-landing main .tool-bar .hwyr-form-wrapper form [type='text'] {
+        position: static;
+        float: left;
+        width: 100%; } }
+.hwyr-landing .remove-border-top {
   border: none; }
-.hwyr-landing main .entry-header h2 {
+.hwyr-landing .entry-header h2 {
   display: inline-block; }
-.hwyr-landing main .hwyr-form-wrapper form label {
-  display: inline-block;
-  position: absolute;
-  right: 375px;
-  top: 9px; }
-.hwyr-landing main .hwyr-form-wrapper form [type='submit'] {
-  background: url(http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/search-white.png) center no-repeat #000;
-  width: 42px;
-  height: 42px;
-  position: absolute;
-  right: 15px;
-  background-position: center; }
-.hwyr-landing main .hwyr-form-wrapper form [type='text'] {
-  min-width: 300px;
-  position: absolute;
-  right: 57px;
-  height: 42px; }
 
 /*# sourceMappingURL=tna-grid.css.map */

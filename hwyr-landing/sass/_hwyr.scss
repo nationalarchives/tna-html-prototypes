@@ -59,39 +59,75 @@
     }
     main {
         .tool-bar {
-            padding: 1em;
-        }
-        .remove-border-top {
-            border: none;
-        }
-        .entry-header {
-            h2 {
-                display: inline-block;
+            .button {
+                @media only screen and (max-width: 867px) {
+                    //background-color: lightblue;
+                    display: block;
+                    //max-width: 200px;
+                }
             }
-        }
-        .hwyr-form-wrapper {
-            form {
-                label {
-                    display: inline-block;
-                    position: absolute;
-                    right: 375px;
-                    top: 9px;
+            padding: 1em;
+            .hwyr-form-wrapper {
+                @media only screen and (max-width: 867px) {
+                    margin-top: 1em;
                 }
-                [type='submit'] {
-                    background: url(http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/search-white.png) center no-repeat #000;
-                    width: 42px;
-                    height: 42px;
-                    position: absolute;
-                    right: 15px;
-                    background-position: center;
-                }
-                [type='text'] {
-                    min-width: 300px;
-                    position: absolute;
-                    right: 57px;
-                    height: 42px;
+                form {
+                    label {
+                        display: none;
+                    }
+                    [type='submit'] {
+                        background: url(http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/search-white.png) center no-repeat #000;
+                        width: 45px;
+                        height: 45px;
+                        position: absolute;
+                        right: 15px;
+                        background-position: center;
+                    }
+                    [type='text'] {
+                        width: 75%;
+                        position: absolute;
+                        right: 57px;
+                        height: 45px;
+                        &::-webkit-input-placeholder {
+                            font-family: 'Roboto Mono', monospace;
+                        }
+                        &::-moz-placeholder {
+                            font-family: 'Roboto Mono', monospace;
+                        }
+                        &:-ms-input-placeholder {
+                            /* IE 10+ */
+                            font-family: 'Roboto Mono', monospace;
+                        }
+                        &:-moz-placeholder {
+                            /* Firefox 18- */
+                            font-family: 'Roboto Mono', monospace;
+                        }
+                        @media only screen and (max-width: 867px) {
+                            position: static;
+                            float: left;
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
     }
+    .remove-border-top {
+        border: none;
+    }
+    .entry-header {
+        h2 {
+            display: inline-block;
+        }
+    }
+    // @media screen and (max-width: 1102) {
+    //     .hwyr-form-wrapper {
+    //         form {
+    //             label {
+    //                 display: block;
+    //                 position: static;
+    //             }
+    //         }
+    //     }
+    // }
 }
