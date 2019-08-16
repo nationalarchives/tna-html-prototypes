@@ -1,0 +1,53 @@
+/* keepers lists */
+.keepers-list h3 {
+  font-family: 'Bitter', serif;
+  font-size: 1.16em;
+  letter-spacing: -.025em;
+  color: #111;
+  margin: 10px 10px 0 0;
+  display: inline-block;
+  /* the translucent strap extends with the character count */
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.keepers-list div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%; }
+
+.keepers-list div p {
+  margin: 0 0 20px 0; }
+
+.keepers-list div .keepers-background {
+  display: block;
+  height: 180px; }
+
+.keepers-list div.resource-block a {
+  height: auto;
+  /* for keepers lists with additional content the height must be over-ridden */ }
+
+.keepers-list > div.resource-block a h3 {
+  padding: .25em 0;
+  background: transparent;
+  font-family: 'Open Sans', sans-serif; }
+
+.keepers-list div a:hover,
+.image-container:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-transition: background 300ms ease;
+  -moz-transition: background 300ms ease;
+  -ms-transition: background 300ms ease;
+  -o-transition: background 300ms ease;
+  transition: background 300ms ease; }
+
+/* to achieve the same hover effect as above on embedded images */
+.bundle-tile img:hover, .keepers-background:hover {
+  opacity: .85; }
+
+.keepers-list div a:hover h3,
+.keepers-list a:hover h3,
+.social-media-links a:hover h3 {
+  text-decoration: underline; }
+
+.bundle-tile img:hover, .keepers-background:hover {
+  opacity: 100; }
