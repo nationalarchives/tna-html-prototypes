@@ -4789,6 +4789,12 @@ form .checkbox input[type="checkbox"]:focus + label::before {
     .portal-landing .stay-up-to-date-bar a .icon-circle {
       margin: 0; }
 
+.education-landing .entry-content {
+  width: 100%;
+  padding: 0 0 0 66px;
+  margin-bottom: 1.6em; }
+.education-landing .page-content {
+  margin-right: 30%; }
 .education-landing a.education {
   margin-bottom: 2em;
   display: block; }
