@@ -1,11 +1,4 @@
 .education-landing {
-    .entry-content {
-        width: 100%;
-        margin-bottom: 1.6em;
-    }
-    .page-content {
-        margin-right: 30%;
-    }
     a.education {
         margin-bottom: 2em;
         display: block;
@@ -36,9 +29,8 @@
         }
     }
     .subject-information {
-        border-left: 2px solid #555555;
         p {
-            padding: 1em;
+            font-size: 1.5em;
         }
     }
     .bottom-spacing {
