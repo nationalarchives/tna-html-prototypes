@@ -467,6 +467,12 @@ a:link, a:visited, a:active, .mimic-link {
   text-decoration: none;
 }
 
+a:focus, .mimic-link:focus {
+  background-color: #FCE45C;
+  outline: 3px solid #ebab00;
+  color: #000;
+}
+
 a:hover, .mimic-link:hover {
   text-decoration: underline;
   cursor: pointer;
@@ -614,7 +620,7 @@ ul.form-selectable li span input[type=checkbox] {
 
 /* Default form tags */
 input[type=submit] {
-  background-color: #000;
+  background-color: #008484;
   color: #fff;
   padding: 0.3em 0.5em;
   border: 0;
@@ -624,7 +630,7 @@ input[type=submit] {
 }
 
 input[type=text], input.width-half, #Email {
-  border: 1px solid #000;
+  border: 1px solid #ccc;
   padding: 2px;
   height: 34px;
   text-indent: 5px;
@@ -750,11 +756,7 @@ p > cite, blockquote + cite {
 
 /* Padding container */
 .breather {
-  padding: 1px 20px 20px;
-}
-.breather h2 {
-  padding-top: 0px;
-  margin-left: -20px;
+  padding: 20px;
 }
 
 /* Background container */
@@ -856,6 +858,7 @@ ul.no-bullet,
 #footer-wrapper ul,
 .footer-base .right,
 .image-container,
+.breather > h2:first-child,
 .breather > h3:first-child,
 .overlay ul,
 .statistic,
@@ -1354,7 +1357,7 @@ x:-moz-any-link {
   height: 40px;
   line-height: 40px;
   background-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/scope-selector.png");
-  background-color: #000;
+  background-color: #555;
   background-size: cover;
   cursor: pointer;
 }
@@ -1658,19 +1661,22 @@ p.standfirst {
 
 /* Custom heading styles */
 h1 > span, h2 > span, h3 > span {
+  background-repeat: no-repeat;
+  background-position: bottom left;
   padding-bottom: 14px;
+  margin-left: -10px;
 }
 
 /* Custom heading spans to add accompanying padding and color */
 h1 > span > span, h2 > span > span, h3 > span > span {
+  padding: 4px 10px 4px 10px;
   display: inline-block;
   color: #000;
   line-height: 125%;
-  padding-top: 14px;
 }
 
 h1 > span > span a:link, h2 > span > span a:link, h1 > span > span a:hover, h2 > span > span a:hover, h1 > span > span a:visited, h2 > span > span a:visited, a > .image-container > h2 > span > span, a > .heading-holding-banner > h2 > span > span {
-  color: #fff;
+  color: #000;
   background-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-24-heading-link.png");
   background-repeat: no-repeat;
   background-position: 100% 50%;
@@ -1764,6 +1770,12 @@ span > h2,
   letter-spacing: -0.025em;
 }
 
+.breather > h2:first-child,
+.breather > h3:first-child {
+  margin: 0.25em 0 1em 0;
+  /* added due to padding on paragraphs of body text increasing the space between headings and paragraphs lower down the page */
+}
+
 p + h2, p + h3, ul + h2, ul + h3 {
   margin: 1.5em 0 1em 0;
   /* avoid altering, add additional conditions if margins between headings and other content containers are too large or small */
@@ -1806,7 +1818,6 @@ h4 + div {
   /* text size increase offsets the grey background as the blue is still too dim */
 }
 
-.feature-box h2,
 .feature-box h3,
 .feature-box h4,
 .breather div > h4,
@@ -1869,9 +1880,7 @@ padding: 0 0 .25em 0;
 
 /* Full width heading holder */
 .heading-holding-banner {
-  padding: 10px 0;
-}
-.heading-holding-banner h1 {
+  padding: 14px 0;
   border-top: 2px solid black;
 }
 
@@ -2211,33 +2220,38 @@ a.button:hover {
 
 #menu-disc li a, #menu-disc li span.disabled,
 #a-z-menu li a, #a-z-menu li span.disabled {
-  font-family: "Bitter", Georgia, Verdana, Arial, Helvetica, serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.25em;
   display: inline-block;
   width: 40px;
   height: auto;
-  color: #FEFEFE;
+  color: #fff;
   border-radius: 50%;
   text-decoration: none;
   line-height: 40px;
 }
 
 #menu-disc li a, #a-z-menu li a {
-  background-color: #008484;
+  background-color: #000;
+  border: 1px solid black;
 }
 
 #menu-disc li span.disabled, #a-z-menu li span.disabled {
-  background-color: #ddd;
-  background-color: rgba(0, 0, 0, 0.25);
-  color: #999;
+  background-color: #eee;
+  color: #555;
+  border: 1px solid #555;
+}
+
+#a-z-menu a:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 #menu-disc li a:hover, #disc-menu li a:hover, #menu-disc .selected, #a-z-menu .selected a,
-#a-z-menu .selected, #a-z-menu a:hover {
+#a-z-menu .selected {
   color: #000;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 50%;
-  border: solid black 1px;
 }
 
 #menu-disc li a, #menu-disc li span.disabled {
@@ -2259,7 +2273,7 @@ a + h3 > a,
 .breather > h3 > a,
 .bigTime {
   margin-top: 0.1em;
-  font-family: "Bitter", serif;
+  font-family: "Roboto Mono", monospace;
 }
 
 /* Banner overlay */
@@ -2741,7 +2755,7 @@ a:focus h3 > span > span, h3 > span > span > a:focus, a:focus > div > h3 > span 
 }
 
 .hue-grey-light {
-  background-color: #eee;
+  background-color: #ddd;
   color: #111;
 }
 
@@ -2751,7 +2765,7 @@ a:focus h3 > span > span, h3 > span > span > a:focus, a:focus > div > h3 > span 
 }
 
 .hue-grey-lightest {
-  background-color: #fff;
+  background-color: #f3f3f3;
   color: #111;
 }
 
@@ -3152,9 +3166,9 @@ a .fifth-width p:hover {
 /* End of styles for Help with your research */
 /* START OF IM guidance links styles */
 #guidance-links .guidance-item {
-  background: #f3f3f3 !important;
-  border-bottom: 2px solid #ddd;
+  background: #fff !important;
   margin: 2% 0;
+  border: 1px solid black;
 }
 
 .select-float h2 {
@@ -3273,7 +3287,7 @@ span.guidance-description {
   }
 
   span.flag {
-    background: rgba(252, 228, 92, 0.85);
+    background: #fbe2bc;
     padding: 2px;
     margin-right: 2px;
   }
@@ -3490,7 +3504,7 @@ span.guidance-description {
   }
 
   /*
-  .box-featured-images {
+  .box-featured-img {
       width: 50%;
       }
       */
@@ -3725,7 +3739,7 @@ span.guidance-description {
   }
 
   /*
-  .breather a images {
+  .breather a img {
       width: 100%;
       height:auto;
   }
@@ -4994,6 +5008,7 @@ span.guidance-description {
   box-sizing: border-box;
   overflow: hidden;
   padding: 1.6em 40px 0 40px;
+  margin-top: 14px;
 }
 .newsletter-template .news-icon {
   display: inline-block;
@@ -5591,7 +5606,7 @@ input#f1 {
 .research-guide-filter-left input[type=text] {
   width: 97%;
   min-width: initial;
-  padding-right: 10px;
+  padding-right: 0;
   position: absolute;
   left: 0;
 }
@@ -5648,6 +5663,17 @@ input#f1 {
 @media only screen and (min-width: 1024px) {
   .banner-category {
     max-width: 25%;
+  }
+}
+.keywords-selectable li {
+  float: left;
+  width: 32% !important;
+}
+
+@media only screen and (min-width: 1024px) {
+  .keywords-selectable li {
+    float: left;
+    width: 23.8% !important;
   }
 }
 /* -- Recommended labels -- */
@@ -5711,7 +5737,7 @@ input#f1 {
 .resource-results li {
   float: left;
   width: 100%;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #ddd;
   list-style: none;
   padding: 0.5em 0;
   margin: 0;
@@ -5812,8 +5838,8 @@ ul.form-selectable li input {
 }
 
 .bg-blue {
-  background: #eee;
-  color: #000;
+  background: #405480 url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-grey-down-arrow.png") no-repeat center top;
+  color: #fff;
 }
 
 .bg-blue .contained {
@@ -5823,7 +5849,7 @@ ul.form-selectable li input {
 
 .utilities {
   float: left;
-  margin: 10px 20px 0 20px;
+  margin: 10px 20px 0 10px;
 }
 
 .utilities ul {
@@ -5837,27 +5863,15 @@ ul.form-selectable li input {
   font-weight: bold;
 }
 
-.utilities li:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  left: -30px;
-  border-radius: 100px;
-  background: #000 url("../../../tna-grid/1.0/img/icon-chevron-down.png") no-repeat 2.5px 2.5px;
-}
-
 .utilities li {
-  position: relative;
   list-style: none;
+  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-24-accordion-open.png") no-repeat left top;
   background-size: 24px;
-  padding: 0px 20px 4px 0px;
+  background-position: 0 2px;
+  padding: 2px 0 4px 32px;
   float: left;
   display: block;
   margin: 0 20px 0 0;
-}
-.utilities li button, .utilities li a {
-  margin-left: 5px;
 }
 
 .utilities li:hover {
@@ -5865,14 +5879,10 @@ ul.form-selectable li input {
   text-decoration: underline;
 }
 
-.utilities li.active:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  left: -30px;
-  border-radius: 100px;
-  background: #000 url("../../../tna-grid/1.0/img/icon-chevron-up.png") no-repeat 2.5px 2.5px;
+.utilities li.active {
+  background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-24-accordion-close.png") no-repeat left top;
+  background-size: 24px;
+  background-position: 0 2px;
 }
 
 .utilities .mimic-link {
@@ -5990,7 +6000,7 @@ a.filter-button-secondary {
 }
 
 .increase {
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 .disc-container {
@@ -6023,21 +6033,18 @@ a.filter-button-secondary {
   line-height: 35px;
   margin: 10px 1px;
   font-family: "Open sans", sans-serif;
-  background: #000;
-  color: #fff;
-  border: solid #eee 1px;
+  background: #fff;
+  color: #222;
 }
 
 #menu-disc li a.selected {
-  background-color: #fff;
-  color: #000;
-  border: 1px solid black;
+  background-color: #405480;
+  color: #fff;
 }
 
 #menu-disc li span.disabled {
-  border: 1px solid #555;
-  background-color: #eee;
-  color: #555;
+  background-color: #ccc;
+  color: #fff;
 }
 
 .contained {
@@ -6097,10 +6104,6 @@ a.filter-button-secondary {
 .margin-none {
   /* use existing style in base.css */
   margin: 0px;
-}
-
-#step-two {
-  margin-top: 14px;
 }
 
 .no-padding-bottom {
@@ -6173,6 +6176,10 @@ a.filter-button-secondary {
     display: none;
   }
 
+  .category-filter-footer {
+    background: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/records/icon-blue-down-arrow.png") no-repeat center top;
+  }
+
   #toggle-container {
     display: block !important;
   }
@@ -6183,7 +6190,7 @@ a.filter-button-secondary {
 
   .keywords-selectable li a {
     margin: 0 !important;
-    color: #007bff;
+    color: #fff;
   }
 
   #mobile-keywords {
@@ -6223,6 +6230,10 @@ a.filter-button-secondary {
     padding: 0.1em 0.3em;
     font-size: 1.4em;
     max-width: 500px !important;
+  }
+
+  .increase {
+    font-size: 2em;
   }
 
   .width-full-to-auto {
@@ -6288,4 +6299,4 @@ a.filter-button-secondary {
   }
 }
 
-/*# sourceMappingURL=research-guides.css.map */
+/*# sourceMappingURL=a-z.css.map */
