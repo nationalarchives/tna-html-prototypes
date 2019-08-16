@@ -140,7 +140,6 @@ p.standfirst {
 
 
 h1  >  span, h2  >  span, h3  >  span {
-  background-image: url('http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/heading-flourish.png');
   background-repeat: no-repeat;
   background-position: bottom left;
   padding-bottom: 14px;
@@ -151,12 +150,11 @@ h1  >  span, h2  >  span, h3  >  span {
 h1  >  span  >  span, h2  >  span  >  span, h3  >  span  >  span {
   padding: 4px 10px 4px 10px;
   display: inline-block;
-  background-color: #405480;
-  color: #fff;
+  color: #000;
   line-height: 125%;
 }
 h1  >  span  >  span a:link, h2  >  span  >  span a:link, h1  >  span  >  span a:hover, h2  >  span  >  span a:hover, h1  >  span  >  span a:visited, h2  >  span  >  span a:visited, a > .image-container  >  h2  >  span  >  span, a  >  .heading-holding-banner  >  h2  >  span  >  span {
-  color: #fff;
+  color: #000;
   background-image: url("http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/icon-24-heading-link.png");
   background-repeat: no-repeat;
   background-position: 100% 50%;
@@ -290,7 +288,6 @@ h4 + div {
 }
 
 
-.feature-box h2,
 .feature-box h3,
 .feature-box h4,
 .breather div > h4,
@@ -348,8 +345,8 @@ padding: 0 0 .25em 0;
 }
 /* Full width heading holder */
 .heading-holding-banner {
-  padding: 10px 0;
-  background: url('http://www.nationalarchives.gov.uk/wp-content/themes/tna/images/global/dot-grey.png'); /* Remove when id specific backgrounds are introduced */
+  padding: 14px 0;
+  border-top: 2px solid black;
 }
 
 hr {
@@ -671,31 +668,37 @@ a.button:hover {
 
 #menu-disc li a, #menu-disc li span.disabled,
 #a-z-menu li a, #a-z-menu li span.disabled  {
-  font-family: 'Bitter',Georgia, Verdana, Arial, Helvetica, serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.25em;
   display: inline-block;
   width: 40px;
   height: auto;
-  color: #FEFEFE;
+  color: #fff;
   border-radius: 50%;
   text-decoration: none;
   line-height: 40px;
 }
 
 #menu-disc li a, #a-z-menu li a {
-  background-color: #008484;
+  background-color: #000;
+  border: 1px solid black;
 }
 
 #menu-disc li span.disabled, #a-z-menu li span.disabled {
-  background-color: #ddd;
-  background-color: rgba(0,0,0,.25);
-  color: #999;
+  background-color: #eee;
+  color: #555;
+  border: 1px solid #555;
+}
+
+#a-z-menu a:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 #menu-disc li a:hover, #disc-menu li a:hover, #menu-disc .selected, #a-z-menu .selected a,
-#a-z-menu .selected, #a-z-menu a:hover  {
+#a-z-menu .selected  {
   color: #000;
-  background-color: #FCE45C;
+  background-color: #fff;
   border-radius: 50%;
 }
 
@@ -724,7 +727,7 @@ a + h3 > a,
 .breather > h3 > a,
 .bigTime {
   margin-top: .1em;
-  font-family: 'Bitter', serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 
@@ -888,9 +891,6 @@ a + div.position-top-right {
 .bg-mint {
   background-color: #B2DAC6;	 /* used to label Sessions we teach on Education */
 }
-
-
-
 
 .breather a img {
   display: block;
@@ -1582,9 +1582,9 @@ a .fifth-width p:hover {
 /* START OF IM guidance links styles */
 
 #guidance-links .guidance-item {
-  background: #f3f3f3 !important;
-  border-bottom: 2px solid #ddd;
+  background: #fff !important;
   margin: 2% 0;
+  border: 1px solid black;
 
 }
 .select-float h2{
@@ -1705,7 +1705,7 @@ span.guidance-description {
   }
 
   span.flag{
-    background: rgba(252,228,92,.85);
+    background: #fbe2bc;
     padding:2px;
     margin-right:2px;
 

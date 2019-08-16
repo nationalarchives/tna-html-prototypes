@@ -16,7 +16,7 @@ p, .article div p {
 }
 
 a:link, a:visited, a:active, .mimic-link {
-  color: #2A5DB0;
+  color: #007bff;
   text-decoration: none;
 }
 
@@ -34,7 +34,7 @@ a[href^="mailto"] {
 }
 /* Default headings */
 h1, h2, h3, h4 {
-  font-family: 'Bitter', serif;
+  font-family: 'Roboto Mono', serif;
   font-weight: 400;
   z-index: 2;
   line-height: 1.5;

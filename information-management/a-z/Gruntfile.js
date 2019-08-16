@@ -9,7 +9,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'css/research-guides.css': 'sass/base-sass.scss'
+                    'css/a-z.css': 'sass/base-sass.scss'
                 }
             }
         },
@@ -19,7 +19,7 @@ module.exports = function (grunt) {
             },
             target: {
                 files: {
-                    'css/research-guides.min.css': ['css/research-guides.css']
+                    'css/a-z.min.css': ['css/a-z.css']
                 }
             }
         },
