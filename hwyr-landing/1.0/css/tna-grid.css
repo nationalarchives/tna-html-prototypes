@@ -4873,6 +4873,10 @@ form .checkbox input[type="checkbox"]:focus + label::before {
   border-right: 1px solid #fff; }
   .hwyr-landing .overlay-box:last-of-type {
     border: none; }
+.hwyr-landing main .hwyr-primary-cards h3:hover {
+  text-decoration: none; }
+.hwyr-landing main .hwyr-mini-cards h3 {
+  font-size: 1em; }
 .hwyr-landing main .tool-bar {
   padding: 1em; }
   @media only screen and (max-width: 867px) {

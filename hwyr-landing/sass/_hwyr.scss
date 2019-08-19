@@ -58,6 +58,18 @@
         }
     }
     main {
+        .hwyr-primary-cards {
+            h3 {
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        .hwyr-mini-cards {
+            h3 {
+                font-size: 1em;
+            }
+        }
         .tool-bar {
             .button {
                 @media only screen and (max-width: 867px) {
@@ -120,14 +132,4 @@
             display: inline-block;
         }
     }
-    // @media screen and (max-width: 1102) {
-    //     .hwyr-form-wrapper {
-    //         form {
-    //             label {
-    //                 display: block;
-    //                 position: static;
-    //             }
-    //         }
-    //     }
-    // }
 }
