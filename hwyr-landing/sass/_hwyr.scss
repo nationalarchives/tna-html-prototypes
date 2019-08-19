@@ -13,34 +13,6 @@
     .card-spacing {
         padding: 1em;
     }
-    .hwyr-card {
-        margin-bottom: 2em;
-        display: block;
-        >div {
-            background-size: cover;
-            background-position: center center;
-            text-align: left;
-            min-height: 200px;
-            position: relative;
-            >span {
-                position: absolute;
-                bottom: 0;
-                background: #000;
-                padding: 5px;
-                color: #fff;
-                font-size: 1em;
-            }
-        }
-        &:hover {
-            >div {
-                opacity: 0.9;
-                cursor: pointer;
-                span {
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
     .hwyr-banner {
         article {
             margin-bottom: 0;

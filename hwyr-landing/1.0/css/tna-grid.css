@@ -4842,27 +4842,6 @@ form .checkbox input[type="checkbox"]:focus + label::before {
   margin-top: 1.5em; }
 .hwyr-landing .card-spacing {
   padding: 1em; }
-.hwyr-landing .hwyr-card {
-  margin-bottom: 2em;
-  display: block; }
-  .hwyr-landing .hwyr-card > div {
-    background-size: cover;
-    background-position: center center;
-    text-align: left;
-    min-height: 200px;
-    position: relative; }
-    .hwyr-landing .hwyr-card > div > span {
-      position: absolute;
-      bottom: 0;
-      background: #000;
-      padding: 5px;
-      color: #fff;
-      font-size: 1em; }
-  .hwyr-landing .hwyr-card:hover > div {
-    opacity: 0.9;
-    cursor: pointer; }
-    .hwyr-landing .hwyr-card:hover > div span {
-      text-decoration: underline; }
 .hwyr-landing .hwyr-banner article {
   margin-bottom: 0; }
   .hwyr-landing .hwyr-banner article .hwyr-banner-overlay {
