@@ -2962,13 +2962,16 @@ input[type=reset]::-moz-focus-inner {
   margin: 0;
 }
 
-.form-heading {
+.advanced-search-form fieldset .form-heading {
   font-family: "Roboto Mono", monospace;
   font-size: 1.6em;
   margin-bottom: 0.6em;
   width: auto;
   border-top: 2px solid #000;
   padding: 0.5em 0 0;
+}
+.advanced-search-form fieldset:first-of-type .form-heading {
+  border-top: none;
 }
 
 .form-heading > span > span {
