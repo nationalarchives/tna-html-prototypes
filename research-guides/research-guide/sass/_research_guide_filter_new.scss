@@ -585,3 +585,18 @@ a.filter-button-secondary {
   }
 
 }
+
+.heading-holding-banner:nth-of-type(1) {
+
+  border-top:2px solid black;
+  background-color: #dde5d5;
+  padding-top: 14px;
+
+  .heading-holding-banner {
+    border: none
+  }
+}
+
+.breather.separator.clr {
+    background-color: #dde5d5;
+  }
