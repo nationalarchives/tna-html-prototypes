@@ -6029,8 +6029,8 @@ a.filter-button-secondary {
 }
 
 #menu-disc li a.selected {
-  background-color: #fff;
-  color: #000;
+  background-color: #555;
+  color: #fff;
   border: 1px solid black;
 }
 
