@@ -1,0 +1,66 @@
+.hierarchy {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-left: .3em solid #C2C2C2;
+  background-color: #EFEFEF;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+.current-month {
+  border-left: .3em solid #575757;
+}
+
+.border-bottom h3 {
+  margin: 0 0 0.4em 0.4em;
+}
+
+.hierarchy ul {
+  padding-left: 0;
+  margin: 0 0 0.5em;
+}
+
+.hierarchy li {
+  float: left;
+  list-style-type: none;
+  margin: 0 1.5em .1em 1em;
+  display: inline-block;
+  border-right: .1em solid #DDDDDD;
+}
+
+.hierarchy li:last-child {
+  border-right: none;
+}
+
+.accordion h3 {
+  padding: 0.5em 2em 0.5em 0.5em;
+  background-image: url("../images/global/icon-24-accordion-open.png");
+  background-repeat: no-repeat;
+  background-position: 99% center;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #DDD;
+  font-size: 1.16em;
+}
+
+.expanded h3 {
+  background-image: url("../images/global/icon-24-accordion-close.png");
+}
+
+@media only screen and (max-width: 768px) {
+  .eye-box {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .eye-box {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .eye-box {
+    display: none;
+  }
+}
