@@ -9,7 +9,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'css/education-content.css': 'sass/base-sass.scss'
+                    'css/education-bundle.css': 'sass/base-sass.scss'
                 }
             }
         },
@@ -19,7 +19,7 @@ module.exports = function (grunt) {
             },
             target: {
                 files: {
-                    'css/education-content.min.css': ['css/education-content.css']
+                    'css/education-bundle.min.css': ['css/education-bundle.css']
                 }
             }
         },

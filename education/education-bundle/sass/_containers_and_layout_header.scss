@@ -73,7 +73,7 @@
   right: 0;
   width: 40px;
   height: 40px;
-  background-image: url('../images/global/search-white.png');
+  background-image: url('https://discovery.nationalarchives.gov.uk/Content/images/search-white.png');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -105,7 +105,7 @@
 #search-expander {
   height: 2.1em;
   width: 40px;
-  background: url('../images/global/search-white.png') no-repeat center;
+  background: url('https://discovery.nationalarchives.gov.uk/Content/images/global/search-white.png') no-repeat center;
   background-size: 90%;
   position: absolute;
   top: 0;
@@ -113,7 +113,7 @@
   cursor: pointer;
 }
 #search-expander.expanded {
-  background: url('../images/global/close-search.png') no-repeat center;
+  background: url('https://discovery.nationalarchives.gov.uk/Content/images/global/close-search.png') no-repeat center;
 }
 /* Mega menu button and search drop down (desktop view only) */
 .pull-down {
@@ -140,7 +140,7 @@
 }
 #mega-menu-pull-down button {
   background-color: #cb0d07;
-  background-image: url('../images/global/menu-collapsed.png');
+  background-image: url('https://discovery.nationalarchives.gov.uk/Content/images/menu-collapsed.png');
   background-position: 50% 85%;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -247,7 +247,7 @@ x:-moz-any-link {
 #mega-menu-mobile button {
   height: 40px;
   width: 40px;
-  background: url('../images/global/menu-trigram-lrg.png') center no-repeat;
+  background: url('https://discovery.nationalarchives.gov.uk/Content/images/menu-trigram-lrg.png') center no-repeat;
   border: 0px;
   z-index: 2;
   background-color: #cb0d07;
@@ -270,13 +270,13 @@ x:-moz-any-link {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  background-image: url('../images/global/scope-selector.png');
+  background-image: url('https://discovery.nationalarchives.gov.uk/Content/images/scope-selector.png');
   background-color: #555;
   background-size: cover;
   cursor: pointer;
 }
 #scope-selector.expanded {
-  background-image: url('../images/global/scope-selector-expanded.png');
+  background-image: url('https://discovery.nationalarchives.gov.uk/Content/images/global/scope-selector-expanded.png');
 }
 /* 'Search our records/search our website' drop down (desktop view only) */
 #search-options {
@@ -305,7 +305,7 @@ x:-moz-any-link {
 }
 /* 'Close' link for the cookie message */
 a#cookie-cutter {
-  background: url('../images/global/close-img.png') no-repeat 0 2px;
+  background: url('https://discovery.nationalarchives.gov.uk/Content/images/menu-expanded.png') no-repeat 0 2px;
   padding-left: 22px;
   margin-left: 10px;
 }
