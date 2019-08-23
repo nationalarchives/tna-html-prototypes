@@ -24,6 +24,12 @@ a:hover, .mimic-link:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+
+a:focus, .mimic-link:focus {
+  outline: 3px solid #f9f7e2;
+  color: #000;
+}
+
 a[href^="mailto"] {
   word-wrap: break-word;
 }
@@ -181,7 +187,7 @@ input[type="text"], input.width-half, #Email /* the Email ID has been applied to
 }
 
 input:focus {
-  outline: 3px solid #ebab00;
+  outline: 3px solid #f9f7e2;
 }
 input[type="submit"]:focus, a.button:focus {
   color: #fff;

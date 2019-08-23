@@ -468,8 +468,7 @@ a:link, a:visited, a:active, .mimic-link {
 }
 
 a:focus, .mimic-link:focus {
-  background-color: #FCE45C;
-  outline: 3px solid #ebab00;
+  outline: 3px solid #f9f7e2;
   color: #000;
 }
 
@@ -5181,7 +5180,7 @@ span.guidance-description {
   }
   .mega-menu > ul > li > a:focus, .mega-menu .sub-menu > li > a:focus {
     background: #FCE45C !important;
-    outline: #ebab00 solid 3px;
+    outline: #f9f7e2 solid 3px;
   }
   .mega-menu .mobile-home-link {
     display: block;
@@ -5235,7 +5234,7 @@ span.guidance-description {
   color: #000;
   text-decoration: underline;
   background: #FCE45C !important;
-  outline: #ebab00 solid 3px;
+  outline: #f9f7e2 solid 3px;
 }
 
 .no-js #nav {

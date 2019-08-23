@@ -6592,7 +6592,7 @@ li.taggedRecord a.disco-button {
   min-width: 220px;
 }
 .foi-request fieldset .form-row input:focus, .foi-request-1939 fieldset .form-row input:focus {
-  outline: #ebab00 solid 3px;
+  outline: #f9f7e2 solid 3px;
 }
 .foi-request fieldset .form-row input:focus + .input-tooltip[data-tooltip], .foi-request-1939 fieldset .form-row input:focus + .input-tooltip[data-tooltip] {
   display: block;
@@ -6608,7 +6608,7 @@ li.taggedRecord a.disco-button {
   padding: 7px;
 }
 .foi-request fieldset .form-row textarea:focus, .foi-request-1939 fieldset .form-row textarea:focus {
-  outline: #ebab00 solid 3px;
+  outline: #f9f7e2 solid 3px;
 }
 .foi-request fieldset .form-row textarea:focus + .textarea-tooltip[data-tooltip], .foi-request-1939 fieldset .form-row textarea:focus + .textarea-tooltip[data-tooltip] {
   display: block;

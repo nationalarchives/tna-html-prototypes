@@ -467,6 +467,11 @@ a:link, a:visited, a:active, .mimic-link {
   text-decoration: none;
 }
 
+a:focus, .mimic-link:focus {
+  background-color: #f9f7e2;
+  color: #000;
+}
+
 a:hover, .mimic-link:hover {
   text-decoration: underline;
   cursor: pointer;
@@ -633,7 +638,7 @@ input[type=text], input.width-half, #Email {
 }
 
 input:focus {
-  outline: 3px solid #ebab00;
+  outline: 3px solid #f9f7e2;
 }
 
 input[type=submit]:focus, a.button:focus {
@@ -5157,7 +5162,7 @@ span.guidance-description {
   }
   .mega-menu > ul > li > a:focus, .mega-menu .sub-menu > li > a:focus {
     background: #FCE45C !important;
-    outline: #ebab00 solid 3px;
+    outline: #f9f7e2 solid 3px;
   }
   .mega-menu .mobile-home-link {
     display: block;
@@ -5211,7 +5216,7 @@ span.guidance-description {
   color: #000;
   text-decoration: underline;
   background: #FCE45C !important;
-  outline: #ebab00 solid 3px;
+  outline: #f9f7e2 solid 3px;
 }
 
 .no-js #nav {

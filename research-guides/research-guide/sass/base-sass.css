@@ -373,8 +373,7 @@ a:link, a:visited, a:active, .mimic-link {
   text-decoration: none; }
 
 a:focus, .mimic-link:focus {
-  background-color: #FCE45C;
-  outline: 3px solid #ebab00;
+  background-color: #f9f7e2;
   color: #000; }
 
 a:hover, .mimic-link:hover {

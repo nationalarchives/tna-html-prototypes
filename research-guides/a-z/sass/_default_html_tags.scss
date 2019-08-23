@@ -21,9 +21,8 @@ a:link, a:visited, a:active, .mimic-link {
 }
 
 a:focus, .mimic-link:focus {
-  //background-color: #FCE45C;
-  //outline: 3px solid #ebab00;
-  //color: #000;
+  background-color: #f9f7e2;
+  color: #000;
 }
 a:hover, .mimic-link:hover {
   text-decoration: underline;
@@ -186,7 +185,7 @@ input[type="text"], input.width-half, #Email /* the Email ID has been applied to
 }
 
 input:focus {
-  outline: 3px solid #ebab00;
+  outline: 3px solid #f9f7e2;
 }
 input[type="submit"]:focus, a.button:focus {
   color: #fff;

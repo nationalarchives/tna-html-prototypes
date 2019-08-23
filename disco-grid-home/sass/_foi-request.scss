@@ -106,7 +106,7 @@
                 }
 
                 &:focus {
-                    outline: #ebab00 solid 3px;
+                    outline: #f9f7e2 solid 3px;
 
                     & + .input-tooltip[data-tooltip] {
                         display: block;
@@ -125,7 +125,7 @@
                 padding: 7px;
 
                 &:focus {
-                    outline: #ebab00 solid 3px;
+                    outline: #f9f7e2 solid 3px;
 
                     & + .textarea-tooltip[data-tooltip] {
                         display: block;
