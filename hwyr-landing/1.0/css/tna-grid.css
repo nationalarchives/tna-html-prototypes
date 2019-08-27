@@ -4832,6 +4832,8 @@ form .checkbox input[type="checkbox"]:focus + label::before {
     width: 41px;
     height: 41px; }
 
+.hwyr-landing .full-width {
+  width: 100%; }
 .hwyr-landing .bottom-spacing {
   margin-bottom: 2em; }
 .hwyr-landing .cover-background {
