@@ -15,15 +15,30 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-right: 1em;
+    margin-right: 0.5em;
+}
+
+nav li a {
+    border-right: 1px solid #DDD;
+    padding-right: 0.8em;
+}
+
+nav li:last-child a  {
+    border: none;
 }
 
 nav li:last-child {
     margin-right: 0;
 }
 
-nav#locale {
+#locale {
     text-align: right;
+}
+
+#locale li:first-child::after {
+    content: '\/';
+    margin-left: 0.7em;
+    color: #DDD;
 }
 
 #search {
@@ -35,9 +50,13 @@ nav#locale {
 }
 
 h1 {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 2em;
     font-weight: bolder;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
 }
 
 input {
@@ -46,13 +65,46 @@ input {
     border-color: transparent;
 }
 
-input[type=text] {
+#search input[type=search] {
     width: 30%;
 }
 
-input[type=submit] {
+#search input[type=submit] {
     background-color: #1d70b8;
     color: rgba(255, 255, 255, 1);
     border-color: transparent;
     width: 4em;
 }
+
+#primary-navigation {
+    background-color: #383838;
+    padding: 0.7em 1em 0.5em 1em;
+}
+
+#primary-navigation a {
+    color: #fff;
+    border-right: 1px solid #999!important;
+}
+
+#paging {
+    padding: 1em;
+    background-color: #EEEEEE;
+}
+
+#paging ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#paging li a {
+    position: relative;
+    top: 0.5em;
+}
+
+#paging h2 {
+    margin: 0;
+    position: relative;
+    top: 0.1em;
+    text-align: center;
+}
+
