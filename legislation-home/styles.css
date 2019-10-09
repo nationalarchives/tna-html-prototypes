@@ -48,6 +48,9 @@ nav li:last-child {
     color: rgba(255, 255, 255, 1);
     text-align: center;
 }
+#search label {
+    margin-right: 0.7em;
+}
 
 h1 {
     font-size: 2em;
@@ -205,11 +208,46 @@ sup {
 .explore-card {
     height: 100%;
     background-color: #eee;
-    border-top: 2px solid #212529;
+    border-top: 3px solid #212529;
     padding: 0 0.7em 0.1em;
     cursor: pointer;
 }
 
 .explore-card h3 {
     margin-top: 10px;
+}
+
+.section-h {
+    padding-top: 10px;
+    border-top: 3px solid #eee;
+}
+.image-card {
+    height: 100%;
+}
+.image-card .img {
+    min-height: 160px;
+    width: 100%;
+    background: center center #ddd;
+    background-size: cover;
+}
+
+.image-card .card-content {
+    background-color: #eee;
+    border-top: 3px solid #212529;
+    padding: 0 1em 0.1em;
+}
+.image-card .card-content h3 {
+    margin-top: 10px;
+}
+.button-small {
+    font-size: 0.9em;
+    padding: 0.3em 0.9em;
+}
+.horizontal {
+    display: flex;
+    flex-wrap: wrap;
+}
+.horizontal .col-50 {
+    flex: 0 0 50%;
+    max-width: 50%;
 }
