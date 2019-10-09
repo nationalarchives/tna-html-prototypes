@@ -1,0 +1,281 @@
+#delivered-by {
+    margin-top: 1.5em;
+    max-width: 40%;
+    float: right;
+}
+
+nav ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-bottom: 0;
+}
+
+nav li a {
+    padding-right: 0.8em;
+}
+
+nav li:last-child a {
+    border: none;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+.secondary-menu {
+    background-color: #eee;
+    padding: 0.5em 0;
+}
+
+#locale {
+    text-align: right;
+}
+
+#locale li:first-child::after {
+    content: '\/';
+    margin-left: 0.7em;
+    color: #DDD;
+}
+
+#search {
+    background-color: #383838;
+    padding: 1em;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+#search label {
+    margin-right: 0.7em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+
+input {
+    border: 2px solid #26262a;
+    padding: 8px;
+    border-color: transparent;
+}
+
+#search input[type=search] {
+    width: 30%;
+}
+
+#search input[type=submit] {
+    background-color: #1d70b8;
+    color: rgba(255, 255, 255, 1);
+    border-color: transparent;
+    width: 4em;
+}
+
+#primary-navigation {
+    background-color: #383838;
+    padding: 0.7em 1em 0.5em 1em;
+}
+
+#primary-navigation a {
+    color: #fff;
+    border-right: 1px solid #999 !important;
+}
+
+#paging {
+    padding: 1em;
+    background-color: #EEEEEE;
+}
+
+#paging ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#paging li a {
+    position: relative;
+    top: 0.5em;
+}
+
+#paging h2 {
+    margin: 0;
+    position: relative;
+    top: 0.1em;
+    text-align: center;
+}
+
+main {
+    padding: 2em;
+}
+
+.section-number {
+    margin-right: 4em;
+}
+
+.sub-section {
+    display: flex;
+}
+
+.sub-section .sub-section-number {
+    text-align: right;
+    padding-right: 1em;
+    flex-basis: 10%;
+}
+
+sup {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.sub-section .legislation-content {
+    flex-basis: 90%;
+}
+
+.sub-sub-section {
+    display: flex;
+}
+
+.sub-sub-section .sub-section-number {
+    text-align: right;
+    padding-right: 1em;
+    flex-basis: 15%;
+}
+
+.sub-sub-section .legislation-content {
+    flex-basis: 85%;
+}
+
+.sub-sub-sub-section {
+    display: flex;
+}
+
+.sub-sub-sub-section .sub-section-number {
+    text-align: right;
+    padding-right: 1em;
+    flex-basis: 20%;
+}
+
+.sub-sub-sub-section .legislation-content {
+    flex-basis: 80%;
+}
+
+.sub-sub-sub-sub-section {
+    display: flex;
+}
+
+.sub-sub-sub-sub-section .sub-section-number {
+    text-align: right;
+    padding-right: 1em;
+    flex-basis: 25%;
+}
+
+.sub-sub-sub-sub-section .legislation-content {
+    flex-basis: 75%;
+}
+
+.textual-amendments {
+    border: 1px solid #dddddd;
+    padding: 1em;
+}
+
+.textual-amendments h3 {
+    margin-top: 0;
+}
+
+.textual-amendments span {
+    margin-right: 1em;
+}
+
+.textual-amendments a {
+    font-weight: bold;
+}
+
+.textual-amendments p {
+    margin-bottom: 0;
+}
+
+.intro {
+    background-color: #eee;
+    padding: 1em 0;
+}
+
+.explore-card {
+    height: 100%;
+    background-color: #eee;
+    border-top: 3px solid #212529;
+    padding: 0 0.7em 0.1em;
+    cursor: pointer;
+}
+
+.explore-card h3 {
+    margin-top: 10px;
+}
+
+.section-h {
+    padding-top: 10px;
+    border-top: 3px solid #eee;
+}
+.image-card {
+    height: 100%;
+}
+.image-card .img {
+    min-height: 160px;
+    width: 100%;
+    background: center center #ddd;
+    background-size: cover;
+}
+
+.image-card .card-content {
+    background-color: #eee;
+    border-top: 3px solid #212529;
+    padding: 0 1em 0.1em;
+}
+.image-card .card-content h3 {
+    margin-top: 10px;
+}
+.button-small {
+    font-size: 0.9em;
+    padding: 0.3em 0.9em;
+}
+.horizontal {
+    display: flex;
+    flex-wrap: wrap;
+}
+.horizontal .col-50 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.info {
+    background-color: #eee;
+    padding: 1em;
+    margin-top: 20px;
+}
+.info h3 {
+    margin-top: 10px;
+}
+.home-section {
+    margin-bottom: 2em;
+}
+footer {
+    padding: 1.6em 0;
+    background-color: #212529;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+}
+footer a:hover {
+    color: #eee;
+}
+.footer-logo {
+    text-align: right;
+}
+.footer-details {
+    margin-top: 1em;
+}
