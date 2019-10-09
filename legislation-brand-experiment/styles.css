@@ -283,7 +283,7 @@ aside > div {
     display: block;
     font-family: 'Open Sans', sans-serif;
     margin-top: 1em;
-    background-color: #1d70b8;
+    background-color: #1d70b8!important;
     border-color: #1d70b8;
 }
 
