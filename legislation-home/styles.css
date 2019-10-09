@@ -28,7 +28,7 @@ nav li:last-child {
 }
 
 .secondary-menu {
-    background-color: #eee;
+    background-color: #e5eaef;
     padding: 0.5em 0;
 }
 
@@ -201,14 +201,14 @@ sup {
 }
 
 .intro {
-    background-color: #eee;
+    background-color: #e5eaef;
     padding: 1em 0;
 }
 
 .explore-card {
     height: 100%;
-    background-color: #eee;
-    border-top: 3px solid #212529;
+    background-color: #e5eaef;
+    border-top: 4px solid #212529;
     padding: 0 0.7em 0.1em;
     cursor: pointer;
 }
@@ -219,7 +219,7 @@ sup {
 
 .section-h {
     padding-top: 10px;
-    border-top: 3px solid #eee;
+    border-top: 2px solid #212529;
 }
 .image-card {
     height: 100%;
@@ -232,8 +232,8 @@ sup {
 }
 
 .image-card .card-content {
-    background-color: #eee;
-    border-top: 3px solid #212529;
+    background-color: #e5eaef;
+    border-top: 2px solid #212529;
     padding: 0 1em 0.1em;
 }
 .image-card .card-content h3 {
@@ -250,14 +250,15 @@ sup {
 .horizontal .col-50 {
     flex: 0 0 50%;
     max-width: 50%;
+    border: 0;
 }
 .info {
-    background-color: #eee;
-    padding: 1em;
+    background-color: #e5eaef;
+    padding: 10px 10px 20px;
     margin-top: 20px;
 }
 .info h3 {
-    margin-top: 10px;
+    margin-top: 0;
 }
 .home-section {
     margin-bottom: 2em;
@@ -271,7 +272,7 @@ footer a {
     color: #fff;
 }
 footer a:hover {
-    color: #eee;
+    color: #e5eaef;
 }
 .footer-logo {
     text-align: right;
