@@ -251,3 +251,14 @@ sup {
     flex: 0 0 50%;
     max-width: 50%;
 }
+.info {
+    background-color: #eee;
+    padding: 1em;
+    margin-top: 20px;
+}
+.info h3 {
+    margin-top: 10px;
+}
+.home-section {
+    margin-bottom: 2em;
+}
