@@ -1,7 +1,10 @@
 #delivered-by {
-    margin-top: 1.5em;
     max-width: 40%;
     float: right;
+}
+
+body {
+    color: #26262a;
 }
 
 nav ul {
@@ -27,9 +30,22 @@ nav li:last-child {
     margin-right: 0;
 }
 
+.branding {
+    background-color: #26262a;
+    padding: 1em 0;
+}
+
 .secondary-menu {
-    background-color: #e5eaef;
+    background-color: #3e3e45;
     padding: 0.5em 0;
+    color: #ccc;
+}
+
+.secondary-menu a {
+    color: #fff;
+}
+.secondary-menu a:hover {
+    color: #eee;
 }
 
 #locale {
@@ -43,7 +59,7 @@ nav li:last-child {
 }
 
 #search {
-    background-color: #383838;
+    background-color: #26262a;
     padding: 1em;
     color: rgba(255, 255, 255, 1);
     text-align: center;
