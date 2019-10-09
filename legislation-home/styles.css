@@ -28,7 +28,7 @@ nav li:last-child {
 }
 
 .secondary-menu {
-    background-color: #eee;
+    background-color: #e5eaef;
     padding: 0.5em 0;
 }
 
@@ -201,13 +201,13 @@ sup {
 }
 
 .intro {
-    background-color: #eee;
+    background-color: #e5eaef;
     padding: 1em 0;
 }
 
 .explore-card {
     height: 100%;
-    background-color: #eee;
+    background-color: #e5eaef;
     border-top: 4px solid #212529;
     padding: 0 0.7em 0.1em;
     cursor: pointer;
@@ -232,7 +232,7 @@ sup {
 }
 
 .image-card .card-content {
-    background-color: #eee;
+    background-color: #e5eaef;
     border-top: 2px solid #212529;
     padding: 0 1em 0.1em;
 }
@@ -253,7 +253,7 @@ sup {
     border: 0;
 }
 .info {
-    background-color: #eee;
+    background-color: #e5eaef;
     padding: 10px 10px 20px;
     margin-top: 20px;
 }
@@ -272,7 +272,7 @@ footer a {
     color: #fff;
 }
 footer a:hover {
-    color: #eee;
+    color: #e5eaef;
 }
 .footer-logo {
     text-align: right;
