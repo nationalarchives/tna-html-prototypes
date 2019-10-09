@@ -208,7 +208,7 @@ sup {
 .explore-card {
     height: 100%;
     background-color: #eee;
-    border-top: 3px solid #212529;
+    border-top: 4px solid #212529;
     padding: 0 0.7em 0.1em;
     cursor: pointer;
 }
@@ -219,7 +219,7 @@ sup {
 
 .section-h {
     padding-top: 10px;
-    border-top: 3px solid #eee;
+    border-top: 2px solid #212529;
 }
 .image-card {
     height: 100%;
@@ -233,7 +233,7 @@ sup {
 
 .image-card .card-content {
     background-color: #eee;
-    border-top: 3px solid #212529;
+    border-top: 2px solid #212529;
     padding: 0 1em 0.1em;
 }
 .image-card .card-content h3 {
@@ -250,14 +250,15 @@ sup {
 .horizontal .col-50 {
     flex: 0 0 50%;
     max-width: 50%;
+    border: 0;
 }
 .info {
     background-color: #eee;
-    padding: 1em;
+    padding: 10px 10px 20px;
     margin-top: 20px;
 }
 .info h3 {
-    margin-top: 10px;
+    margin-top: 0;
 }
 .home-section {
     margin-bottom: 2em;
