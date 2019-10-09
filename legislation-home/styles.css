@@ -262,3 +262,20 @@ sup {
 .home-section {
     margin-bottom: 2em;
 }
+footer {
+    padding: 1.6em 0;
+    background-color: #212529;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+}
+footer a:hover {
+    color: #eee;
+}
+.footer-logo {
+    text-align: right;
+}
+.footer-details {
+    margin-top: 1em;
+}
