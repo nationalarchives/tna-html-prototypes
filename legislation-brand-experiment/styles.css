@@ -1,7 +1,35 @@
+/*
+
+ ________  ________  ________  ________          ________  ________  ________  _______
+|\   __  \|\   __  \|\   __  \|\   __  \        |\   ____\|\   __  \|\   ___ \|\  ___ \
+\ \  \|\  \ \  \|\  \ \  \|\  \ \  \|\  \       \ \  \___|\ \  \|\  \ \  \_|\ \ \   __/|
+ \ \   ____\ \  \\\  \ \  \\\  \ \   _  _\       \ \  \    \ \  \\\  \ \  \ \\ \ \  \_|/__
+  \ \  \___|\ \  \\\  \ \  \\\  \ \  \\  \|       \ \  \____\ \  \\\  \ \  \_\\ \ \  \_|\ \
+   \ \__\    \ \_______\ \_______\ \__\\ _\        \ \_______\ \_______\ \_______\ \_______\
+    \|__|     \|_______|\|_______|\|__|\|__|        \|_______|\|_______|\|_______|\|_______|
+
+
+
+ ________  ________          ________   ________  _________        ___  ___  ________  _______
+|\   ___ \|\   __  \        |\   ___  \|\   __  \|\___   ___\     |\  \|\  \|\   ____\|\  ___ \
+\ \  \_|\ \ \  \|\  \       \ \  \\ \  \ \  \|\  \|___ \  \_|     \ \  \\\  \ \  \___|\ \   __/|
+ \ \  \ \\ \ \  \\\  \       \ \  \\ \  \ \  \\\  \   \ \  \       \ \  \\\  \ \_____  \ \  \_|/__
+  \ \  \_\\ \ \  \\\  \       \ \  \\ \  \ \  \\\  \   \ \  \       \ \  \\\  \|____|\  \ \  \_|\ \
+   \ \_______\ \_______\       \ \__\\ \__\ \_______\   \ \__\       \ \_______\____\_\  \ \_______\
+    \|_______|\|_______|        \|__| \|__|\|_______|    \|__|        \|_______|\_________\|_______|
+                                                                               \|_________|
+
+
+*/
+
 #delivered-by {
     margin-top: 1.5em;
     max-width: 40%;
     float: right;
+}
+
+label {
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 nav ul {
@@ -94,6 +122,7 @@ input {
 #paging li a {
     position: relative;
     top: 0.5em;
+    border: none;
 }
 
 #paging h2 {
@@ -192,3 +221,193 @@ sup {
 .textual-amendments p {
     margin-bottom: 0;
 }
+
+aside > div {
+    border: 1px solid #383838;
+    margin-top: 1em;
+}
+
+.version-information {
+    display: flex;
+    position: relative;
+}
+
+.version-information div {
+    padding: 1em;
+}
+
+.version-information > div:first-child {
+    background-color: #1d70b8;
+    color: #FFF;
+}
+
+.version-information > div:first-child::after {
+    content: "«";
+    position: absolute;
+    top: 5em;
+    left: 0.8em;
+}
+
+.version-information .icon {
+    text-align: center;
+}
+
+.version-information h2 {
+    text-align: center;
+    font-size: 1em;
+    margin: 0;
+}
+
+.version-information i {
+    font-size: 2em;
+    background-color: #383838;
+    padding: 0.3em;
+    border-radius: 50%;
+    color: #FFF
+}
+
+.version-information time {
+    display: block;
+    text-align: center;
+}
+
+.up-to-date {
+    padding: 1em;
+}
+
+.in-force {
+    padding: 1em;
+}
+
+.tna-button {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1em;
+    background-color: #1d70b8;
+    border-color: #1d70b8;
+}
+
+.print-and-download {
+    margin-top: 0;
+    border-top: none;
+}
+
+.print-and-download a {
+    display: inline-block;
+    padding: 0 0.5em;
+    background-color: #1d70b8 !important;
+}
+
+.accordion .heading {
+    background-color: #dde5d5;
+    background-image: url(expand_more-24px.svg);
+    background-repeat: no-repeat;
+    background-position: right 5% bottom 50%;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.accordion .heading.expanded {
+    background-color: #dde5d5;
+    background-image: url(expand_less-24px.svg);
+}
+
+.accordion .toggled {
+    padding: 1em;
+    font-size: 90%;
+}
+
+.accordion ul {
+    padding: 0 0 1em 0;
+    border-bottom: 1px solid #dde5d5;
+}
+
+.accordion li {
+    list-style: none;
+}
+
+.help-and-annotations {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #dde5d5;
+}
+
+.tna-form__checkbox label::before {
+    height: 20px;
+    width: 20px;
+    border: 2px solid #26262a;
+    left: 0;
+    top: 2px;
+}
+
+.tna-form__checkbox label::after {
+    height: 6px;
+    width: 11px;
+    border-left: 2px solid #26262a;
+    border-bottom: 2px solid #26262a;
+    transform: rotate(-45deg);
+    left: 5px;
+    top: 7px;
+}
+
+.tna-form__row {
+    margin-bottom: 0;
+}
+
+.read-with {
+    padding-top: 1em;
+}
+
+.print-and-download .toggled > div {
+    display: flex;
+    margin-bottom: 0.5em;
+}
+
+.print-and-download .toggled > div:last-child {
+    margin-bottom: 0;
+}
+
+
+.print-and-download .tna-button {
+    margin-top: 0;
+}
+
+.print-and-download .toggled > div > *:first-child {
+    flex-basis: 90%;
+}
+
+footer {
+    padding: 1em;
+    background-color: #383838;
+    color: #FFF;
+    background-image: url(gov-uk.png);
+    background-repeat: no-repeat;
+    background-position: bottom 50% right 100px;;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 1em;
+}
+
+footer a {
+    color: #FFF;
+}
+
+footer a:hover {
+    color: #FFF;
+}
+
+footer a:visited {
+    color: #FFF;
+}
+
+footer p a {
+    text-decoration: underline;
+}
+
+
